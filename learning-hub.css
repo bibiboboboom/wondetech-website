@@ -1,0 +1,266 @@
+/* ============================================================
+   LEARNING HUB PAGE STYLES
+   ============================================================ */
+
+.gradient-text-indigo {
+  background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.lh-header {
+  background: linear-gradient(160deg, #eef2ff 0%, #f5f3ff 60%, #ffffff 100%);
+}
+
+/* CONTEXT BANNER */
+.context-banner {
+  background: var(--indigo-light);
+  border-bottom: 1px solid #c7d2fe;
+  padding: 14px 0;
+}
+.context-banner-inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.cb-icon { font-size: 18px; }
+.cb-text { font-size: 14px; color: var(--gray-700); flex: 1; }
+.cb-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--indigo);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.cb-link:hover { text-decoration: underline; }
+
+/* VALUE PROPS */
+.lh-vp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.lh-vp-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+.lh-vp-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.lh-vp-icon { font-size: 26px; margin-bottom: 12px; }
+.lh-vp-card h3 { font-size: 16px; font-weight: 700; color: var(--gray-900); margin-bottom: 8px; }
+.lh-vp-card p  { font-size: 14px; color: var(--gray-500); line-height: 1.65; }
+
+/* HOW IT WORKS — JOURNEY */
+.lh-how-section { background: var(--gray-50); }
+.lh-journey {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+}
+.lh-journey-step {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  position: relative;
+}
+.lj-icon {
+  width: 44px; height: 44px;
+  border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.lj-icon.knowledge { background: var(--blue-light); }
+.lj-icon.map       { background: #fef9c3; }
+.lj-icon.gap       { background: var(--blue-light); }
+.lj-icon.learn     { background: var(--indigo-light); }
+.lj-icon.ready     { background: #dcfce7; }
+.lj-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--indigo);
+  margin-bottom: 4px;
+}
+.lj-content h4 { font-size: 16px; font-weight: 700; color: var(--gray-900); margin-bottom: 6px; }
+.lj-content p  { font-size: 14px; color: var(--gray-500); line-height: 1.65; }
+.lj-connector {
+  text-align: center;
+  font-size: 20px;
+  color: var(--indigo);
+  padding: 6px 0;
+  opacity: 0.4;
+}
+
+/* DEMO VISUALS */
+.lh-visual-section { background: var(--white); }
+.lh-demo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 24px;
+}
+.lh-demo-card {
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+.lh-demo-header {
+  padding: 14px 18px;
+  background: var(--indigo-light);
+  border-bottom: 1px solid #c7d2fe;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--indigo);
+}
+
+/* Learning Map */
+.lh-map { padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+.lh-map-category {}
+.lhmc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 6px 6px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+.lhmc-header.blue   { background: var(--blue-light); color: var(--blue); }
+.lhmc-header.amber  { background: #fffbeb; color: #92400e; }
+.lhmc-score { font-size: 11px; opacity: 0.7; }
+.lhmc-items {
+  border: 1px solid var(--gray-100);
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  overflow: hidden;
+}
+.lhmc-item {
+  padding: 8px 12px;
+  font-size: 12px;
+  border-bottom: 1px solid var(--gray-50);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gray-600);
+}
+.lhmc-item:last-child { border-bottom: none; }
+.lhmc-item.done     { color: var(--gray-500); }
+.lhmc-item.pending  { color: var(--gray-700); font-weight: 500; }
+.lhmc-item.pending.critical { background: #fef2f2; color: #991b1b; }
+.urgent {
+  font-size: 10px;
+  font-weight: 700;
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-left: auto;
+}
+
+/* Readiness Table */
+.lh-readiness-table { padding: 12px 16px; }
+.lrt-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 1fr;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--gray-100);
+  font-size: 12px;
+  align-items: center;
+}
+.lrt-row:last-child { border-bottom: none; }
+.lrt-row.header {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gray-400);
+}
+.lrt-role { font-size: 11px; color: var(--gray-500); }
+.lrt-bar-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+.lrt-bar { flex: 1; height: 6px; background: var(--gray-100); border-radius: 3px; overflow: hidden; }
+.lrt-fill { height: 100%; background: #22c55e; border-radius: 3px; }
+.lrt-fill.warn { background: #f59e0b; }
+.lrt-fill.low  { background: #ef4444; }
+.lrt-gaps.none     { font-size: 11px; color: #16a34a; font-weight: 600; }
+.lrt-gaps.critical { font-size: 11px; color: #dc2626; font-weight: 700; }
+
+/* ROLES GRID */
+.lh-uc-section { background: var(--gray-50); }
+.lh-roles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+.lh-role-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+.lh-role-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.lhr-role-title { font-size: 15px; font-weight: 700; color: var(--gray-900); margin-bottom: 10px; }
+.lh-role-card p { font-size: 14px; color: var(--gray-500); line-height: 1.65; }
+
+/* CROSSLINK */
+.crosslink-section { background: var(--white); padding: 64px 0; }
+.crosslink-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-500);
+  text-align: center;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.crosslink-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.crosslink-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.15s;
+  border: 1.5px solid transparent;
+}
+.crosslink-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.crosslink-card.blue   { background: var(--blue-light); border-color: var(--blue-mid); }
+.crosslink-card.purple { background: var(--purple-light); border-color: #ddd6fe; }
+.cc-icon { font-size: 28px; flex-shrink: 0; }
+.cc-body { flex: 1; }
+.cc-title { font-size: 15px; font-weight: 700; color: var(--gray-900); margin-bottom: 4px; }
+.cc-desc  { font-size: 13px; color: var(--gray-600); line-height: 1.5; }
+.cc-arrow { font-size: 18px; color: var(--gray-400); flex-shrink: 0; }
+
+@media (max-width: 768px) {
+  .lh-demo-grid { grid-template-columns: 1fr; }
+  .lrt-row { grid-template-columns: 1fr 1fr; }
+  .lrt-row.header span:nth-child(2),
+  .lrt-row span.lrt-role { display: none; }
+}
