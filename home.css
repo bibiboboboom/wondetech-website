@@ -43,7 +43,7 @@
 .hero-subtitle {
   font-size: 18px;
   color: var(--gray-500);
-  max-width: 600px;
+  max-width: 680px;
   margin-bottom: 36px;
   line-height: 1.7;
 }
@@ -65,13 +65,14 @@
   border-radius: var(--radius-lg);
   padding: 32px;
   box-shadow: var(--shadow-lg);
-  max-width: 900px;
+  max-width: 960px;
 }
 .platform-input-row {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   margin-bottom: 20px;
+  justify-content: center;
 }
 .doc-chip {
   display: flex;
@@ -153,6 +154,33 @@
   background: var(--gray-400);
 }
 
+/* CLOSED-LOOP FEEDBACK ROW */
+.loop-feedback-row {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px dashed var(--gray-200);
+}
+.loop-feedback-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.loop-arrow-icon {
+  font-size: 20px;
+  color: var(--blue);
+  animation: spin 4s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.loop-feedback-text {
+  font-size: 12px;
+  color: var(--gray-500);
+  text-align: center;
+}
+
 /* PROBLEM SECTION */
 .problem-section { background: var(--gray-50); }
 .problem-grid {
@@ -172,6 +200,64 @@
 }
 .problem-icon { font-size: 24px; flex-shrink: 0; margin-top: 2px; }
 .problem-text { font-size: 15px; color: var(--gray-600); line-height: 1.55; }
+
+/* CLOSED-LOOP STORY SECTION */
+.loop-section {
+  background: linear-gradient(180deg, #ffffff 0%, #eff6ff 100%);
+}
+.loop-diagram {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 48px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.loop-step {
+  flex: 1;
+  min-width: 160px;
+  max-width: 200px;
+  text-align: center;
+  padding: 24px 16px;
+  background: var(--white);
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+.loop-step.loop-govern {
+  border-color: var(--blue-mid);
+  background: var(--blue-light);
+}
+.loop-step.loop-capture {
+  border-color: var(--indigo-mid, #c7d2fe);
+  background: #f0f9ff;
+}
+.loop-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+.loop-step-title {
+  font-family: var(--font-head);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 8px;
+}
+.loop-step-desc {
+  font-size: 12px;
+  color: var(--gray-500);
+  line-height: 1.5;
+}
+.loop-arrow-right {
+  font-size: 24px;
+  color: var(--gray-300);
+  flex-shrink: 0;
+  align-self: center;
+}
+.loop-arrow-back {
+  color: var(--blue);
+  font-size: 20px;
+}
 
 /* PRODUCT BLOCKS */
 .solution-section { background: var(--white); }
@@ -357,80 +443,15 @@
   color: var(--gray-700);
 }
 
-/* ARCHITECTURE SECTION */
-.connect-section { background: var(--gray-50); }
-.architecture-diagram { margin-top: 0; }
-.arch-center { display: flex; flex-direction: column; align-items: center; gap: 0; margin-bottom: 40px; }
-.arch-core {
-  background: var(--white);
-  border: 1.5px solid var(--gray-200);
-  border-radius: var(--radius-md);
-  padding: 28px 36px;
-  text-align: center;
-  box-shadow: var(--shadow-md);
-  max-width: 360px;
-  margin-bottom: 0;
-}
-.arch-core-icon { font-size: 32px; margin-bottom: 10px; }
-.arch-core-title { font-family: var(--font-head); font-size: 16px; font-weight: 700; color: var(--gray-900); margin-bottom: 6px; }
-.arch-core-desc { font-size: 13px; color: var(--gray-500); }
-
-.arch-spokes {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 0;
-}
-.arch-spoke {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0;
-}
-.spoke-line {
-  width: 1px;
-  height: 32px;
-  background: var(--gray-300);
-}
-.spoke-node {
-  padding: 16px 20px;
-  border-radius: var(--radius-md);
-  text-align: center;
-  font-size: 13px;
-  font-weight: 600;
-  min-width: 140px;
-}
-.spoke-node > div:first-child { font-size: 22px; margin-bottom: 6px; }
-.spoke-node.blue   { background: var(--blue-light); color: var(--blue); border: 1px solid var(--blue-mid); }
-.spoke-node.indigo { background: var(--indigo-light); color: var(--indigo); border: 1px solid #c7d2fe; }
-.spoke-node.purple { background: var(--purple-light); color: var(--purple); border: 1px solid #ddd6fe; }
-
-.arch-benefit-row {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.arch-benefit {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  color: var(--gray-600);
-  font-weight: 500;
-}
-.benefit-icon { font-size: 16px; }
-
 /* USE CASES */
-.use-cases-section { background: var(--white); }
+.use-cases-section { background: var(--gray-50); }
 .use-case-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
 }
 .use-case-card {
-  background: var(--gray-50);
+  background: var(--white);
   border: 1px solid var(--gray-200);
   border-radius: var(--radius-md);
   padding: 28px;
@@ -441,6 +462,31 @@
 .use-case-card h4 { font-size: 16px; font-weight: 700; margin-bottom: 10px; color: var(--gray-900); }
 .use-case-card p  { font-size: 14px; color: var(--gray-500); line-height: 1.65; }
 
+/* STATS */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+}
+.stat-card { text-align: center; }
+.stat-number {
+  font-family: var(--font-head);
+  font-size: 44px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #2563EB, #7C3AED);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.stat-label {
+  font-size: 15px;
+  color: var(--gray-500);
+  max-width: 200px;
+  margin: 0 auto;
+}
+
 @media (max-width: 900px) {
   .product-block {
     grid-template-columns: 1fr;
@@ -448,6 +494,9 @@
   }
   .product-block-right .product-content,
   .product-block-right .product-visual { order: unset; }
+  .loop-diagram { flex-direction: column; align-items: center; }
+  .loop-step { max-width: 100%; }
+  .loop-arrow-right, .loop-arrow-back { display: none; }
 }
 @media (max-width: 640px) {
   .platform-modules-row { flex-direction: column; }
