@@ -30,22 +30,40 @@
   </div>
 </nav>
 
-<!-- PAGE HEADER -->
-<div class="page-header uc-header">
+<!-- PAGE HERO -->
+<div class="uc-hero">
   <div class="container">
     <a href="index.html" class="back-link">← Back to Platform Overview</a>
-    <div class="page-header-badge">
-      <span>📋</span>
-      <span>Customer Use Cases</span>
+    <div class="uc-hero-inner">
+      <div class="uc-hero-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        Enterprise Use Cases
+      </div>
+      <h1 class="uc-hero-title">
+        Real outcomes from<br />
+        <span class="gradient-text">enterprise knowledge in action</span>
+      </h1>
+      <p class="uc-hero-sub">
+        See how WondeTech turns enterprise knowledge into practical outcomes across
+        operations, workforce enablement, and contract review.
+      </p>
+      <div class="uc-hero-stats">
+        <div class="uc-hero-stat">
+          <span class="uc-hero-stat-num">4</span>
+          <span class="uc-hero-stat-label">Enterprise Customers</span>
+        </div>
+        <div class="uc-hero-stat-divider"></div>
+        <div class="uc-hero-stat">
+          <span class="uc-hero-stat-num">3</span>
+          <span class="uc-hero-stat-label">Product Modules</span>
+        </div>
+        <div class="uc-hero-stat-divider"></div>
+        <div class="uc-hero-stat">
+          <span class="uc-hero-stat-num">2</span>
+          <span class="uc-hero-stat-label">Industry Verticals</span>
+        </div>
+      </div>
     </div>
-    <h1 class="page-header-title">
-      Real outcomes from<br />
-      <span class="gradient-text">enterprise knowledge in action</span>
-    </h1>
-    <p class="page-header-subtitle">
-      See how WondeTech turns enterprise knowledge into practical outcomes across
-      oilfield operations, workforce enablement, and contract review.
-    </p>
   </div>
 </div>
 
@@ -53,81 +71,358 @@
 <div class="uc-filter-bar">
   <div class="container">
     <div class="uc-filter-row">
-      <span class="uc-filter-label">Filter by:</span>
+      <span class="uc-filter-label">Filter by module:</span>
       <div class="uc-filter-tabs">
         <button class="uc-tab active" data-filter="all">All Cases</button>
-        <button class="uc-tab" data-filter="knowledge-hub">Knowledge Hub</button>
-        <button class="uc-tab" data-filter="learning-hub">Learning Hub</button>
-        <button class="uc-tab" data-filter="contract-review">Contract Review</button>
+        <button class="uc-tab" data-filter="knowledge-hub">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          Knowledge Hub
+        </button>
+        <button class="uc-tab" data-filter="learning-hub">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          Learning Hub
+        </button>
+        <button class="uc-tab" data-filter="contract-review">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          Contract Review
+        </button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ============ CASE 1: BOC ============ -->
-<section class="section uc-case-section" id="case-boc" data-modules="knowledge-hub learning-hub contract-review">
+<!-- ============================================================
+     CASE 01: BOC
+     ============================================================ -->
+<section class="uc-case" id="case-boc" data-modules="knowledge-hub learning-hub contract-review">
   <div class="container">
-    <div class="uc-case-grid">
 
-      <!-- Left: Case meta -->
-      <div class="uc-case-meta">
-        <div class="uc-case-number">Case 01</div>
-        <div class="uc-customer-pill">🏭 BOC</div>
-        <div class="uc-case-type">Enterprise Knowledge Base &amp; Workforce Enablement</div>
-        <div class="uc-module-tags">
-          <span class="uc-mod-tag blue">Knowledge Hub</span>
-          <span class="uc-mod-tag indigo">Learning Hub</span>
-          <span class="uc-mod-tag purple">Contract Review</span>
+    <!-- Case Header Band -->
+    <div class="cs-header">
+      <div class="cs-number">Case 01</div>
+      <div class="cs-header-body">
+        <div class="cs-client-row">
+          <div class="cs-client-icon boc-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div>
+            <h2 class="cs-client-name">BOC</h2>
+            <p class="cs-positioning">Enterprise Knowledge Base &amp; Workforce Enablement</p>
+          </div>
         </div>
-        <div class="uc-outcome-box">
-          <div class="uc-outcome-label">Key Outcome</div>
-          <p>Scattered technical documents, training materials, and IP content structured into a single, searchable enterprise knowledge base.</p>
+        <div class="cs-module-tags">
+          <span class="cs-mod-tag mod-kh">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            Knowledge Hub
+          </span>
+          <span class="cs-mod-tag mod-lh">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            Learning Hub
+          </span>
+          <span class="cs-mod-tag mod-cr">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Contract Review
+          </span>
         </div>
       </div>
+    </div>
 
-      <!-- Right: Case story -->
-      <div class="uc-case-story">
-        <h2 class="uc-case-title">Building a reusable industry knowledge base to support operations, onboarding, and contract work</h2>
+    <!-- Case Body -->
+    <div class="cs-body">
 
-        <div class="uc-story-block">
-          <div class="uc-story-icon">📂</div>
-          <div>
-            <div class="uc-story-tag">The Situation</div>
-            <p>Technical documents, training materials, contract files, project experience records, and IP-related content were stored across different systems — each team maintained their own folders, and finding the right version of a document meant asking around or searching through multiple drives.</p>
+      <!-- Left: Client Snapshot -->
+      <aside class="cs-sidebar">
+        <div class="cs-snapshot">
+          <div class="cs-snapshot-title">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            Client Snapshot
+          </div>
+          <ul class="cs-snapshot-list">
+            <li>
+              <span class="cs-snap-icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </span>
+              <div>
+                <div class="cs-snap-key">Client</div>
+                <div class="cs-snap-val">BOC</div>
+              </div>
+            </li>
+            <li>
+              <span class="cs-snap-icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </span>
+              <div>
+                <div class="cs-snap-key">Industry</div>
+                <div class="cs-snap-val">Oil &amp; Gas</div>
+              </div>
+            </li>
+            <li>
+              <span class="cs-snap-icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </span>
+              <div>
+                <div class="cs-snap-key">Region</div>
+                <div class="cs-snap-val">Iraq</div>
+              </div>
+            </li>
+            <li>
+              <span class="cs-snap-icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+              </span>
+              <div>
+                <div class="cs-snap-key">Scenario</div>
+                <div class="cs-snap-val">Enterprise knowledge base and workforce enablement</div>
+              </div>
+            </li>
+            <li>
+              <span class="cs-snap-icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </span>
+              <div>
+                <div class="cs-snap-key">Modules</div>
+                <div class="cs-snap-mod-row">
+                  <span class="cs-snap-mod-chip kh">KH</span>
+                  <span class="cs-snap-mod-chip lh">LH</span>
+                  <span class="cs-snap-mod-chip cr">CR</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Right: Case Content -->
+      <div class="cs-content">
+
+        <!-- Challenge -->
+        <div class="cs-section">
+          <div class="cs-section-head challenge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Challenge
+          </div>
+          <ul class="cs-bullets">
+            <li>Technical documents, training materials, contract files, project records, and IP-related content were scattered across teams and systems.</li>
+            <li>Employees had to ask colleagues or search through multiple folders to find the right version.</li>
+            <li>Knowledge was difficult to reuse for onboarding, operations, and contract reference.</li>
+          </ul>
+        </div>
+
+        <!-- What WondeTech Changed -->
+        <div class="cs-section">
+          <div class="cs-section-head changed">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            What WondeTech Changed
+          </div>
+          <ul class="cs-bullets cs-bullets-positive">
+            <li>Built a governed knowledge base for technical documents, training records, project files, and contract materials.</li>
+            <li>Made content structured, searchable, version-controlled, and easier to reuse.</li>
+            <li>Connected operational knowledge with onboarding and contract reference needs.</li>
+          </ul>
+        </div>
+
+        <!-- Business Impact -->
+        <div class="cs-section">
+          <div class="cs-section-head impact">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            Business Impact
+          </div>
+          <div class="cs-impact-chips">
+            <div class="cs-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              Faster employee onboarding
+            </div>
+            <div class="cs-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              Less time spent searching for documents
+            </div>
+            <div class="cs-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/></svg>
+              Clearer contract and policy references
+            </div>
+            <div class="cs-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Better control of sensitive knowledge assets
+            </div>
           </div>
         </div>
 
-        <div class="uc-story-block">
-          <div class="uc-story-icon">⚡</div>
-          <div>
-            <div class="uc-story-tag">What Changed</div>
-            <p>WondeTech ingested documents, training records, project files, and contract materials into a governed knowledge base. Content is now structured, searchable, and version-controlled. Employees can find what they need directly — including tracing contract clauses back to policy documents or standards.</p>
+        <!-- Module Contribution -->
+        <div class="cs-section">
+          <div class="cs-section-head modules">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            Module Contribution
+          </div>
+          <div class="cs-modules-grid cs-modules-3">
+            <div class="cs-module-card kh">
+              <div class="cs-module-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </div>
+              <div class="cs-module-name">Knowledge Hub</div>
+              <div class="cs-module-desc">Structures technical documents, project records, and IP-related content into a searchable governed knowledge base.</div>
+            </div>
+            <div class="cs-module-card lh">
+              <div class="cs-module-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <div class="cs-module-name">Learning Hub</div>
+              <div class="cs-module-desc">Uses role-relevant knowledge to support onboarding and employee development.</div>
+            </div>
+            <div class="cs-module-card cr">
+              <div class="cs-module-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              </div>
+              <div class="cs-module-name">Contract Review</div>
+              <div class="cs-module-desc">Allows reviewers to trace contract clauses back to internal policies, standards, and source documents.</div>
+            </div>
           </div>
         </div>
 
-        <div class="uc-story-block">
-          <div class="uc-story-icon">📈</div>
+      </div><!-- /cs-content -->
+    </div><!-- /cs-body -->
+  </div>
+</section>
+
+<div class="uc-case-divider"></div>
+
+<!-- ============================================================
+     CASE 02: MAJNOON
+     ============================================================ -->
+<section class="uc-case uc-case-alt" id="case-majnoon" data-modules="knowledge-hub contract-review">
+  <div class="container">
+
+    <div class="cs-header">
+      <div class="cs-number">Case 02</div>
+      <div class="cs-header-body">
+        <div class="cs-client-row">
+          <div class="cs-client-icon majnoon-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
           <div>
-            <div class="uc-story-tag">Business Value</div>
-            <p>Faster employee onboarding — new hires access structured role-relevant materials without waiting for colleagues. Clearer contract references — reviewers can trace terms to authoritative source documents. IP-sensitive content is governed with access controls, reducing exposure risk.</p>
+            <h2 class="cs-client-name">Majnoon</h2>
+            <p class="cs-positioning">Oilfield Information Management &amp; Evidence-Based Contract Review</p>
+          </div>
+        </div>
+        <div class="cs-module-tags">
+          <span class="cs-mod-tag mod-kh">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            Knowledge Hub
+          </span>
+          <span class="cs-mod-tag mod-cr">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Contract Review
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-body">
+      <aside class="cs-sidebar">
+        <div class="cs-snapshot">
+          <div class="cs-snapshot-title">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            Client Snapshot
+          </div>
+          <ul class="cs-snapshot-list">
+            <li>
+              <span class="cs-snap-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></span>
+              <div><div class="cs-snap-key">Client</div><div class="cs-snap-val">Majnoon</div></div>
+            </li>
+            <li>
+              <span class="cs-snap-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+              <div><div class="cs-snap-key">Industry</div><div class="cs-snap-val">Oil &amp; Gas / Oilfield Operations</div></div>
+            </li>
+            <li>
+              <span class="cs-snap-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+              <div><div class="cs-snap-key">Region</div><div class="cs-snap-val">Iraq</div></div>
+            </li>
+            <li>
+              <span class="cs-snap-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4"/></svg></span>
+              <div><div class="cs-snap-key">Scenario</div><div class="cs-snap-val">Connecting contract review with engineering documents and delivery evidence</div></div>
+            </li>
+            <li>
+              <span class="cs-snap-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+              <div>
+                <div class="cs-snap-key">Modules</div>
+                <div class="cs-snap-mod-row">
+                  <span class="cs-snap-mod-chip kh">KH</span>
+                  <span class="cs-snap-mod-chip cr">CR</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="cs-content">
+        <div class="cs-section">
+          <div class="cs-section-head challenge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Challenge
+          </div>
+          <ul class="cs-bullets">
+            <li>Engineering, procurement, contract, approval, acceptance, and delivery documents were stored separately.</li>
+            <li>Reviewers needed to manually locate attachments, verify versions, and trace approval records.</li>
+            <li>Contract claims or deliverable checks lacked a fast and reliable evidence trail.</li>
+          </ul>
+        </div>
+
+        <div class="cs-section">
+          <div class="cs-section-head changed">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            What WondeTech Changed
+          </div>
+          <ul class="cs-bullets cs-bullets-positive">
+            <li>Connected contract text with relevant engineering files, approval records, acceptance materials, and project documents.</li>
+            <li>Created a clearer link between contract clauses and supporting evidence.</li>
+            <li>Improved version visibility and source traceability during review.</li>
+          </ul>
+        </div>
+
+        <div class="cs-section">
+          <div class="cs-section-head impact">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            Business Impact
+          </div>
+          <div class="cs-impact-chips">
+            <div class="cs-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              Reduced manual attachment searching
+            </div>
+            <div class="cs-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              Clearer approval and evidence trail
+            </div>
+            <div class="cs-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              Faster contract review preparation
+            </div>
+            <div class="cs-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Lower project and claim-related risk
+            </div>
           </div>
         </div>
 
-        <div class="uc-kv-grid">
-          <div class="uc-kv-item">
-            <div class="uc-kv-icon">🏛️</div>
-            <div class="uc-kv-label">Knowledge Hub</div>
-            <div class="uc-kv-desc">Structured, searchable knowledge base with version control and access governance</div>
+        <div class="cs-section">
+          <div class="cs-section-head modules">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            Module Contribution
           </div>
-          <div class="uc-kv-item">
-            <div class="uc-kv-icon">🎓</div>
-            <div class="uc-kv-label">Learning Hub</div>
-            <div class="uc-kv-desc">Role-based onboarding paths built from your own enterprise content</div>
-          </div>
-          <div class="uc-kv-item">
-            <div class="uc-kv-icon">⚖️</div>
-            <div class="uc-kv-label">Contract Review</div>
-            <div class="uc-kv-desc">Clause references traced to your own policy library and standards</div>
+          <div class="cs-modules-grid cs-modules-2">
+            <div class="cs-module-card kh">
+              <div class="cs-module-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </div>
+              <div class="cs-module-name">Knowledge Hub</div>
+              <div class="cs-module-desc">Governs engineering records, approval documents, acceptance materials, and project files with version control.</div>
+            </div>
+            <div class="cs-module-card cr">
+              <div class="cs-module-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/></svg>
+              </div>
+              <div class="cs-module-name">Contract Review</div>
+              <div class="cs-module-desc">Links contract clauses to supporting evidence, technical documents, and approval history.</div>
+            </div>
           </div>
         </div>
       </div>
@@ -135,65 +430,147 @@
   </div>
 </section>
 
-<!-- DIVIDER -->
-<div class="uc-divider"></div>
+<div class="uc-case-divider"></div>
 
-<!-- ============ CASE 2: MAJNOON ============ -->
-<section class="section uc-case-section uc-case-alt" id="case-majnoon" data-modules="knowledge-hub contract-review">
+<!-- ============================================================
+     CASE 03: VIVIDATA
+     ============================================================ -->
+<section class="uc-case" id="case-vividata" data-modules="contract-review knowledge-hub">
   <div class="container">
-    <div class="uc-case-grid">
 
-      <div class="uc-case-meta">
-        <div class="uc-case-number">Case 02</div>
-        <div class="uc-customer-pill">🛢️ Majnoon</div>
-        <div class="uc-case-type">Oilfield Information Management &amp; Evidence-Based Contract Review</div>
-        <div class="uc-module-tags">
-          <span class="uc-mod-tag blue">Knowledge Hub</span>
-          <span class="uc-mod-tag purple">Contract Review</span>
+    <div class="cs-header">
+      <div class="cs-number">Case 03</div>
+      <div class="cs-header-body">
+        <div class="cs-client-row">
+          <div class="cs-client-icon vividata-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div>
+            <h2 class="cs-client-name">Vividata</h2>
+            <p class="cs-positioning">Cross-Border Contract Drafting &amp; Review Workflow</p>
+          </div>
         </div>
-        <div class="uc-outcome-box">
-          <div class="uc-outcome-label">Key Outcome</div>
-          <p>Contract review supported by direct access to engineering docs, approval records, acceptance materials, and project files — no more manual attachment chasing.</p>
+        <div class="cs-module-tags">
+          <span class="cs-mod-tag mod-cr">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Contract Review
+          </span>
+          <span class="cs-mod-tag mod-kh">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            Knowledge Hub
+          </span>
         </div>
       </div>
+    </div>
 
-      <div class="uc-case-story">
-        <h2 class="uc-case-title">Connecting contract documents with engineering records, approval files, and field delivery evidence</h2>
+    <div class="cs-body">
+      <aside class="cs-sidebar">
+        <div class="cs-snapshot">
+          <div class="cs-snapshot-title">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            Client Snapshot
+          </div>
+          <ul class="cs-snapshot-list">
+            <li>
+              <span class="cs-snap-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></span>
+              <div><div class="cs-snap-key">Client</div><div class="cs-snap-val">Vividata</div></div>
+            </li>
+            <li>
+              <span class="cs-snap-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span>
+              <div><div class="cs-snap-key">Industry</div><div class="cs-snap-val">Cross-border Technology Services</div></div>
+            </li>
+            <li>
+              <span class="cs-snap-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10"/></svg></span>
+              <div><div class="cs-snap-key">Region</div><div class="cs-snap-val">International</div></div>
+            </li>
+            <li>
+              <span class="cs-snap-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4"/></svg></span>
+              <div><div class="cs-snap-key">Scenario</div><div class="cs-snap-val">Reusing institutional knowledge for English contract drafting and review</div></div>
+            </li>
+            <li>
+              <span class="cs-snap-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+              <div>
+                <div class="cs-snap-key">Modules</div>
+                <div class="cs-snap-mod-row">
+                  <span class="cs-snap-mod-chip cr">CR</span>
+                  <span class="cs-snap-mod-chip kh">KH</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-        <div class="uc-story-block">
-          <div class="uc-story-icon">📂</div>
-          <div>
-            <div class="uc-story-tag">The Situation</div>
-            <p>Engineering, procurement, contract, approval, acceptance, and delivery documents were stored separately. When reviewers needed to check a contract claim or verify a deliverable, they spent significant time locating the relevant attachments, confirming version history, and tracing approval chains.</p>
+      <div class="cs-content">
+        <div class="cs-section">
+          <div class="cs-section-head challenge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Challenge
+          </div>
+          <ul class="cs-bullets">
+            <li>The team handled English contracts, service agreements, cooperation terms, and compliance documents.</li>
+            <li>Historical agreements, standard templates, risk clauses, and review notes existed but were not easy to reuse.</li>
+            <li>Drafting and review depended heavily on manual comparison and individual experience.</li>
+          </ul>
+        </div>
+
+        <div class="cs-section">
+          <div class="cs-section-head changed">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            What WondeTech Changed
+          </div>
+          <ul class="cs-bullets cs-bullets-positive">
+            <li>Consolidated historical agreements, approved templates, risk clauses, and internal review notes into Knowledge Hub.</li>
+            <li>Made precedents and approved language easier to retrieve during drafting.</li>
+            <li>Used Contract Review to flag risks based on the organization's own clause library and review standards.</li>
+          </ul>
+        </div>
+
+        <div class="cs-section">
+          <div class="cs-section-head impact">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            Business Impact
+          </div>
+          <div class="cs-impact-chips">
+            <div class="cs-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              Faster first-draft preparation
+            </div>
+            <div class="cs-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              More consistent contract review
+            </div>
+            <div class="cs-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 2 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+              Better reuse of approved templates and clauses
+            </div>
+            <div class="cs-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              Cleaner communication between drafting and review teams
+            </div>
           </div>
         </div>
 
-        <div class="uc-story-block">
-          <div class="uc-story-icon">⚡</div>
-          <div>
-            <div class="uc-story-tag">What Changed</div>
-            <p>WondeTech connected contract text with the associated technical attachments, approval records, acceptance materials, and project files stored in Knowledge Hub. Reviewers can now navigate from a contract clause directly to the supporting document — and see which version was current at signing.</p>
+        <div class="cs-section">
+          <div class="cs-section-head modules">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            Module Contribution
           </div>
-        </div>
-
-        <div class="uc-story-block">
-          <div class="uc-story-icon">📈</div>
-          <div>
-            <div class="uc-story-tag">Business Value</div>
-            <p>Review time reduced by eliminating manual attachment searches. Approval trail is clear and auditable. Disputes and claims can be resolved with direct evidence — reducing negotiation time and project risk.</p>
-          </div>
-        </div>
-
-        <div class="uc-kv-grid uc-kv-2col">
-          <div class="uc-kv-item">
-            <div class="uc-kv-icon">🏛️</div>
-            <div class="uc-kv-label">Knowledge Hub</div>
-            <div class="uc-kv-desc">Governs engineering documents, approval records, and acceptance materials with version control</div>
-          </div>
-          <div class="uc-kv-item">
-            <div class="uc-kv-icon">⚖️</div>
-            <div class="uc-kv-label">Contract Review</div>
-            <div class="uc-kv-desc">Contract clauses linked to supporting evidence — approval history, technical specs, delivery records</div>
+          <div class="cs-modules-grid cs-modules-2">
+            <div class="cs-module-card kh">
+              <div class="cs-module-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </div>
+              <div class="cs-module-name">Knowledge Hub</div>
+              <div class="cs-module-desc">Makes templates, precedents, approved clauses, and review notes accessible during drafting and review.</div>
+            </div>
+            <div class="cs-module-card cr">
+              <div class="cs-module-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              </div>
+              <div class="cs-module-name">Contract Review</div>
+              <div class="cs-module-desc">Applies risk alerts based on the organization's own historical agreements and approved clause library.</div>
+            </div>
           </div>
         </div>
       </div>
@@ -201,131 +578,147 @@
   </div>
 </section>
 
-<!-- DIVIDER -->
-<div class="uc-divider"></div>
+<div class="uc-case-divider"></div>
 
-<!-- ============ CASE 3: VIVIDATA ============ -->
-<section class="section uc-case-section" id="case-vividata" data-modules="contract-review knowledge-hub">
+<!-- ============================================================
+     CASE 04: U.S. CHEM-PHARMA STARTUP
+     ============================================================ -->
+<section class="uc-case uc-case-alt" id="case-startup" data-modules="contract-review knowledge-hub">
   <div class="container">
-    <div class="uc-case-grid">
 
-      <div class="uc-case-meta">
-        <div class="uc-case-number">Case 03</div>
-        <div class="uc-customer-pill">🌐 Vividata</div>
-        <div class="uc-case-type">Cross-Border Contract Drafting &amp; Review Workflow</div>
-        <div class="uc-module-tags">
-          <span class="uc-mod-tag purple">Contract Review</span>
-          <span class="uc-mod-tag blue">Knowledge Hub</span>
-        </div>
-        <div class="uc-outcome-box">
-          <div class="uc-outcome-label">Key Outcome</div>
-          <p>Historical agreements, standard templates, and risk clauses consolidated into a single workflow — from first-draft preparation through to final sign-off.</p>
-        </div>
-      </div>
-
-      <div class="uc-case-story">
-        <h2 class="uc-case-title">Reusing institutional knowledge in cross-border contract drafting and review</h2>
-
-        <div class="uc-story-block">
-          <div class="uc-story-icon">📂</div>
+    <div class="cs-header">
+      <div class="cs-number">Case 04</div>
+      <div class="cs-header-body">
+        <div class="cs-client-row">
+          <div class="cs-client-icon startup-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v11m0 0H5m4 0h4m6-8h2m-2 0a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-4m0-9v9m0 0H5a2 2 0 0 1-2-2v-1"/></svg>
+          </div>
           <div>
-            <div class="uc-story-tag">The Situation</div>
-            <p>The team handled English-language contracts, service agreements, cooperation terms, and compliance documents. Relevant precedents — historical agreements, standard templates, risk clauses, and internal review notes — existed but were not easily reachable when drafting or reviewing a new agreement.</p>
+            <h2 class="cs-client-name">U.S. Chemical-Pharma Startup</h2>
+            <p class="cs-positioning">Lean Team Compliance &amp; Risk Prioritization</p>
           </div>
         </div>
-
-        <div class="uc-story-block">
-          <div class="uc-story-icon">⚡</div>
-          <div>
-            <div class="uc-story-tag">What Changed</div>
-            <p>WondeTech brought historical agreements, approved templates, risk clause libraries, and internal review notes into the Knowledge Hub, making them retrievable during the drafting process. Contract Review applies risk alerts against those same benchmarks — so reviewers work from the same reference base as drafters.</p>
-          </div>
-        </div>
-
-        <div class="uc-story-block">
-          <div class="uc-story-icon">📈</div>
-          <div>
-            <div class="uc-story-tag">Business Value</div>
-            <p>First-draft preparation is faster — writers can pull from approved templates and precedents. Risk review is more consistent — alerts are grounded in your own institutional knowledge rather than generic rule sets. Communication between drafting and legal teams is cleaner and better documented.</p>
-          </div>
-        </div>
-
-        <div class="uc-kv-grid uc-kv-2col">
-          <div class="uc-kv-item">
-            <div class="uc-kv-icon">⚖️</div>
-            <div class="uc-kv-label">Contract Review</div>
-            <div class="uc-kv-desc">Risk alerts calibrated to your own historical agreements and approved clause library</div>
-          </div>
-          <div class="uc-kv-item">
-            <div class="uc-kv-icon">🏛️</div>
-            <div class="uc-kv-label">Knowledge Hub</div>
-            <div class="uc-kv-desc">Templates, precedents, and risk clauses accessible during drafting and review</div>
-          </div>
+        <div class="cs-module-tags">
+          <span class="cs-mod-tag mod-cr">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Contract Review
+          </span>
+          <span class="cs-mod-tag mod-kh">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            Knowledge Hub
+          </span>
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- DIVIDER -->
-<div class="uc-divider"></div>
-
-<!-- ============ CASE 4: US CHEM-PHARMA ============ -->
-<section class="section uc-case-section uc-case-alt" id="case-startup" data-modules="contract-review knowledge-hub">
-  <div class="container">
-    <div class="uc-case-grid">
-
-      <div class="uc-case-meta">
-        <div class="uc-case-number">Case 04</div>
-        <div class="uc-customer-pill">🧪 U.S. Chemical-Pharma Startup</div>
-        <div class="uc-case-type">Lean Team Compliance &amp; Risk Prioritization</div>
-        <div class="uc-module-tags">
-          <span class="uc-mod-tag purple">Contract Review</span>
-          <span class="uc-mod-tag blue">Knowledge Hub</span>
+    <div class="cs-body">
+      <aside class="cs-sidebar">
+        <div class="cs-snapshot">
+          <div class="cs-snapshot-title">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            Client Snapshot
+          </div>
+          <ul class="cs-snapshot-list">
+            <li>
+              <span class="cs-snap-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></span>
+              <div><div class="cs-snap-key">Client</div><div class="cs-snap-val">U.S. Chemical-Pharma Startup</div></div>
+            </li>
+            <li>
+              <span class="cs-snap-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span>
+              <div><div class="cs-snap-key">Industry</div><div class="cs-snap-val">Chemical / Pharmaceutical R&amp;D</div></div>
+            </li>
+            <li>
+              <span class="cs-snap-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10"/></svg></span>
+              <div><div class="cs-snap-key">Region</div><div class="cs-snap-val">United States</div></div>
+            </li>
+            <li>
+              <span class="cs-snap-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4"/></svg></span>
+              <div><div class="cs-snap-key">Scenario</div><div class="cs-snap-val">Screening contract risks before formal legal review</div></div>
+            </li>
+            <li>
+              <span class="cs-snap-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+              <div>
+                <div class="cs-snap-key">Modules</div>
+                <div class="cs-snap-mod-row">
+                  <span class="cs-snap-mod-chip cr">CR</span>
+                  <span class="cs-snap-mod-chip kh">KH</span>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="uc-outcome-box">
-          <div class="uc-outcome-label">Key Outcome</div>
-          <p>Small team can screen key contract risks before formal legal review — prioritizing high-risk documents and focusing on business decisions that matter.</p>
+      </aside>
+
+      <div class="cs-content">
+        <div class="cs-section">
+          <div class="cs-section-head challenge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Challenge
+          </div>
+          <ul class="cs-bullets">
+            <li>A lean team needed to handle R&amp;D collaboration agreements, supplier contracts, NDAs, IP documents, and customer contracts.</li>
+            <li>The team did not have enough bandwidth to fully review every document before legal review.</li>
+            <li>Key risks were sometimes identified late, after business terms had already moved forward.</li>
+          </ul>
         </div>
-      </div>
 
-      <div class="uc-case-story">
-        <h2 class="uc-case-title">Helping a small team screen contract risk and prioritize what needs legal attention</h2>
+        <div class="cs-section">
+          <div class="cs-section-head changed">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            What WondeTech Changed
+          </div>
+          <ul class="cs-bullets cs-bullets-positive">
+            <li>Screened incoming contracts against internal policies, approved templates, IP protection standards, and compliance benchmarks stored in Knowledge Hub.</li>
+            <li>Flagged high-risk terms and surfaced relevant precedents.</li>
+            <li>Helped the business team prioritize which documents needed deeper legal review.</li>
+          </ul>
+        </div>
 
-        <div class="uc-story-block">
-          <div class="uc-story-icon">📂</div>
-          <div>
-            <div class="uc-story-tag">The Situation</div>
-            <p>A lean team was responsible for R&D collaboration agreements, supplier contracts, NDAs, IP documents, and customer contracts — without the bandwidth to review every document thoroughly before sending to legal. Important risks were sometimes missed at the business stage, only surfacing late in the process.</p>
+        <div class="cs-section">
+          <div class="cs-section-head impact">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            Business Impact
+          </div>
+          <div class="cs-impact-chips">
+            <div class="cs-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Legal time focused on higher-risk documents
+            </div>
+            <div class="cs-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              Earlier visibility into business and compliance risks
+            </div>
+            <div class="cs-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+              More systematic review preparation
+            </div>
+            <div class="cs-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              Better-informed decisions before final approval
+            </div>
           </div>
         </div>
 
-        <div class="uc-story-block">
-          <div class="uc-story-icon">⚡</div>
-          <div>
-            <div class="uc-story-tag">What Changed</div>
-            <p>WondeTech screens incoming contracts against the team's own benchmarks — internal policies, approved templates, and IP protection standards stored in Knowledge Hub. The system flags high-risk terms and surfaces relevant precedents, so the business team can triage documents before legal review rather than after.</p>
+        <div class="cs-section">
+          <div class="cs-section-head modules">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            Module Contribution
           </div>
-        </div>
-
-        <div class="uc-story-block">
-          <div class="uc-story-icon">📈</div>
-          <div>
-            <div class="uc-story-tag">Business Value</div>
-            <p>The team focuses legal time on the contracts that genuinely need it. Business decisions are better informed — the team understands the key risks before committing to terms. Compliance requirements are checked systematically rather than depending on individual reviewers to remember every rule.</p>
-          </div>
-        </div>
-
-        <div class="uc-kv-grid uc-kv-2col">
-          <div class="uc-kv-item">
-            <div class="uc-kv-icon">⚖️</div>
-            <div class="uc-kv-label">Contract Review</div>
-            <div class="uc-kv-desc">Risk screening calibrated to your own compliance benchmarks and IP requirements</div>
-          </div>
-          <div class="uc-kv-item">
-            <div class="uc-kv-icon">🏛️</div>
-            <div class="uc-kv-label">Knowledge Hub</div>
-            <div class="uc-kv-desc">Internal policies, approved templates, and IP standards used as the review benchmark</div>
+          <div class="cs-modules-grid cs-modules-2">
+            <div class="cs-module-card kh">
+              <div class="cs-module-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </div>
+              <div class="cs-module-name">Knowledge Hub</div>
+              <div class="cs-module-desc">Stores internal policies, approved templates, IP standards, and compliance benchmarks as reusable reference knowledge.</div>
+            </div>
+            <div class="cs-module-card cr">
+              <div class="cs-module-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              </div>
+              <div class="cs-module-name">Contract Review</div>
+              <div class="cs-module-desc">Screens contracts against those references and highlights key risks before formal legal review.</div>
+            </div>
           </div>
         </div>
       </div>
@@ -370,8 +763,8 @@
 <script>
   // Filter tab logic
   const tabs = document.querySelectorAll('.uc-tab');
-  const cases = document.querySelectorAll('.uc-case-section');
-  const dividers = document.querySelectorAll('.uc-divider');
+  const cases = document.querySelectorAll('.uc-case');
+  const dividers = document.querySelectorAll('.uc-case-divider');
 
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
@@ -379,20 +772,26 @@
       tab.classList.add('active');
 
       const filter = tab.dataset.filter;
-      let visibleCount = 0;
 
       cases.forEach(c => {
         const modules = c.dataset.modules || '';
         const show = filter === 'all' || modules.includes(filter);
         c.style.display = show ? '' : 'none';
-        if (show) visibleCount++;
       });
 
-      // Show/hide dividers based on visible sections
-      dividers.forEach((d, i) => {
-        const allCases = [...cases];
-        const visibleCases = allCases.filter(c => c.style.display !== 'none');
-        d.style.display = (visibleCases.length > 1 && i < visibleCases.length - 1) ? '' : 'none';
+      // Manage dividers: hide dividers after last visible case
+      const allCases = [...cases];
+      const allDividers = [...dividers];
+      const visibleCases = allCases.filter(c => c.style.display !== 'none');
+
+      allDividers.forEach((d, i) => {
+        // A divider is between case[i] and case[i+1]
+        // Show it only if both surrounding cases are visible
+        const prevCase = allCases[i];
+        const nextCase = allCases[i + 1];
+        const prevVisible = prevCase && prevCase.style.display !== 'none';
+        const nextVisible = nextCase && nextCase.style.display !== 'none';
+        d.style.display = (prevVisible && nextVisible) ? '' : 'none';
       });
     });
   });
