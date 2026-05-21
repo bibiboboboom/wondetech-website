@@ -409,6 +409,86 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto;
 }
 
+/* LANGUAGE SWITCHER */
+.lang-switcher {
+  position: relative;
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-600);
+  background: var(--white);
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.lang-btn:hover { border-color: var(--gray-400); color: var(--gray-900); background: var(--gray-50); }
+.lang-btn svg { flex-shrink: 0; }
+.lang-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  background: var(--white);
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  min-width: 140px;
+  z-index: 200;
+  overflow: hidden;
+}
+.lang-switcher:hover .lang-dropdown,
+.lang-switcher.open .lang-dropdown { display: block; }
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-700);
+  text-decoration: none;
+  transition: background 0.12s;
+  white-space: nowrap;
+}
+.lang-option:hover { background: var(--gray-50); color: var(--gray-900); }
+.lang-option.active { background: var(--blue-light); color: var(--blue); font-weight: 700; }
+.lang-option .lang-flag { font-size: 15px; line-height: 1; }
+
+/* Footer language links */
+.footer-lang {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--gray-400);
+  flex-wrap: wrap;
+}
+.footer-lang a {
+  color: var(--gray-500);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.footer-lang a:hover { color: var(--gray-800); }
+.footer-lang a.active { color: var(--blue); font-weight: 600; }
+.footer-lang-sep { color: var(--gray-300); }
+
+/* RTL support */
+[dir="rtl"] .nav-links { margin-left: 0; margin-right: auto; }
+[dir="rtl"] .footer-nav { margin-left: 0; margin-right: auto; }
+[dir="rtl"] .lang-dropdown { right: auto; left: 0; }
+[dir="rtl"] .back-link { direction: ltr; display: inline-flex; }
+[dir="rtl"] .product-features li::before { margin-left: 0; }
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .nav-links { display: none; }

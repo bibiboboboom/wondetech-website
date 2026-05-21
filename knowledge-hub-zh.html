@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knowledge Hub — WondeTech</title>
+  <meta name="description" content="Knowledge Hub 将企业数据资产与知识资产——文档、记录、培训、合同、现场经验——整合为可检索、可溯源、统一治理的知识底座。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+  <link rel="stylesheet" href="knowledge-hub.css" />
+  <link rel="stylesheet" href="use-cases.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index-zh.html" class="nav-logo">
+      <span class="logo-mark">W</span>
+      <span class="logo-text">WondeTech</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="knowledge-hub-zh.html" class="nav-link active">Knowledge Hub</a></li>
+      <li><a href="learning-hub-zh.html" class="nav-link">Learning Hub</a></li>
+      <li><a href="contract-review-zh.html" class="nav-link">Contract Review</a></li>
+      <li><a href="use-cases-zh.html" class="nav-link">客户案例</a></li>
+    </ul>
+    <a href="index-zh.html#contact" class="btn btn-primary nav-cta">申请演示</a>
+    <div class="lang-switcher">
+      <button class="lang-btn">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        中文 ▾
+      </button>
+      <div class="lang-dropdown">
+        <a href="knowledge-hub.html" class="lang-option"><span class="lang-flag">🇬🇧</span> English</a>
+        <a href="knowledge-hub-zh.html" class="lang-option active"><span class="lang-flag">🇨🇳</span> 中文</a>
+        <a href="knowledge-hub-ar.html" class="lang-option"><span class="lang-flag">🇸🇦</span> العربية</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header kh-header">
+  <div class="container">
+    <a href="index-zh.html" class="back-link">← 返回平台概览</a>
+    <div class="page-header-badge">
+      <span>🏛️</span>
+      <span>Knowledge Hub</span>
+    </div>
+    <h1 class="page-header-title">
+      从零散资产到<br />
+      <span class="gradient-text-blue">统一治理的企业知识底座。</span>
+    </h1>
+    <p class="page-header-subtitle">
+      Knowledge Hub 将企业文档、运营记录、培训成果、合同、专家会议和现场经验
+      整合为可检索、可溯源、统一治理的知识底座，
+      为本地化人才赋能和合同合规管理提供核心支撑。
+    </p>
+    <div class="page-header-cta-row">
+      <a href="index-zh.html#contact" class="btn btn-primary">申请演示</a>
+      <a href="#how-it-works" class="btn btn-ghost">了解运作方式</a>
+    </div>
+  </div>
+</div>
+
+<!-- MORE THAN DOCUMENTS -->
+<section class="section more-docs-section" id="knowledge-assets">
+  <div class="container">
+    <div class="section-label">知识来源</div>
+    <h2 class="section-title">不只是文档</h2>
+    <p class="section-subtitle">
+      企业知识以多种形态存在。Knowledge Hub 统一接入并治理所有类型——
+      将零散资产转化为统一、可检索的知识底座。
+    </p>
+    <div class="asset-grid">
+      <div class="asset-card">
+        <div class="asset-icon">📋</div>
+        <div class="asset-title">文件与规程</div>
+        <div class="asset-desc">SOP、技术手册、标准、作业指导书、法规文件</div>
+      </div>
+      <div class="asset-card">
+        <div class="asset-icon">📊</div>
+        <div class="asset-title">运营记录</div>
+        <div class="asset-desc">现场日志、事故报告、检查记录、绩效数据</div>
+      </div>
+      <div class="asset-card">
+        <div class="asset-icon">🎓</div>
+        <div class="asset-title">培训材料</div>
+        <div class="asset-desc">课程、评估、认证、课程体系文件</div>
+      </div>
+      <div class="asset-card">
+        <div class="asset-icon">🎙️</div>
+        <div class="asset-title">实时培训转录稿</div>
+        <div class="asset-desc">通过 ASR 捕获专家讲授内容，按需翻译，存档复用</div>
+      </div>
+      <div class="asset-card">
+        <div class="asset-icon">💬</div>
+        <div class="asset-title">专家问答</div>
+        <div class="asset-desc">SME 解答、知识分享会议、技术咨询记录</div>
+      </div>
+      <div class="asset-card">
+        <div class="asset-icon">📄</div>
+        <div class="asset-title">合同与政策</div>
+        <div class="asset-desc">主协议、采购政策、法律模板、历史案例审核记录</div>
+      </div>
+      <div class="asset-card">
+        <div class="asset-icon">🗺️</div>
+        <div class="asset-title">本地现场经验</div>
+        <div class="asset-desc">现场特定知识、区域差异、本地最佳实践</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KEY VALUE PROPS -->
+<section class="section" id="value-props">
+  <div class="container">
+    <div class="section-label">核心能力</div>
+    <h2 class="section-title">专为规模化企业知识管理而构建</h2>
+    <p class="section-subtitle">
+      Knowledge Hub 对所有知识资产实施治理、检索、溯源和版本管控——
+      不仅限于文档。
+    </p>
+    <div class="value-prop-grid">
+      <div class="vp-card">
+        <div class="vp-icon blue-bg">🔍</div>
+        <h3>智能检索</h3>
+        <p>跨所有知识资产的全文检索与语义搜索——文档、记录、转录稿、专家问答，秒级获取相关答案。</p>
+      </div>
+      <div class="vp-card">
+        <div class="vp-icon blue-bg">🔗</div>
+        <h3>来源溯源</h3>
+        <p>每条答案均可追溯至其来源——文档、版本、章节、专家会议或培训成果，团队始终清楚知识出处。</p>
+      </div>
+      <div class="vp-card">
+        <div class="vp-icon blue-bg">🔄</div>
+        <h3>版本与变更历史</h3>
+        <p>所有知识资产均受版本控制，保留完整变更记录。规程更新时，所有关联应用自动感知。</p>
+      </div>
+      <div class="vp-card">
+        <div class="vp-icon blue-bg">🏛️</div>
+        <h3>治理与权限管控</h3>
+        <p>基于角色的权限管控与审计日志，确保合适的人员访问合适的知识，并完整记录访问时间与内容。</p>
+      </div>
+      <div class="vp-card">
+        <div class="vp-icon blue-bg">📥</div>
+        <h3>多源接入</h3>
+        <p>文档、表格、转录稿、问答记录、运营日志——Knowledge Hub 无需重新格式化即可全部接入。</p>
+      </div>
+      <div class="vp-card">
+        <div class="vp-icon blue-bg">🔄</div>
+        <h3>知识闭环捕获</h3>
+        <p>培训结果、员工反馈和更新的现场记录持续回流至知识底座——随使用不断积累丰富。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section how-section" id="how-it-works">
+  <div class="container">
+    <div class="section-label">运作方式</div>
+    <h2 class="section-title">从零散资产到企业知识底座</h2>
+    <p class="section-subtitle">四步流程，将多元知识来源转化为统一治理、持续成长的知识底座。</p>
+
+    <div class="steps-flow">
+      <div class="step-item">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <h4>汇聚</h4>
+          <p>连接文档库、培训系统、专家问答渠道和运营记录。Knowledge Hub 以原始格式接入多种来源类型。</p>
+        </div>
+        <div class="step-arrow">→</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <h4>结构化</h4>
+          <p>知识资产经解析、分类和索引处理，来源、版本和关联关系被完整捕获——让隐性知识变为显性可检索资产。</p>
+        </div>
+        <div class="step-arrow">→</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <h4>治理</h4>
+          <p>权限管控、版本追踪和审计日志自动应用。您的治理策略定义谁可以读取、检索和更新各项资产。</p>
+        </div>
+        <div class="step-arrow">→</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">04</div>
+        <div class="step-content">
+          <h4>应用与丰富</h4>
+          <p>Learning Hub 和 Contract Review 共享同一知识底座。培训结果和现场反馈持续回流，不断丰富企业知识。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT DEMO VISUAL -->
+<section class="section demo-section">
+  <div class="container">
+    <div class="section-label">实际体验</div>
+    <h2 class="section-title">团队实际使用的功能界面</h2>
+    <div class="demo-layout">
+      <div class="demo-sidebar">
+        <div class="demo-tab active" data-tab="search">🔍 检索</div>
+        <div class="demo-tab" data-tab="trace">🔗 来源溯源</div>
+        <div class="demo-tab" data-tab="version">🔄 版本历史</div>
+        <div class="demo-tab" data-tab="access">🏛️ 权限管控</div>
+      </div>
+      <div class="demo-content">
+        <div class="demo-panel active" id="panel-search">
+          <div class="demo-panel-header">多源检索 — 跨所有知识资产查找答案</div>
+          <div class="demo-search-ui">
+            <div class="dsui-search-bar">
+              <span>🔍</span>
+              <span class="dsui-query">钻井过程中环空压力监测的规程是什么？</span>
+            </div>
+            <div class="dsui-results">
+              <div class="dsui-result primary">
+                <div class="dsui-result-rank">最佳匹配 — 文档</div>
+                <div class="dsui-result-title">环空压力管理规程 — v3.1</div>
+                <div class="dsui-result-body">所有钻井作业期间须持续监测环空压力。压力偏差超出基准值 5% 时须记录并上报...</div>
+                <div class="dsui-result-meta">
+                  <span class="meta-chip blue">SOP-DRILL-042</span>
+                  <span class="meta-chip">文档 · 2026年2月</span>
+                  <span class="meta-chip green">✓ 现行版本</span>
+                </div>
+              </div>
+              <div class="dsui-result secondary">
+                <div class="dsui-result-rank">专家洞察 — 培训转录稿</div>
+                <div class="dsui-result-title">压力管理问答 — 井控研讨会</div>
+                <div class="dsui-result-body">"当发现压力漂移时，始终先验证屏障完整性..." — 高级工程师，2026年1月研讨会</div>
+                <div class="dsui-result-meta">
+                  <span class="meta-chip">转录稿</span>
+                  <span class="meta-chip">专家问答</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="demo-panel" id="panel-trace">
+          <div class="demo-panel-header">来源溯源 — 清楚每条答案的出处</div>
+          <div class="trace-ui">
+            <div class="trace-answer">
+              <div class="trace-label">答案</div>
+              <div class="trace-answer-text">"压力测试须按 API 6A 标准执行，间隔不超过90天，或在任何井下作业后进行..."</div>
+            </div>
+            <div class="trace-path">
+              <div class="trace-path-arrow">↓ 溯源至</div>
+            </div>
+            <div class="trace-source">
+              <div class="trace-source-doc">
+                <div class="trace-source-icon">📄</div>
+                <div>
+                  <div class="trace-source-name">井完整性测试 — 标准规程</div>
+                  <div class="trace-source-meta">文档编号：WI-SOP-0042 · 版本：4.2 · 审批日期：2026年1月</div>
+                  <div class="trace-source-section">第3.2节，第4段</div>
+                </div>
+              </div>
+              <div class="trace-approver">
+                <span class="trace-approver-icon">✓</span>
+                <span>审批人：井完整性经理 · 2026年1月12日</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="demo-panel" id="panel-version">
+          <div class="demo-panel-header">版本历史 — 每项知识资产的完整审计记录</div>
+          <div class="version-ui">
+            <div class="version-current">
+              <span class="version-tag current">当前版本：v4.2</span>
+              <span class="version-date">更新于 2026年3月14日</span>
+              <span class="version-author">by J. Martinez</span>
+            </div>
+            <div class="version-history">
+              <div class="vh-item">
+                <span class="vh-version">v4.1</span>
+                <span class="vh-date">2025年12月</span>
+                <span class="vh-change">依据 API 6A-2024 修订案更新压力阈值</span>
+              </div>
+              <div class="vh-item">
+                <span class="vh-version">v4.0</span>
+                <span class="vh-date">2025年8月</span>
+                <span class="vh-change">新增第3.2节：环空压力监测间隔要求</span>
+              </div>
+              <div class="vh-item">
+                <span class="vh-version">v3.2</span>
+                <span class="vh-date">2025年3月</span>
+                <span class="vh-change">依据现场反馈修订紧急关井触发条件</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="demo-panel" id="panel-access">
+          <div class="demo-panel-header">权限管控 — 合适的知识对合适的人开放</div>
+          <div class="access-ui">
+            <div class="access-table">
+              <div class="access-row header">
+                <span>知识资产</span>
+                <span>工程部门</span>
+                <span>运营部门</span>
+                <span>承包商</span>
+              </div>
+              <div class="access-row">
+                <span>井完整性 SOP v4.2</span>
+                <span class="ac-badge read-write">读取 / 编辑</span>
+                <span class="ac-badge read">只读</span>
+                <span class="ac-badge none">受限</span>
+              </div>
+              <div class="access-row">
+                <span>HSE 应急规程</span>
+                <span class="ac-badge read-write">读取 / 编辑</span>
+                <span class="ac-badge read">只读</span>
+                <span class="ac-badge read">只读</span>
+              </div>
+              <div class="access-row">
+                <span>专家问答档案</span>
+                <span class="ac-badge read-write">读取 / 编辑</span>
+                <span class="ac-badge read">只读</span>
+                <span class="ac-badge read">只读</span>
+              </div>
+              <div class="access-row">
+                <span>主服务协议</span>
+                <span class="ac-badge none">受限</span>
+                <span class="ac-badge none">受限</span>
+                <span class="ac-badge none">受限</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- USE CASES -->
+<section class="section use-section">
+  <div class="container">
+    <div class="section-label">企业知识实践</div>
+    <h2 class="section-title">Knowledge Hub 发挥关键作用的场景</h2>
+    <div class="uc-list">
+      <div class="uc-item">
+        <div class="uc-num">01</div>
+        <div class="uc-body">
+          <h4>现场运营团队</h4>
+          <p>技术员和现场主管可跨文档、专家转录稿和现场记录查找答案——即便在现场平板上也能即时获取。无需在多个系统间查找相互矛盾的指引。</p>
+        </div>
+      </div>
+      <div class="uc-item">
+        <div class="uc-num">02</div>
+        <div class="uc-body">
+          <h4>学习与发展团队</h4>
+          <p>培训内容直接来源于知识底座，而非独立内容库。规程更新时，学习发展方案自动同步——彻底消除内容漂移。</p>
+        </div>
+      </div>
+      <div class="uc-item">
+        <div class="uc-num">03</div>
+        <div class="uc-body">
+          <h4>合同审核团队</h4>
+          <p>以知识底座中存储的企业政策、模板和历史案例为基准审核合同。每条标记均链接至可溯源的企业证据。</p>
+        </div>
+      </div>
+      <div class="uc-item">
+        <div class="uc-num">04</div>
+        <div class="uc-body">
+          <h4>HSE 与合规团队</h4>
+          <p>验证运营实践是否已记录、保持最新并符合法规要求。具备完整来源溯源的审计准备工作从数周缩短至数小时。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CROSSLINK TO OTHER PRODUCTS -->
+<section class="section crosslink-section">
+  <div class="container">
+    <div class="crosslink-label">Knowledge Hub 赋能整个平台</div>
+    <div class="crosslink-cards">
+      <a href="learning-hub-zh.html" class="crosslink-card indigo">
+        <div class="cc-icon">🎓</div>
+        <div class="cc-body">
+          <div class="cc-title">Learning Hub</div>
+          <div class="cc-desc">基于企业知识底座的岗位就绪度提升与 EDP 发展计划。</div>
+        </div>
+        <div class="cc-arrow">→</div>
+      </a>
+      <a href="contract-review-zh.html" class="crosslink-card purple">
+        <div class="cc-icon">⚖️</div>
+        <div class="cc-body">
+          <div class="cc-title">Contract Review</div>
+          <div class="cc-desc">依据企业政策库和历史案例进行合同条款合规核查。</div>
+        </div>
+        <div class="cc-arrow">→</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-section" id="contact">
+  <div class="container">
+    <div class="cta-box">
+      <h2 class="cta-title">构建您的企业知识底座。</h2>
+      <p class="cta-sub">
+        了解 Knowledge Hub 如何将组织中零散的知识整合为统一治理、持续成长的知识资产——
+        驱动学习发展、合同审核与日常运营。
+      </p>
+      <div class="cta-actions">
+        <a href="mailto:demo@wondetech.com" class="btn btn-white btn-lg">申请演示</a>
+        <a href="index-zh.html" class="btn btn-ghost-white btn-lg">返回平台概览</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo-mark">W</span>
+      <span class="logo-text">WondeTech</span>
+    </div>
+    <nav class="footer-nav">
+      <a href="knowledge-hub-zh.html">Knowledge Hub</a>
+      <a href="learning-hub-zh.html">Learning Hub</a>
+      <a href="contract-review-zh.html">Contract Review</a>
+      <a href="use-cases-zh.html">客户案例</a>
+    </nav>
+    <div class="footer-copy">© 2026 WondeTech. 版权所有。</div>
+    <div class="footer-lang">
+      <a href="knowledge-hub.html">EN</a>
+      <span class="footer-lang-sep">|</span>
+      <a href="knowledge-hub-zh.html" class="active">中文</a>
+      <span class="footer-lang-sep">|</span>
+      <a href="knowledge-hub-ar.html">العربية</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const tabs = document.querySelectorAll('.demo-tab');
+  const panels = document.querySelectorAll('.demo-panel');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById('panel-' + tab.dataset.tab).classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

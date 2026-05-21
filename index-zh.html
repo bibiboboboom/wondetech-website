@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WondeTech — 企业知识资产平台</title>
+  <meta name="description" content="WondeTech 将企业知识资产转化为员工实战能力。将文档、培训记录、合同和现场经验整合为统一治理的知识底座。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index-zh.html" class="nav-logo">
+      <span class="logo-mark">W</span>
+      <span class="logo-text">WondeTech</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="knowledge-hub-zh.html" class="nav-link">Knowledge Hub</a></li>
+      <li><a href="learning-hub-zh.html" class="nav-link">Learning Hub</a></li>
+      <li><a href="contract-review-zh.html" class="nav-link">Contract Review</a></li>
+      <li><a href="use-cases-zh.html" class="nav-link">客户案例</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary nav-cta">申请演示</a>
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+      <button class="lang-btn">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        中文 ▾
+      </button>
+      <div class="lang-dropdown">
+        <a href="index.html" class="lang-option"><span class="lang-flag">🇬🇧</span> English</a>
+        <a href="index-zh.html" class="lang-option active"><span class="lang-flag">🇨🇳</span> 中文</a>
+        <a href="index-ar.html" class="lang-option"><span class="lang-flag">🇸🇦</span> العربية</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="container hero-content">
+    <div class="hero-badge">企业知识资产平台</div>
+    <h1 class="hero-title">
+      将企业知识转化为<br />
+      <span class="gradient-text">员工实战能力。</span>
+    </h1>
+    <p class="hero-subtitle">
+      WondeTech 帮助油田及企业团队，将文档、培训记录、合同、运营数据和现场经验整合为统一治理的知识底座——
+      并将这些知识应用于人才培养、合同审核与日常运营。
+    </p>
+    <div class="hero-ctas">
+      <a href="#products" class="btn btn-primary btn-lg">了解运作方式</a>
+      <a href="#contact" class="btn btn-ghost btn-lg">联系销售团队</a>
+    </div>
+
+    <!-- Hero visual: closed-loop platform flow -->
+    <div class="hero-platform-visual">
+      <div class="platform-flow">
+        <div class="platform-input-row">
+          <div class="doc-chip"><span class="doc-icon">📋</span> 文件与规程</div>
+          <div class="doc-chip"><span class="doc-icon">📊</span> 运营记录</div>
+          <div class="doc-chip"><span class="doc-icon">🎓</span> 培训成果</div>
+          <div class="doc-chip"><span class="doc-icon">💬</span> 专家问答</div>
+          <div class="doc-chip"><span class="doc-icon">📄</span> 合同文件</div>
+          <div class="doc-chip"><span class="doc-icon">🗺️</span> 现场经验</div>
+        </div>
+        <div class="platform-arrow-row">
+          <div class="platform-arrow-line"></div>
+          <div class="platform-arrow-label">由 WondeTech 结构化与统一治理</div>
+          <div class="platform-arrow-line"></div>
+        </div>
+        <div class="platform-modules-row">
+          <a href="knowledge-hub-zh.html" class="platform-module mod-blue">
+            <div class="mod-icon">🏛️</div>
+            <div class="mod-name">Knowledge Hub</div>
+            <div class="mod-desc">企业知识资产底座</div>
+          </a>
+          <div class="platform-connector">
+            <div class="connector-line"></div>
+            <div class="connector-dot"></div>
+            <div class="connector-line"></div>
+          </div>
+          <a href="learning-hub-zh.html" class="platform-module mod-indigo">
+            <div class="mod-icon">🎓</div>
+            <div class="mod-name">Learning Hub</div>
+            <div class="mod-desc">岗位就绪度 · EDP 发展计划</div>
+          </a>
+          <div class="platform-connector">
+            <div class="connector-line"></div>
+            <div class="connector-dot"></div>
+            <div class="connector-line"></div>
+          </div>
+          <a href="contract-review-zh.html" class="platform-module mod-purple">
+            <div class="mod-icon">⚖️</div>
+            <div class="mod-name">Contract Review</div>
+            <div class="mod-desc">政策核查 · 合规审核</div>
+          </a>
+        </div>
+        <!-- Closed-loop feedback arrow -->
+        <div class="loop-feedback-row">
+          <div class="loop-feedback-arrow">
+            <span class="loop-arrow-icon">↺</span>
+            <span class="loop-feedback-text">培训结果 · 员工反馈 · 更新记录 → 回流至 Knowledge Hub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM STATEMENT -->
+<section class="section problem-section" id="why">
+  <div class="container">
+    <div class="section-label">核心挑战</div>
+    <h2 class="section-title">企业知识长期分散孤立——直到迫切需要时才暴露问题</h2>
+    <p class="section-subtitle">
+      组织每天都在产生知识：规程、培训、合同、现场反馈、专家解答。
+      但若缺乏统一治理的底座，这些知识在团队最需要时往往无从获取。
+    </p>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-icon">🗃️</div>
+        <div class="problem-text">知识分散在文档、系统和个人经验中，难以统一管理</div>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">🔄</div>
+        <div class="problem-text">培训与实际岗位要求及运营标准脱节</div>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">⚠️</div>
+        <div class="problem-text">合同风险依赖人工审核，缺乏一致且最新的合规基准</div>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">📉</div>
+        <div class="problem-text">资深员工离职后，组织知识随之流失</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSED-LOOP STORY SECTION -->
+<section class="section loop-section" id="story">
+  <div class="container">
+    <div class="section-label">平台故事</div>
+    <h2 class="section-title">从零散资产到员工能力——形成知识闭环</h2>
+    <p class="section-subtitle">
+      WondeTech 构建持续循环：汇聚企业知识，应用于日常工作，
+      捕获成果，并将其反馈至不断成长的知识底座。
+    </p>
+    <div class="loop-diagram">
+      <div class="loop-step loop-collect">
+        <div class="loop-icon">📥</div>
+        <div class="loop-step-title">汇聚</div>
+        <div class="loop-step-desc">从文档、规程、培训成果、专家会议、合同和现场经验中收集数据资产与知识资产</div>
+      </div>
+      <div class="loop-arrow-right">→</div>
+      <div class="loop-step loop-govern">
+        <div class="loop-icon">🏛️</div>
+        <div class="loop-step-title">治理</div>
+        <div class="loop-step-desc">结构化、核验、版本管理与权限管控——打造企业专属、行业专属的知识底座</div>
+      </div>
+      <div class="loop-arrow-right">→</div>
+      <div class="loop-step loop-apply">
+        <div class="loop-icon">⚡</div>
+        <div class="loop-step-title">应用</div>
+        <div class="loop-step-desc">Learning Hub 提升岗位就绪度，Contract Review 确保政策合规，日常运营解答员工问题</div>
+      </div>
+      <div class="loop-arrow-right loop-arrow-back">↺</div>
+      <div class="loop-step loop-capture">
+        <div class="loop-icon">📤</div>
+        <div class="loop-step-title">回流</div>
+        <div class="loop-step-desc">培训结果、员工反馈、更新规程和新的现场经验回流，持续丰富知识底座</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION / PRODUCT NARRATIVE -->
+<section class="section solution-section" id="products">
+  <div class="container">
+    <div class="section-label">平台产品</div>
+    <h2 class="section-title">一个平台。三款专注产品。一个统一知识底座。</h2>
+    <p class="section-subtitle">
+      WondeTech 将企业知识资产与员工及业务流程紧密连接——
+      通过统一治理的知识底座，随使用不断积累成长。
+    </p>
+
+    <!-- Module 1: Knowledge Hub -->
+    <div class="product-block product-block-left">
+      <div class="product-content">
+        <div class="product-badge badge-blue">基础底座</div>
+        <div class="product-number">01</div>
+        <h3 class="product-title">Knowledge Hub</h3>
+        <p class="product-tagline">企业知识资产的统一底座。</p>
+        <p class="product-desc">
+          Knowledge Hub 将文档、运营记录、培训成果、合同、专家会议和现场经验
+          整合为统一治理、可检索、可溯源的知识底座，
+          为 WondeTech 所有产品提供核心支撑。
+        </p>
+        <ul class="product-features">
+          <li>多源接入：文档、记录、转录稿、问答、合同</li>
+          <li>全文检索与语义搜索，支持来源溯源</li>
+          <li>所有知识资产的版本管控与变更历史</li>
+          <li>基于角色的治理、权限管控与审计日志</li>
+        </ul>
+        <a href="knowledge-hub-zh.html" class="btn btn-primary">深入了解 Knowledge Hub →</a>
+      </div>
+      <div class="product-visual">
+        <div class="product-mockup mockup-blue">
+          <div class="mockup-header">
+            <div class="mockup-dots"><span></span><span></span><span></span></div>
+            <div class="mockup-title-bar">Knowledge Hub</div>
+          </div>
+          <div class="mockup-search-bar">
+            <span class="mockup-search-icon">🔍</span>
+            <span class="mockup-search-text">环空压力异常如何处理？</span>
+          </div>
+          <div class="mockup-result">
+            <div class="result-title">环空压力响应处理规程 — 现场指南 v3.1</div>
+            <div class="result-excerpt">压力异常超出基准值 5% 时，须在 15 分钟内上报。参考：SOP-DRILL-042...</div>
+            <div class="result-meta">
+              <span class="meta-tag">SOP-DRILL-042</span>
+              <span class="meta-tag">现场指南</span>
+              <span class="meta-tag">2026年3月</span>
+            </div>
+          </div>
+          <div class="mockup-result">
+            <div class="result-title">专家问答 — 压力管理（培训转录稿）</div>
+            <div class="result-excerpt">"当你发现压力漂移时，首先验证屏障完整性..." — 高级工程师，2026年1月</div>
+            <div class="result-meta">
+              <span class="meta-tag">实时会议</span>
+              <span class="meta-tag">转录稿</span>
+            </div>
+          </div>
+          <div class="mockup-badge-row">
+            <span class="mockup-badge">✓ 来源已核验</span>
+            <span class="mockup-badge">✓ 多源整合</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Connector arrow -->
+    <div class="module-connector">
+      <div class="connector-arrow-down"></div>
+      <div class="connector-label">知识赋能本地化人才发展</div>
+    </div>
+
+    <!-- Module 2: Learning Hub -->
+    <div class="product-block product-block-right">
+      <div class="product-visual">
+        <div class="product-mockup mockup-indigo">
+          <div class="mockup-header">
+            <div class="mockup-dots"><span></span><span></span><span></span></div>
+            <div class="mockup-title-bar">Learning Hub</div>
+          </div>
+          <div class="mockup-role-card">
+            <div class="role-label">岗位：井场主管</div>
+            <div class="role-readiness">
+              <span>就绪度</span>
+              <div class="readiness-bar"><div class="readiness-fill" style="width:72%"></div></div>
+              <span class="readiness-pct">72%</span>
+            </div>
+          </div>
+          <div class="mockup-gap-list">
+            <div class="gap-item gap-critical">
+              <span class="gap-dot critical"></span>
+              <span>井控应急响应</span>
+              <span class="gap-action">开始学习 →</span>
+            </div>
+            <div class="gap-item gap-medium">
+              <span class="gap-dot medium"></span>
+              <span>H2S 安全规程</span>
+              <span class="gap-action">复习 →</span>
+            </div>
+            <div class="gap-item gap-ok">
+              <span class="gap-dot ok"></span>
+              <span>日常钻井作业</span>
+              <span class="gap-done">✓ 已完成</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-content">
+        <div class="product-badge badge-indigo">基于 Knowledge Hub 构建</div>
+        <div class="product-number">02</div>
+        <h3 class="product-title">Learning Hub</h3>
+        <p class="product-tagline">本地化人才赋能——以企业自身知识为驱动。</p>
+        <p class="product-desc">
+          Learning Hub 利用企业专属和行业专属的知识底座，
+          构建基于角色的学习发展方案，识别能力缺口，通过有针对性的发展行动加以弥补。
+          每项培训结果都会回流至 Knowledge Hub。
+        </p>
+        <ul class="product-features">
+          <li>基于企业专属标准的岗位胜任力图谱</li>
+          <li>EDP 发展计划，支持能力缺口追踪</li>
+          <li>学习内容直接来源并版本化于 Knowledge Hub</li>
+          <li>进度追踪与管理者就绪度看板</li>
+        </ul>
+        <a href="learning-hub-zh.html" class="btn btn-primary btn-indigo">深入了解 Learning Hub →</a>
+      </div>
+    </div>
+
+    <!-- Connector arrow -->
+    <div class="module-connector">
+      <div class="connector-arrow-down"></div>
+      <div class="connector-label">知识驱动合同合规管理</div>
+    </div>
+
+    <!-- Module 3: Contract Review -->
+    <div class="product-block product-block-left">
+      <div class="product-content">
+        <div class="product-badge badge-purple">基于 Knowledge Hub 构建</div>
+        <div class="product-number">03</div>
+        <h3 class="product-title">Contract Review</h3>
+        <p class="product-tagline">审核更高效。风险更清晰。每条条款均可溯源至政策依据。</p>
+        <p class="product-desc">
+          Contract Review 将企业自身的政策、模板和历史案例
+          应用于合同自动化分析。条款针对企业知识底座进行标记——
+          而非依赖通用基准。
+        </p>
+        <ul class="product-features">
+          <li>自动化条款提取与风险分类</li>
+          <li>与企业政策库及历史案例比对</li>
+          <li>证据溯源：每条标记均链接至来源政策或先例</li>
+          <li>为法务和运营团队生成结构化审核报告</li>
+        </ul>
+        <a href="contract-review-zh.html" class="btn btn-primary btn-purple">深入了解 Contract Review →</a>
+      </div>
+      <div class="product-visual">
+        <div class="product-mockup mockup-purple">
+          <div class="mockup-header">
+            <div class="mockup-dots"><span></span><span></span><span></span></div>
+            <div class="mockup-title-bar">Contract Review</div>
+          </div>
+          <div class="mockup-contract-row">
+            <div class="contract-risk risk-high">
+              <span class="risk-badge high">高风险</span>
+              <div class="risk-clause">"承包商责任上限为过去3个月已付费用..."</div>
+              <div class="risk-reason">⚠ 低于企业标准：MSA 要求最低12个月覆盖期</div>
+            </div>
+            <div class="contract-risk risk-medium">
+              <span class="risk-badge medium">待审核</span>
+              <div class="risk-clause">"付款条款：发票提交后 Net 90 天..."</div>
+              <div class="risk-reason">⚡ 超出政策标准 Net 30 — 需审批</div>
+            </div>
+            <div class="contract-risk risk-ok">
+              <span class="risk-badge ok">✓ 通过</span>
+              <div class="risk-clause">"HSE 要求符合当地法规标准..."</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- USE CASES / INDUSTRIES -->
+<section class="section use-cases-section" id="use-cases">
+  <div class="container">
+    <div class="section-label">适用行业</div>
+    <h2 class="section-title">专为容错率极低的企业而构建</h2>
+    <div class="use-case-grid">
+      <div class="use-case-card">
+        <div class="uc-icon">🛢️</div>
+        <h4>油气运营</h4>
+        <p>统一各作业现场的知识管理，以企业自身运营标准提升岗位就绪度，确保从入职到上岗全程的 HSE 合规。</p>
+      </div>
+      <div class="use-case-card">
+        <div class="uc-icon">⚙️</div>
+        <h4>工业与制造</h4>
+        <p>结构化质量知识，通过 EDP 发展计划弥补能力缺口，并依据企业合规要求审核供应商合同。</p>
+      </div>
+      <div class="use-case-card">
+        <div class="uc-icon">🏗️</div>
+        <h4>EPC 与项目管理</h4>
+        <p>跨阶段管理项目知识，支持本地化人才赋能，并依据企业标准审核分包合同条款。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS / TRUST SIGNALS -->
+<section class="section stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number">10x</div>
+        <div class="stat-label">知识检索速度提升，远超人工查找</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">可溯源——每条答案均链接至原始来源</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">三合一</div>
+        <div class="stat-label">平台整合：知识管理、人才学习、合同审核</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">知识闭环</div>
+        <div class="stat-label">随使用持续积累，越用越智能</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-section" id="contact">
+  <div class="container">
+    <div class="cta-box">
+      <h2 class="cta-title">准备好将知识转化为能力了吗？</h2>
+      <p class="cta-sub">
+        与我们的团队深入沟通，了解 WondeTech 如何助力您的组织。
+        大多数项目可在四周内上线交付。
+      </p>
+      <div class="cta-actions">
+        <a href="mailto:demo@wondetech.com" class="btn btn-white btn-lg">申请演示</a>
+        <a href="knowledge-hub-zh.html" class="btn btn-ghost-white btn-lg">探索平台</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo-mark">W</span>
+      <span class="logo-text">WondeTech</span>
+    </div>
+    <nav class="footer-nav">
+      <a href="knowledge-hub-zh.html">Knowledge Hub</a>
+      <a href="learning-hub-zh.html">Learning Hub</a>
+      <a href="contract-review-zh.html">Contract Review</a>
+      <a href="use-cases-zh.html">客户案例</a>
+    </nav>
+    <div class="footer-copy">© 2026 WondeTech. 版权所有。</div>
+    <div class="footer-lang">
+      <a href="index.html">EN</a>
+      <span class="footer-lang-sep">|</span>
+      <a href="index-zh.html" class="active">中文</a>
+      <span class="footer-lang-sep">|</span>
+      <a href="index-ar.html">العربية</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

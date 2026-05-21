@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WondeTech — منصة المعرفة المؤسسية</title>
+  <meta name="description" content="WondeTech تحوّل أصول المعرفة المؤسسية إلى كفاءات عملية للموارد البشرية. هيكلة الوثائق وسجلات التدريب والعقود والخبرات الميدانية في قاعدة معرفة موحّدة ومحكومة." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Manrope:wght@500;700;800&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+  <link rel="stylesheet" href="home.css" />
+  <style>
+    body { font-family: 'Cairo', 'IBM Plex Sans', system-ui, sans-serif; }
+    h1, h2, h3, h4, h5 { font-family: 'Cairo', 'Manrope', system-ui, sans-serif; }
+    .nav-inner { flex-direction: row-reverse; }
+    .nav-links { margin-left: 0; margin-right: auto; }
+    .footer-inner { flex-direction: row-reverse; }
+    .footer-nav { margin-left: 0; margin-right: auto; }
+    .lang-dropdown { right: auto; left: 0; }
+    .product-block-left, .product-block-right { flex-direction: row-reverse; }
+    .product-features li::before { margin-left: 8px; margin-right: 0; }
+    .loop-diagram { flex-direction: row-reverse; }
+    .loop-arrow-right { transform: scaleX(-1); }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index-ar.html" class="nav-logo">
+      <span class="logo-mark">W</span>
+      <span class="logo-text">WondeTech</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="knowledge-hub-ar.html" class="nav-link">Knowledge Hub</a></li>
+      <li><a href="learning-hub-ar.html" class="nav-link">Learning Hub</a></li>
+      <li><a href="contract-review-ar.html" class="nav-link">Contract Review</a></li>
+      <li><a href="use-cases-ar.html" class="nav-link">حالات الاستخدام</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary nav-cta">طلب عرض توضيحي</a>
+    <div class="lang-switcher">
+      <button class="lang-btn">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        العربية ▾
+      </button>
+      <div class="lang-dropdown">
+        <a href="index.html" class="lang-option"><span class="lang-flag">🇬🇧</span> English</a>
+        <a href="index-zh.html" class="lang-option"><span class="lang-flag">🇨🇳</span> 中文</a>
+        <a href="index-ar.html" class="lang-option active"><span class="lang-flag">🇸🇦</span> العربية</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="container hero-content">
+    <div class="hero-badge">منصة المعرفة المؤسسية</div>
+    <h1 class="hero-title">
+      حوِّل المعرفة المؤسسية إلى<br />
+      <span class="gradient-text">كفاءات حقيقية للموارد البشرية.</span>
+    </h1>
+    <p class="hero-subtitle">
+      تُساعد WondeTech فرق العمل في قطاعَي النفط والمؤسسات على هيكلة الوثائق وسجلات التدريب والعقود
+      والبيانات التشغيلية والخبرات الميدانية في قاعدة معرفة موحّدة ومحكومة —
+      ثم توظيف هذه المعرفة في تطوير الكوادر ومراجعة العقود والعمليات اليومية.
+    </p>
+    <div class="hero-ctas">
+      <a href="#products" class="btn btn-primary btn-lg">اكتشف آلية العمل</a>
+      <a href="#contact" class="btn btn-ghost btn-lg">تواصل مع فريق المبيعات</a>
+    </div>
+
+    <!-- Hero visual: closed-loop platform flow -->
+    <div class="hero-platform-visual">
+      <div class="platform-flow">
+        <div class="platform-input-row">
+          <div class="doc-chip"><span class="doc-icon">📋</span> الوثائق والإجراءات</div>
+          <div class="doc-chip"><span class="doc-icon">📊</span> السجلات التشغيلية</div>
+          <div class="doc-chip"><span class="doc-icon">🎓</span> مخرجات التدريب</div>
+          <div class="doc-chip"><span class="doc-icon">💬</span> أسئلة الخبراء وإجاباتهم</div>
+          <div class="doc-chip"><span class="doc-icon">📄</span> العقود</div>
+          <div class="doc-chip"><span class="doc-icon">🗺️</span> الخبرة الميدانية</div>
+        </div>
+        <div class="platform-arrow-row">
+          <div class="platform-arrow-line"></div>
+          <div class="platform-arrow-label">هيكلة وحوكمة بواسطة WondeTech</div>
+          <div class="platform-arrow-line"></div>
+        </div>
+        <div class="platform-modules-row">
+          <a href="knowledge-hub-ar.html" class="platform-module mod-blue">
+            <div class="mod-icon">🏛️</div>
+            <div class="mod-name">Knowledge Hub</div>
+            <div class="mod-desc">قاعدة أصول المعرفة المؤسسية</div>
+          </a>
+          <div class="platform-connector">
+            <div class="connector-line"></div>
+            <div class="connector-dot"></div>
+            <div class="connector-line"></div>
+          </div>
+          <a href="learning-hub-ar.html" class="platform-module mod-indigo">
+            <div class="mod-icon">🎓</div>
+            <div class="mod-name">Learning Hub</div>
+            <div class="mod-desc">الاستعداد الوظيفي · خطط التطوير</div>
+          </a>
+          <div class="platform-connector">
+            <div class="connector-line"></div>
+            <div class="connector-dot"></div>
+            <div class="connector-line"></div>
+          </div>
+          <a href="contract-review-ar.html" class="platform-module mod-purple">
+            <div class="mod-icon">⚖️</div>
+            <div class="mod-name">Contract Review</div>
+            <div class="mod-desc">فحص السياسات · الامتثال</div>
+          </a>
+        </div>
+        <div class="loop-feedback-row">
+          <div class="loop-feedback-arrow">
+            <span class="loop-arrow-icon">↺</span>
+            <span class="loop-feedback-text">نتائج التدريب · التغذية الراجعة · السجلات المحدّثة ← تعود إلى Knowledge Hub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM STATEMENT -->
+<section class="section problem-section" id="why">
+  <div class="container">
+    <div class="section-label">التحدي</div>
+    <h2 class="section-title">تظل المعرفة المؤسسية في عزلة — حتى يحين وقت الحاجة</h2>
+    <p class="section-subtitle">
+      تنتج مؤسستك المعرفة يوميًا: إجراءات، تدريبات، عقود، تغذية راجعة ميدانية، إجابات خبراء.
+      غير أنه في غياب قاعدة موحّدة ومحكومة، تبقى هذه المعرفة غير متاحة حين يحتاجها فريقك أشد الحاجة.
+    </p>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-icon">🗃️</div>
+        <div class="problem-text">المعرفة مشتّتة بين الوثائق والأنظمة والخبرات الفردية</div>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">🔄</div>
+        <div class="problem-text">التدريب منفصل عن متطلبات الوظيفة الفعلية والمعايير التشغيلية</div>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">⚠️</div>
+        <div class="problem-text">مراجعة مخاطر العقود تتم يدويًا وفق معايير غير موحّدة أو قديمة</div>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">📉</div>
+        <div class="problem-text">المعرفة المؤسسية تضيع عند رحيل الكوادر ذات الخبرة</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSED-LOOP STORY SECTION -->
+<section class="section loop-section" id="story">
+  <div class="container">
+    <div class="section-label">قصة المنصة</div>
+    <h2 class="section-title">من الأصول المشتّتة إلى الكفاءة المؤسسية — حلقة متكاملة</h2>
+    <p class="section-subtitle">
+      تُنشئ WondeTech دورة مستمرة: جمع المعرفة المؤسسية، توظيفها في العمل اليومي،
+      التقاط النتائج، وإعادتها إلى قاعدة المعرفة المتنامية.
+    </p>
+    <div class="loop-diagram">
+      <div class="loop-step loop-collect">
+        <div class="loop-icon">📥</div>
+        <div class="loop-step-title">جمع</div>
+        <div class="loop-step-desc">تجميع أصول البيانات والمعرفة من الوثائق والإجراءات ومخرجات التدريب وجلسات الخبراء والعقود والخبرة الميدانية</div>
+      </div>
+      <div class="loop-arrow-right">→</div>
+      <div class="loop-step loop-govern">
+        <div class="loop-icon">🏛️</div>
+        <div class="loop-step-title">حوكمة</div>
+        <div class="loop-step-desc">هيكلة وتحقق وإصدار نسخ وتأمين — لبناء قاعدة معرفة مخصصة للمؤسسة والصناعة</div>
+      </div>
+      <div class="loop-arrow-right">→</div>
+      <div class="loop-step loop-apply">
+        <div class="loop-icon">⚡</div>
+        <div class="loop-step-title">تطبيق</div>
+        <div class="loop-step-desc">Learning Hub للاستعداد الوظيفي، Contract Review للامتثال للسياسات، العمليات اليومية للإجابة على أسئلة الموظفين</div>
+      </div>
+      <div class="loop-arrow-right loop-arrow-back">↺</div>
+      <div class="loop-step loop-capture">
+        <div class="loop-icon">📤</div>
+        <div class="loop-step-title">التقاط</div>
+        <div class="loop-step-desc">نتائج التدريب والتغذية الراجعة والإجراءات المحدّثة والخبرات الميدانية الجديدة تعود لإثراء قاعدة المعرفة</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION / PRODUCT NARRATIVE -->
+<section class="section solution-section" id="products">
+  <div class="container">
+    <div class="section-label">المنصة</div>
+    <h2 class="section-title">منصة واحدة. ثلاثة منتجات متخصصة. قاعدة معرفة موحّدة.</h2>
+    <p class="section-subtitle">
+      تربط WondeTech أصول المعرفة المؤسسية بموظفيك وعملياتك —
+      من خلال قاعدة معرفة محكومة تنمو وتتطور مع كل استخدام.
+    </p>
+
+    <!-- Module 1: Knowledge Hub -->
+    <div class="product-block product-block-left">
+      <div class="product-content">
+        <div class="product-badge badge-blue">الأساس</div>
+        <div class="product-number">01</div>
+        <h3 class="product-title">Knowledge Hub</h3>
+        <p class="product-tagline">قاعدة أصول المعرفة المؤسسية.</p>
+        <p class="product-desc">
+          يُهيكل Knowledge Hub الوثائقَ والسجلاتِ التشغيلية ومخرجاتِ التدريب والعقودَ وجلساتِ الخبراء
+          والخبرةَ الميدانية في قاعدة معرفة محكومة وقابلة للبحث وقابلة للتتبع.
+          وهو الأساس الذي يُشغّل جميع منتجات WondeTech الأخرى.
+        </p>
+        <ul class="product-features">
+          <li>استيعاب متعدد المصادر: وثائق وسجلات ونصوص مكتوبة وأسئلة وعقود</li>
+          <li>بحث نصي ودلالي مع تتبع المصدر</li>
+          <li>إدارة الإصدارات وسجل التغييرات لجميع أصول المعرفة</li>
+          <li>حوكمة قائمة على الأدوار وتحكم في الوصول وسجلات تدقيق</li>
+        </ul>
+        <a href="knowledge-hub-ar.html" class="btn btn-primary">استكشف Knowledge Hub →</a>
+      </div>
+      <div class="product-visual">
+        <div class="product-mockup mockup-blue">
+          <div class="mockup-header">
+            <div class="mockup-dots"><span></span><span></span><span></span></div>
+            <div class="mockup-title-bar">Knowledge Hub</div>
+          </div>
+          <div class="mockup-search-bar">
+            <span class="mockup-search-icon">🔍</span>
+            <span class="mockup-search-text">ما إجراء معالجة شذوذات ضغط الحلقة؟</span>
+          </div>
+          <div class="mockup-result">
+            <div class="result-title">إجراء الاستجابة لضغط الحلقة — الدليل الميداني v3.1</div>
+            <div class="result-excerpt">تجاوز شذوذات الضغط 5% من خط الأساس يستوجب الإبلاغ خلال 15 دقيقة. مرجع: SOP-DRILL-042...</div>
+            <div class="result-meta">
+              <span class="meta-tag">SOP-DRILL-042</span>
+              <span class="meta-tag">دليل ميداني</span>
+              <span class="meta-tag">مارس 2026</span>
+            </div>
+          </div>
+          <div class="mockup-badge-row">
+            <span class="mockup-badge">✓ المصدر موثّق</span>
+            <span class="mockup-badge">✓ متعدد المصادر</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="module-connector">
+      <div class="connector-arrow-down"></div>
+      <div class="connector-label">المعرفة تُمكّن التطوير الوظيفي المحلي</div>
+    </div>
+
+    <!-- Module 2: Learning Hub -->
+    <div class="product-block product-block-right">
+      <div class="product-visual">
+        <div class="product-mockup mockup-indigo">
+          <div class="mockup-header">
+            <div class="mockup-dots"><span></span><span></span><span></span></div>
+            <div class="mockup-title-bar">Learning Hub</div>
+          </div>
+          <div class="mockup-role-card">
+            <div class="role-label">الدور: مشرف موقع الحفر</div>
+            <div class="role-readiness">
+              <span>الاستعداد</span>
+              <div class="readiness-bar"><div class="readiness-fill" style="width:72%"></div></div>
+              <span class="readiness-pct">72%</span>
+            </div>
+          </div>
+          <div class="mockup-gap-list">
+            <div class="gap-item gap-critical">
+              <span class="gap-dot critical"></span>
+              <span>الاستجابة لحالات الطوارئ في التحكم بالبئر</span>
+              <span class="gap-action">ابدأ التعلم →</span>
+            </div>
+            <div class="gap-item gap-medium">
+              <span class="gap-dot medium"></span>
+              <span>إجراءات سلامة H2S</span>
+              <span class="gap-action">مراجعة →</span>
+            </div>
+            <div class="gap-item gap-ok">
+              <span class="gap-dot ok"></span>
+              <span>عمليات الحفر اليومية</span>
+              <span class="gap-done">✓ مكتمل</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-content">
+        <div class="product-badge badge-indigo">مبني على Knowledge Hub</div>
+        <div class="product-number">02</div>
+        <h3 class="product-title">Learning Hub</h3>
+        <p class="product-tagline">تمكين الكوادر محلياً — مدفوعًا بمعرفتك المؤسسية الخاصة.</p>
+        <p class="product-desc">
+          يستخدم Learning Hub قاعدة المعرفة المؤسسية والصناعية الخاصة بك
+          لبناء خطط تطوير قائمة على الأدوار، وتحديد فجوات الكفاءة، وإغلاقها بإجراءات تطوير مستهدفة.
+          كل نتيجة تدريب تعود إلى Knowledge Hub.
+        </p>
+        <ul class="product-features">
+          <li>خرائط كفاءة وظيفية مرتبطة بمعايير مؤسستك</li>
+          <li>خطط تطوير EDP مع تتبع إغلاق الفجوات</li>
+          <li>محتوى تعليمي مصدره وإصداراته من Knowledge Hub</li>
+          <li>تتبع التقدم ولوحات بيانات الاستعداد للمديرين</li>
+        </ul>
+        <a href="learning-hub-ar.html" class="btn btn-primary btn-indigo">استكشف Learning Hub →</a>
+      </div>
+    </div>
+
+    <div class="module-connector">
+      <div class="connector-arrow-down"></div>
+      <div class="connector-label">المعرفة تحكم امتثال العقود</div>
+    </div>
+
+    <!-- Module 3: Contract Review -->
+    <div class="product-block product-block-left">
+      <div class="product-content">
+        <div class="product-badge badge-purple">مبني على Knowledge Hub</div>
+        <div class="product-number">03</div>
+        <h3 class="product-title">Contract Review</h3>
+        <p class="product-tagline">مراجعة أسرع. مفاجآت أقل. كل بند مرتبط بمصدر سياسته.</p>
+        <p class="product-desc">
+          يُطبّق Contract Review سياساتك ونماذجك وقضاياك السابقة
+          على تحليل العقود الآلي. تُصنَّف البنود مقارنةً بقاعدة معرفتك المؤسسية —
+          لا بمعايير عامة.
+        </p>
+        <ul class="product-features">
+          <li>استخراج آلي للبنود وتصنيف المخاطر</li>
+          <li>مقارنة مع مكتبة سياساتك والقضايا السابقة</li>
+          <li>تتبع الأدلة: كل تنبيه مرتبط بالسياسة أو السابقة المصدر</li>
+          <li>تقارير مراجعة منظمة للفرق القانونية والتشغيلية</li>
+        </ul>
+        <a href="contract-review-ar.html" class="btn btn-primary btn-purple">استكشف Contract Review →</a>
+      </div>
+      <div class="product-visual">
+        <div class="product-mockup mockup-purple">
+          <div class="mockup-header">
+            <div class="mockup-dots"><span></span><span></span><span></span></div>
+            <div class="mockup-title-bar">Contract Review</div>
+          </div>
+          <div class="mockup-contract-row">
+            <div class="contract-risk risk-high">
+              <span class="risk-badge high">مخاطرة عالية</span>
+              <div class="risk-clause">"مسؤولية المقاول محدودة بالرسوم المدفوعة خلال 3 أشهر..."</div>
+              <div class="risk-reason">⚠ أقل من معيارك: MSA يشترط الحد الأدنى 12 شهرًا</div>
+            </div>
+            <div class="contract-risk risk-medium">
+              <span class="risk-badge medium">يستوجب مراجعة</span>
+              <div class="risk-clause">"شروط الدفع: Net 90 يومًا من تاريخ تقديم الفاتورة..."</div>
+              <div class="risk-reason">⚡ يتجاوز معيار السياسة Net 30 — يستلزم الموافقة</div>
+            </div>
+            <div class="contract-risk risk-ok">
+              <span class="risk-badge ok">✓ مقبول</span>
+              <div class="risk-clause">"اشتراطات HSE وفق المعايير التنظيمية المحلية..."</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- USE CASES / INDUSTRIES -->
+<section class="section use-cases-section" id="use-cases">
+  <div class="container">
+    <div class="section-label">المستخدمون</div>
+    <h2 class="section-title">مصمم للمؤسسات التي لا تقبل الخطأ</h2>
+    <div class="use-case-grid">
+      <div class="use-case-card">
+        <div class="uc-icon">🛢️</div>
+        <h4>عمليات النفط والغاز</h4>
+        <p>توحيد إدارة المعرفة عبر المواقع الميدانية، وبناء الاستعداد الوظيفي وفق معاييرك التشغيلية، وضمان الامتثال لاشتراطات الصحة والسلامة والبيئة من لحظة التوظيف حتى الانتشار.</p>
+      </div>
+      <div class="use-case-card">
+        <div class="uc-icon">⚙️</div>
+        <h4>الصناعة والتصنيع</h4>
+        <p>هيكلة المعرفة النوعية، وإغلاق فجوات الكفاءة بخطط التطوير، ومراجعة عقود الموردين وفق متطلبات الامتثال الخاصة بك.</p>
+      </div>
+      <div class="use-case-card">
+        <div class="uc-icon">🏗️</div>
+        <h4>EPC وإدارة المشاريع</h4>
+        <p>إدارة معرفة المشروع عبر مراحله، ودعم تمكين القوى العاملة محليًا، ومراجعة شروط العقود من الباطن وفق المعايير المؤسسية.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS / TRUST SIGNALS -->
+<section class="section stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number">10x</div>
+        <div class="stat-label">أسرع من استرجاع المعرفة يدويًا</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">قابل للتتبع — كل إجابة مرتبطة بمصدرها</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">3 في 1</div>
+        <div class="stat-label">منصة موحدة: المعرفة والتعلم والعقود</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">حلقة مغلقة</div>
+        <div class="stat-label">المعرفة تنمو مع كل استخدام</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-section" id="contact">
+  <div class="container">
+    <div class="cta-box">
+      <h2 class="cta-title">هل أنت مستعد لتحويل المعرفة إلى كفاءة؟</h2>
+      <p class="cta-sub">
+        تحدّث إلى فريقنا واكتشف كيف تناسب WondeTech احتياجات مؤسستك.
+        معظم عمليات النشر تنطلق في أقل من أربعة أسابيع.
+      </p>
+      <div class="cta-actions">
+        <a href="mailto:demo@wondetech.com" class="btn btn-white btn-lg">طلب عرض توضيحي</a>
+        <a href="knowledge-hub-ar.html" class="btn btn-ghost-white btn-lg">استكشف المنصة</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo-mark">W</span>
+      <span class="logo-text">WondeTech</span>
+    </div>
+    <nav class="footer-nav">
+      <a href="knowledge-hub-ar.html">Knowledge Hub</a>
+      <a href="learning-hub-ar.html">Learning Hub</a>
+      <a href="contract-review-ar.html">Contract Review</a>
+      <a href="use-cases-ar.html">حالات الاستخدام</a>
+    </nav>
+    <div class="footer-copy">© 2026 WondeTech. جميع الحقوق محفوظة.</div>
+    <div class="footer-lang">
+      <a href="index.html">EN</a>
+      <span class="footer-lang-sep">|</span>
+      <a href="index-zh.html">中文</a>
+      <span class="footer-lang-sep">|</span>
+      <a href="index-ar.html" class="active">العربية</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مراجعة العقود — WondeTech</title>
+  <meta name="description" content="مراجعة العقود: استخراج آلي للبنود، وتمييز المخاطر، والتحقق من الامتثال — كل نتيجة مرتبطة بمكتبة سياسات المؤسسة." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Manrope:wght@500;700;800&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+  <link rel="stylesheet" href="contract-review.css" />
+  <link rel="stylesheet" href="use-cases.css" />
+  <style>
+    body { font-family: 'Cairo', 'IBM Plex Sans', system-ui, sans-serif; }
+    h1, h2, h3, h4, h5 { font-family: 'Cairo', 'Manrope', system-ui, sans-serif; }
+    .nav-inner { flex-direction: row-reverse; }
+    .nav-links { margin-left: 0; margin-right: auto; }
+    .footer-inner { flex-direction: row-reverse; }
+    .footer-nav { margin-left: 0; margin-right: auto; }
+    .lang-dropdown { right: auto; left: 0; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index-ar.html" class="nav-logo">
+      <span class="logo-mark">W</span>
+      <span class="logo-text">WondeTech</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="knowledge-hub-ar.html" class="nav-link">Knowledge Hub</a></li>
+      <li><a href="learning-hub-ar.html" class="nav-link">Learning Hub</a></li>
+      <li><a href="contract-review-ar.html" class="nav-link active">Contract Review</a></li>
+      <li><a href="use-cases-ar.html" class="nav-link">حالات الاستخدام</a></li>
+    </ul>
+    <a href="index-ar.html#contact" class="btn btn-primary btn-purple nav-cta">طلب عرض توضيحي</a>
+    <div class="lang-switcher">
+      <button class="lang-btn">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        العربية ▾
+      </button>
+      <div class="lang-dropdown">
+        <a href="contract-review.html" class="lang-option"><span class="lang-flag">🇬🇧</span> English</a>
+        <a href="contract-review-zh.html" class="lang-option"><span class="lang-flag">🇨🇳</span> 中文</a>
+        <a href="contract-review-ar.html" class="lang-option active"><span class="lang-flag">🇸🇦</span> العربية</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header cr-header">
+  <div class="container">
+    <a href="index-ar.html" class="back-link">&larr; العودة إلى نظرة عامة على المنصة</a>
+    <div class="page-header-badge" style="background:#f5f3ff; border-color:#ddd6fe; color:#7C3AED;">
+      <span>&#9878;</span>
+      <span>Contract Review</span>
+    </div>
+    <h1 class="page-header-title">
+      اكتشاف مخاطر العقود مبكراً.<br />
+      <span class="gradient-text-purple">كل بند مرتبط بالسياسة التي يستند إليها.</span>
+    </h1>
+    <p class="page-header-subtitle">
+      يُطبّق Contract Review معرفة مؤسستك للامتثال ومعايير السياسات
+      على التحليل الآلي للعقود — يميّز المخاطر بسرعة ويقدّم أدلة قابلة للتنفيذ المباشر.
+    </p>
+    <div class="page-header-cta-row">
+      <a href="index-ar.html#contact" class="btn btn-primary btn-purple">طلب عرض توضيحي</a>
+      <a href="#how-it-works" class="btn btn-ghost">كيف يعمل</a>
+    </div>
+  </div>
+</div>
+
+<!-- CONTEXT BANNER -->
+<div class="context-banner cr-banner">
+  <div class="container context-banner-inner">
+    <span class="cb-icon">&#128279;</span>
+    <span class="cb-text">
+      <strong>المعيار: قاعدة معرفتك في Knowledge Hub.</strong>
+      يُميّز Contract Review المخاطر بناءً على مكتبة سياسات المؤسسة ومعايير التشغيل الخاصة بها — وليس مجموعة قواعد عامة.
+    </span>
+    <a href="knowledge-hub-ar.html" class="cb-link cr-link">اطلع على Knowledge Hub &rarr;</a>
+  </div>
+</div>
+
+<!-- VALUE PROPS -->
+<section class="section" id="value-props">
+  <div class="container">
+    <div class="section-label">لماذا Contract Review</div>
+    <h2 class="section-title">مراجعة عقود تستثمر معرفتك المؤسسية فعلاً</h2>
+    <p class="section-subtitle">
+      مراجعة العقود التقليدية بطيئة وغير متسقة، ومنفصلة عن المعايير التشغيلية للمؤسسة.
+      يحوّل Contract Review معيار المراجعة من القواعد العامة إلى منظومة السياسات الخاصة بالمؤسسة نفسها.
+    </p>
+    <div class="cr-vp-grid">
+      <div class="cr-vp-card">
+        <div class="cr-vp-icon">&#9889;</div>
+        <h3>استخراج آلي للبنود</h3>
+        <p>يُستخرج كل بند تلقائياً ويُصنَّف ثم يُقارَن بمكتبة سياسات المؤسسة — مما يُقصِّر دورة المراجعة من أيام إلى ساعات.</p>
+      </div>
+      <div class="cr-vp-card">
+        <div class="cr-vp-icon">&#128680;</div>
+        <h3>تمييز المخاطر</h3>
+        <p>تظهر البند عالية المخاطر فوراً — حدود المسؤولية، شروط الدفع، القوة القاهرة، حق الإنهاء. لا تختبئ أي مخاطرة في التفاصيل.</p>
+      </div>
+      <div class="cr-vp-card">
+        <div class="cr-vp-icon">&#128279;</div>
+        <h3>نتائج مدعومة بالأدلة</h3>
+        <p>كل بند مُميَّز مُربوط بالسياسة أو المعيار أو السابقة المحددة التي أثارته — فريقك يدرك تماماً أين يتجه في التفاوض ولماذا.</p>
+      </div>
+      <div class="cr-vp-card">
+        <div class="cr-vp-icon">&#127962;</div>
+        <h3>مكتبة سياساتك هي المعيار</h3>
+        <p>يستخدم Contract Review اتفاقيات المؤسسة الرئيسية وسياسات المشتريات ومتطلبات التنظيم — وليس قواعد عامة لا تتناسب مع واقع الصناعة.</p>
+      </div>
+      <div class="cr-vp-card">
+        <div class="cr-vp-icon">&#128203;</div>
+        <h3>تقارير مراجعة منظمة</h3>
+        <p>توليد تقرير منظم لفرق القانون والتشغيل في كل مراجعة — ملخص المخاطر، البند المُميَّز، الإجراء المقترح والأدلة الداعمة.</p>
+      </div>
+      <div class="cr-vp-card">
+        <div class="cr-vp-icon">&#128202;</div>
+        <h3>سجل المراجعة والتدقيق</h3>
+        <p>جميع عمليات المراجعة موثقة بالطابع الزمني والمُراجِع وسجلات القرارات. تدقيق المشتريات أصبح مباشراً ولا داعي للقلق.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section cr-how-section" id="how-it-works">
+  <div class="container">
+    <div class="section-label">آلية العمل</div>
+    <h2 class="section-title">من رفع العقد إلى تقرير المخاطر المنظم</h2>
+    <div class="cr-flow">
+      <div class="cr-flow-step">
+        <div class="cr-step-icon">&#128228;</div>
+        <div class="cr-step-body">
+          <h4>رفع العقد</h4>
+          <p>ارفع ملف العقد بأي صيغة. PDF أو Word أو مستند ممسوح ضوئياً — النظام يعالج جميع الصيغ الشائعة دون الحاجة إلى معالجة مسبقة.</p>
+        </div>
+        <div class="cr-step-arrow">&larr;</div>
+      </div>
+      <div class="cr-flow-step">
+        <div class="cr-step-icon">&#128269;</div>
+        <div class="cr-step-body">
+          <h4>استخراج وتحليل</h4>
+          <p>يُستخرج البنود وتُصنَّف ثم تُقارَن بمكتبة سياسات Knowledge Hub — المسؤوليات، الدفع، الملكية الفكرية، الإنهاء، متطلبات الامتثال.</p>
+        </div>
+        <div class="cr-step-arrow">&larr;</div>
+      </div>
+      <div class="cr-flow-step">
+        <div class="cr-step-icon">&#9888;&#65039;</div>
+        <div class="cr-step-body">
+          <h4>تمييز المخاطر</h4>
+          <p>تُصنَّف المسائل حسب الخطورة — مخاطرة عالية، يستوجب مراجعة، مقبول — مع توضيح السياسة أو المعيار الذي خالفه كل بند.</p>
+        </div>
+        <div class="cr-step-arrow">&larr;</div>
+      </div>
+      <div class="cr-flow-step">
+        <div class="cr-step-icon">&#128203;</div>
+        <div class="cr-step-body">
+          <h4>تقرير منظم</h4>
+          <p>تحصل فرق القانون والأعمال على تقرير مراجعة واضح وقابل للتنفيذ — مُنظَّم حسب مستوى المخاطر ومعزّز بالأدلة اللازمة للتفاوض أو الرفع.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT DEMO VISUAL -->
+<section class="section cr-demo-section">
+  <div class="container">
+    <div class="section-label">مظهر المنتج الفعلي</div>
+    <h2 class="section-title">كيف تبدو مراجعة العقد</h2>
+
+    <div class="cr-demo-layout">
+      <div class="cr-doc-panel">
+        <div class="cr-panel-header">العقد — اتفاقية خدمات الحفر (MSA-2026-04)</div>
+        <div class="cr-doc-content">
+          <div class="cr-clause-block highlighted high">
+            <div class="cr-clause-marker high">&#9679; مخاطرة عالية</div>
+            <div class="cr-clause-text">
+              "المادة 8.3 — تحديد المسؤولية: إجمالي مسؤولية المتعهد بموجب هذه الاتفاقية،
+              بصرف النظر عن طبيعة المطالبة، لا يتجاوز إجمالي الرسوم المدفوعة خلال الثلاثة (3) أشهر السابقة للمطالبة..."
+            </div>
+          </div>
+          <div class="cr-clause-block highlighted review">
+            <div class="cr-clause-marker review">&#9679; يستوجب مراجعة</div>
+            <div class="cr-clause-text">
+              "المادة 11.2 — شروط الدفع: يجب سداد جميع الفواتير خلال تسعين (90) يوماً من تقديمها،
+              ما لم يتم تقديم اعتراض كتابي خلال خمسة عشر (15) يوماً..."
+            </div>
+          </div>
+          <div class="cr-clause-block clear">
+            <div class="cr-clause-marker clear">&#10003; مقبول</div>
+            <div class="cr-clause-text">
+              "المادة 4.1 — متطلبات HSE: يلتزم المتعهد بجميع اللوائح الصحية والسلامة والبيئية
+              السارية والمفعلة في موقع العمل..."
+            </div>
+          </div>
+          <div class="cr-clause-block highlighted high">
+            <div class="cr-clause-marker high">&#9679; مخاطرة عالية</div>
+            <div class="cr-clause-text">
+              "المادة 14.4 — القانون الواجب التطبيق: تخضع هذه الاتفاقية لقوانين الاختصاص القضائي الذي سُجِّل فيه المتعهد..."
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cr-findings-panel">
+        <div class="cr-panel-header">ملخص المخاطر</div>
+        <div class="cr-summary-row">
+          <div class="cr-summary-chip high">2 مخاطرة عالية</div>
+          <div class="cr-summary-chip review">3 يستوجب مراجعة</div>
+          <div class="cr-summary-chip clear">8 مقبول</div>
+        </div>
+
+        <div class="cr-finding">
+          <div class="cr-finding-header">
+            <span class="cr-finding-badge high">مخاطرة عالية</span>
+            <span class="cr-finding-clause">&#167;8.3 — تحديد المسؤولية</span>
+          </div>
+          <div class="cr-finding-issue">
+            سقف المسؤولية بثلاثة أشهر من الرسوم أدنى بكثير من المعيار. نموذج الاتفاقية الرئيسية للمؤسسة يشترط الحد الأدنى لـ 12 شهراً من قيمة العقد.
+          </div>
+          <div class="cr-finding-evidence">
+            <span class="cr-evidence-icon">&#128279;</span>
+            <span>المصدر: سياسة المشتريات PP-004 &#167;3.1 — معايير المسؤولية الدنيا</span>
+          </div>
+          <div class="cr-finding-action">التوصية: التفاوض لرفع الحد الأدنى إلى 12 شهراً أو رفع الأمر للموافقة القانونية</div>
+        </div>
+
+        <div class="cr-finding">
+          <div class="cr-finding-header">
+            <span class="cr-finding-badge review">يستوجب مراجعة</span>
+            <span class="cr-finding-clause">&#167;11.2 — شروط الدفع</span>
+          </div>
+          <div class="cr-finding-issue">
+            شرط السداد بـ 90 يوم يتجاوز سياسة المؤسسة القائمة على 30 يوماً، ويتطلب موافقة استثناء من الإدارة المالية.
+          </div>
+          <div class="cr-finding-evidence">
+            <span class="cr-evidence-icon">&#128279;</span>
+            <span>المصدر: السياسة المالية FP-012 &#167;2.4 — شروط الدفع القياسية</span>
+          </div>
+          <div class="cr-finding-action">التوصية: رفع طلب موافقة استثناء إلى الإدارة المالية</div>
+        </div>
+
+        <div class="cr-finding">
+          <div class="cr-finding-header">
+            <span class="cr-finding-badge high">مخاطرة عالية</span>
+            <span class="cr-finding-clause">&#167;14.4 — القانون الواجب التطبيق</span>
+          </div>
+          <div class="cr-finding-issue">
+            القانون الواجب التطبيق مُحدَّد باختصاص المتعهد. سياسة المؤسسة تشترط تطبيق الاختصاص المحلي على النزاعات.
+          </div>
+          <div class="cr-finding-evidence">
+            <span class="cr-evidence-icon">&#128279;</span>
+            <span>المصدر: الإطار القانوني LF-002 &#167;7 — متطلبات حل النزاعات</span>
+          </div>
+          <div class="cr-finding-action">التوصية: المطالبة بتعديل بند القانون الواجب التطبيق قبل التوقيع</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- USE CASES -->
+<section class="section cr-uc-section">
+  <div class="container">
+    <div class="section-label">سيناريوهات الاستخدام</div>
+    <h2 class="section-title">من المشتريات إلى القانون再到 العمليات الميدانية</h2>
+    <div class="cr-uc-grid">
+      <div class="cr-uc-card">
+        <div class="cr-uc-icon">&#129309;</div>
+        <h4>فرق المشتريات</h4>
+        <p>مراجعة عقود الموردين واتفاقيات الخدمات بسرعة أكبر، بتطبيق معايير مخاطر متناسقة في كل مرة — بغض النظر عن عضو الفريق المكلف بالمراجعة.</p>
+      </div>
+      <div class="cr-uc-card">
+        <div class="cr-uc-icon">&#9878;&#65039;</div>
+        <h4>الفرق القانونية والامتثال</h4>
+        <p>تركيز جهود الخبراء القانونيين على المسائل ذات الأولوية الحقيقية. يُجرِي Contract Review فرزاً مسبقاً للمخاطر الشائعة ليتمكن المستشارون القانونيون من التركيز على الحالات الحدية واستراتيجيات التفاوض — بدلاً من استخراج البنود واحداً تلو الآخر.</p>
+      </div>
+      <div class="cr-uc-card">
+        <div class="cr-uc-icon">&#128666;&#65039;</div>
+        <h4>عمليات النفط والغاز</h4>
+        <p>مراجعة اتفاقيات خدمات الحفر وعقود تشغيل الآبار وبنود تأجير المعدات بناءً على سياسات العمليات الميدانية ومتطلبات التنظيم الخاصة بالمؤسسة — وليس بناءً على معايير عامة.</p>
+      </div>
+      <div class="cr-uc-card">
+        <div class="cr-uc-icon">&#128736;&#65039;</div>
+        <h4>فرق EPC وإدارة المشاريع</h4>
+        <p>إدارة مخاطر التعاقد من الباطن في هياكل المشاريع المعقدة عبر مراجعة متناسقة ومدعومة بالأدلة لبنود النطاق والدفع والمسؤولية والإنجاز.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-section" id="contact">
+  <div class="container">
+    <div class="cta-box">
+      <h2 class="cta-title">اجعل مراجعة العقود أكثر ذكاءً وكفاءة.</h2>
+      <p class="cta-sub">
+        اكتشف كيف يحوّل Contract Review سياسات مؤسستك إلى معايير امتثال آلية —
+        لتصبح مخاطر كل عقد واضحة وموثوقة بالأدلة.
+      </p>
+      <div class="cta-actions">
+        <a href="mailto:demo@wondetech.com" class="btn btn-white btn-lg">طلب عرض توضيحي</a>
+        <a href="index-ar.html" class="btn btn-ghost-white btn-lg">العودة إلى نظرة عامة على المنصة</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo-mark">W</span>
+      <span class="logo-text">WondeTech</span>
+    </div>
+    <nav class="footer-nav">
+      <a href="knowledge-hub-ar.html">Knowledge Hub</a>
+      <a href="learning-hub-ar.html">Learning Hub</a>
+      <a href="contract-review-ar.html">Contract Review</a>
+      <a href="use-cases-ar.html">حالات الاستخدام</a>
+    </nav>
+    <div class="footer-copy">&copy; 2026 WondeTech. جميع الحقوق محفوظة.</div>
+    <div class="footer-lang">
+      <a href="contract-review.html">EN</a>
+      <span class="footer-lang-sep">|</span>
+      <a href="contract-review-zh.html">中文</a>
+      <span class="footer-lang-sep">|</span>
+      <a href="contract-review-ar.html" class="active">العربية</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

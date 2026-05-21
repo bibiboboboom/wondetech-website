@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>حالات الاستخدام — WondeTech</title>
+  <meta name="description content="اكتشف كيف تحول WondeTech المعرفة المؤسسية إلى نتائج عملية عبر عمليات الحقول النفطية، وتمكين القوى العاملة، ومراجعة العقود." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Manrope:wght@500;700;800&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+  <link rel="stylesheet" href="use-cases.css" />
+  <style>
+    body { font-family: 'Cairo', 'IBM Plex Sans', system-ui, sans-serif; }
+    h1, h2, h3, h4, h5 { font-family: 'Cairo', 'Manrope', system-ui, sans-serif; }
+    .nav-inner { flex-direction: row-reverse; }
+    .nav-links { margin-left: 0; margin-right: auto; }
+    .footer-inner { flex-direction: row-reverse; }
+    .footer-nav { margin-left: 0; margin-right: auto; }
+    .lang-dropdown { right: auto; left: 0; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index-ar.html" class="nav-logo">
+      <span class="logo-mark">W</span>
+      <span class="logo-text">WondeTech</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="knowledge-hub-ar.html" class="nav-link">مركز المعرفة</a></li>
+      <li><a href="learning-hub-ar.html" class="nav-link">مركز التعلم</a></li>
+      <li><a href="contract-review-ar.html" class="nav-link">مراجعة العقود</a></li>
+      <li><a href="use-cases-ar.html" class="nav-link active">حالات الاستخدام</a></li>
+    </ul>
+    <a href="index-ar.html#contact" class="btn btn-primary nav-cta">طلب عرض توضيحي</a>
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+      <button class="lang-btn">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        العربية ▾
+      </button>
+      <div class="lang-dropdown">
+        <a href="use-cases.html" class="lang-option"><span class="lang-flag">🇬🇧</span> English</a>
+        <a href="use-cases-zh.html" class="lang-option"><span class="lang-flag">🇨🇳</span> 中文</a>
+        <a href="use-cases-ar.html" class="lang-option active"><span class="lang-flag">🇸🇦</span> العربية</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="uc-hero">
+  <div class="container">
+    <a href="index-ar.html" class="back-link">← العودة إلى نظرة عامة على المنصة</a>
+    <div class="uc-hero-inner">
+      <div class="uc-hero-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        حالات الاستخدام المؤسسية
+      </div>
+      <h1 class="uc-hero-title">
+        نتائج حقيقية من<br />
+        <span class="gradient-text">المعرفة المؤسسية في الممارسة</span>
+      </h1>
+      <p class="uc-hero-sub">
+        اكتشف كيف تحول WondeTech المعرفة المؤسسية إلى نتائج عملية عبر
+        العمليات، وتمكين القوى العاملة، ومراجعة العقود.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- FILTER BAR -->
+<div class="uc-filter-bar">
+  <div class="container">
+    <div class="uc-filter-row">
+      <span class="uc-filter-label">تصفية حسب الوحدة:</span>
+      <div class="uc-filter-tabs">
+        <button class="uc-tab active" data-filter="all">جميع الحالات</button>
+        <button class="uc-tab" data-filter="knowledge-hub">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          مركز المعرفة
+        </button>
+        <button class="uc-tab" data-filter="learning-hub">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          مركز التعلم
+        </button>
+        <button class="uc-tab" data-filter="contract-review">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          مراجعة العقود
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     CASE OVERVIEW CARDS
+     ============================================================ -->
+<div class="uc-overview-section">
+  <div class="container">
+    <div class="uc-overview-grid">
+
+      <!-- Card: BOC -->
+      <a href="#case-boc" class="ov-card">
+        <div class="ov-card-header">
+          <div class="ov-client-icon boc-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div>
+            <div class="ov-client-name">BOC</div>
+            <div class="ov-meta">النفط والغاز · العراق</div>
+          </div>
+        </div>
+        <p class="ov-scenario">قاعدة معرفة مؤسسية وتمكين القوى العاملة</p>
+        <ul class="ov-outcomes">
+          <li>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            إدماج الموظفين بشكل أسرع
+          </li>
+          <li>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            أصول معرفة قابلة للبحث
+          </li>
+          <li>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            مراجع عقود أوضح
+          </li>
+        </ul>
+        <div class="ov-modules">
+          <span class="cs-mod-tag mod-kh">مركز المعرفة</span>
+          <span class="cs-mod-tag mod-lh">مركز التعلم</span>
+          <span class="cs-mod-tag mod-cr">مراجعة العقود</span>
+        </div>
+        <div class="ov-view-link">← عرض الحالة</div>
+      </a>
+
+      <!-- Card: Majnoon -->
+      <a href="#case-majnoon" class="ov-card">
+        <div class="ov-card-header">
+          <div class="ov-client-icon majnoon-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <div>
+            <div class="ov-client-name">Majnoon</div>
+            <div class="ov-meta">النفط والغاز · العراق</div>
+          </div>
+        </div>
+        <p class="ov-scenario">إدارة معلومات الحقول النفطية ومراجعة العقود المبنية على الأدلة</p>
+        <ul class="ov-outcomes">
+          <li>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            تقليل البحث اليدوي عن المرفقات
+          </li>
+          <li>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            مسار أدلة أوضح
+          </li>
+          <li>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            مخاطر مشروع أقل
+          </li>
+        </ul>
+        <div class="ov-modules">
+          <span class="cs-mod-tag mod-kh">مركز المعرفة</span>
+          <span class="cs-mod-tag mod-cr">مراجعة العقود</span>
+        </div>
+        <div class="ov-view-link">← عرض الحالة</div>
+      </a>
+
+      <!-- Card: Vividata -->
+      <a href="#case-vividata" class="ov-card">
+        <div class="ov-card-header">
+          <div class="ov-client-icon vividata-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10"/></svg>
+          </div>
+          <div>
+            <div class="ov-client-name">Vividata</div>
+            <div class="ov-meta">خدمات التكنولوجيا · دولي</div>
+          </div>
+        </div>
+        <p class="ov-scenario">سير عمل صياغة ومراجعة العقود عبر الحدود</p>
+        <ul class="ov-outcomes">
+          <li>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            تحضير المسودة الأولى بشكل أسرع
+          </li>
+          <li>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            مراجعة عقود متسقة
+          </li>
+          <li>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            قوالب معتمدة قابلة لإعادة الاستخدام
+          </li>
+        </ul>
+        <div class="ov-modules">
+          <span class="cs-mod-tag mod-cr">مراجعة العقود</span>
+          <span class="cs-mod-tag mod-kh">مركز المعرفة</span>
+        </div>
+        <div class="ov-view-link">← عرض الحالة</div>
+      </a>
+
+      <!-- Card: US Startup -->
+      <a href="#case-startup" class="ov-card">
+        <div class="ov-card-header">
+          <div class="ov-client-icon startup-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v11m0 0H5m4 0h4m6-8h2m-2 0a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-4m0-9v9m0 0H5a2 2 0 0 1-2-2v-1"/></svg>
+          </div>
+          <div>
+            <div class="ov-client-name">U.S. Chemical-Pharma Startup</div>
+            <div class="ov-meta">البحث والتطوير الدوائي · الولايات المتحدة</div>
+          </div>
+        </div>
+        <p class="ov-scenario">الامتثال لفريق صغير وأولوية المخاطر</p>
+        <ul class="ov-outcomes">
+          <li>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            تركيز الوقت القانوني على المستندات عالية المخاطر
+          </li>
+          <li>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            رؤية مبكرة للمخاطر
+          </li>
+          <li>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            تحضير مراجعي منهجي
+          </li>
+        </ul>
+        <div class="ov-modules">
+          <span class="cs-mod-tag mod-cr">مراجعة العقود</span>
+          <span class="cs-mod-tag mod-kh">مركز المعرفة</span>
+        </div>
+        <div class="ov-view-link">← عرض الحالة</div>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     CASE 01: BOC
+     ============================================================ -->
+<section class="uc-case" id="case-boc" data-modules="knowledge-hub learning-hub contract-review">
+  <div class="container">
+
+    <div class="cs-case-header">
+      <div class="cs-case-num">الحالة 01</div>
+      <div class="cs-case-header-body">
+        <div class="cs-case-client-row">
+          <div class="cs-client-icon boc-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div>
+            <h2 class="cs-client-name">BOC</h2>
+            <p class="cs-positioning">قاعدة المعرفة المؤسسية وتمكين القوى العاملة</p>
+          </div>
+        </div>
+        <div class="cs-module-tags">
+          <span class="cs-mod-tag mod-kh"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>مركز المعرفة</span>
+          <span class="cs-mod-tag mod-lh"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>مركز التعلم</span>
+          <span class="cs-mod-tag mod-cr"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>مراجعة العقود</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-body">
+      <!-- Left: Snapshot + Key Outcome -->
+      <div class="cs-left">
+        <div class="cs-snapshot">
+          <div class="cs-snapshot-title">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            لمحة عن العميل
+          </div>
+          <ul class="cs-snapshot-list">
+            <li>
+              <span class="cs-snap-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></span>
+              <div><div class="cs-snap-key">العميل</div><div class="cs-snap-val">BOC</div></div>
+            </li>
+            <li>
+              <span class="cs-snap-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span>
+              <div><div class="cs-snap-key">الصناعة</div><div class="cs-snap-val">النفط والغاز</div></div>
+            </li>
+            <li>
+              <span class="cs-snap-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+              <div><div class="cs-snap-key">المنطقة</div><div class="cs-snap-val">العراق</div></div>
+            </li>
+            <li>
+              <span class="cs-snap-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4"/></svg></span>
+              <div><div class="cs-snap-key">السيناريو</div><div class="cs-snap-val">قاعدة معرفة مؤسسية وتمكين القوى العاملة</div></div>
+            </li>
+          </ul>
+        </div>
+        <div class="cs-key-outcome">
+          <div class="cs-ko-label">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            النتيجة الرئيسية
+          </div>
+          <p>تحويل المستندات المتناثرة إلى قاعدة معرفة مؤسسية موحدة وقابلة للبحث وخاضعة للحوكمة — متاحة عبر العمليات والإدماج ومراجعة العقود.</p>
+        </div>
+      </div>
+
+      <!-- Right: Content -->
+      <div class="cs-right">
+        <!-- Challenge + What Changed -->
+        <div class="cs-two-col">
+          <div>
+            <div class="cs-section-head challenge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              التحدي
+            </div>
+            <ul class="cs-bullets">
+              <li>المستندات التقنية والتدريبية والعقدية والملكية الفكرية متناثرة بين الفرق</li>
+              <li>كان الموظفون يسألون زملاءهم للعثور على النسخة الصحيحة</li>
+              <li>كان من الصعب إعادة استخدام المعرفة في الإدماج والعقود</li>
+            </ul>
+          </div>
+          <div>
+            <div class="cs-section-head changed">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              ما غيّرته WondeTech
+            </div>
+            <ul class="cs-bullets cs-bullets-positive">
+              <li>بناء قاعدة معرفة خاضعة للحوكمة لجميع أنواع المستندات</li>
+              <li>جعل المحتوى منظّماً وقابلاً للبحث وخاضعاً لإدارة النسخ</li>
+              <li>ربط المعرفة التشغيلية باحتياجات الإدماج والعقود</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Business Impact -->
+        <div class="cs-section">
+          <div class="cs-section-head impact">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            التأثير على الأعمال
+          </div>
+          <div class="cs-impact-grid">
+            <div class="cs-impact-card">
+              <div class="cs-impact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div class="cs-impact-val">إدماج الموظفين بشكل أسرع</div>
+              <div class="cs-impact-desc">يصل الموظفون الجدد للمواد المهيكلة ذات الصلة بدورهم مباشرة</div>
+            </div>
+            <div class="cs-impact-card">
+              <div class="cs-impact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </div>
+              <div class="cs-impact-val">بحث أقل عن المستندات</div>
+              <div class="cs-impact-desc">بحث واحد يغطي جميع الفرق وأنواع المستندات</div>
+            </div>
+            <div class="cs-impact-card">
+              <div class="cs-impact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              </div>
+              <div class="cs-impact-val">مراجع عقود أوضح</div>
+              <div class="cs-impact-desc">يتتبع المراجعون الشروط إلى المستندات المصدرية الرسمية</div>
+            </div>
+            <div class="cs-impact-card">
+              <div class="cs-impact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </div>
+              <div class="cs-impact-val">تحكم أفضل في المعرفة</div>
+              <div class="cs-impact-desc">المحتوى الحساس للملكية الفكرية خاضع للحوكمة مع ضبط الوصول</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module Contribution -->
+        <div class="cs-section">
+          <div class="cs-section-head modules">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            مساهمة الوحدات
+          </div>
+          <div class="cs-modules-grid cs-modules-3">
+            <div class="cs-module-card kh">
+              <div class="cs-module-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+              <div class="cs-module-name">مركز المعرفة</div>
+              <div class="cs-module-desc">يهيكل الملفات التقنية ومواد التدريب وسجلات المشروعات والمحتوى الخاص بالملكية الفكرية في قاعدة معرفة خاضعة للحوكمة وقابلة للبحث.</div>
+            </div>
+            <div class="cs-module-card lh">
+              <div class="cs-module-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+              <div class="cs-module-name">مركز التعلم</div>
+              <div class="cs-module-desc">يحوّل المعرفة ذات الصلة بالأدوار إلى مواد إدماج ومسارات تطور للموظفين.</div>
+            </div>
+            <div class="cs-module-card cr">
+              <div class="cs-module-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+              <div class="cs-module-name">مراجعة العقود</div>
+              <div class="cs-module-desc">يربط بنود العقود بالسياسات الداخلية والمعايير والأدلة المصدرية لمراجعة مبنية على الأدلة.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="uc-case-divider"></div>
+
+<!-- ============================================================
+     CASE 02: MAJNOON
+     ============================================================ -->
+<section class="uc-case uc-case-alt" id="case-majnoon" data-modules="knowledge-hub contract-review">
+  <div class="container">
+
+    <div class="cs-case-header">
+      <div class="cs-case-num">الحالة 02</div>
+      <div class="cs-case-header-body">
+        <div class="cs-case-client-row">
+          <div class="cs-client-icon majnoon-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <div>
+            <h2 class="cs-client-name">Majnoon</h2>
+            <p class="cs-positioning">إدارة معلومات الحقول النفطية ومراجعة العقود المبنية على الأدلة</p>
+          </div>
+        </div>
+        <div class="cs-module-tags">
+          <span class="cs-mod-tag mod-kh"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>مركز المعرفة</span>
+          <span class="cs-mod-tag mod-cr"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>مراجعة العقود</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-body">
+      <div class="cs-left">
+        <div class="cs-snapshot">
+          <div class="cs-snapshot-title">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            لمحة عن العميل
+          </div>
+          <ul class="cs-snapshot-list">
+            <li><span class="cs-snap-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></span><div><div class="cs-snap-key">العميل</div><div class="cs-snap-val">Majnoon</div></div></li>
+            <li><span class="cs-snap-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span><div><div class="cs-snap-key">الصناعة</div><div class="cs-snap-val">النفط والغاز / عمليات الحقول النفطية</div></div></li>
+            <li><span class="cs-snap-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span><div><div class="cs-snap-key">المنطقة</div><div class="cs-snap-val">العراق</div></div></li>
+            <li><span class="cs-snap-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83"/></svg></span><div><div class="cs-snap-key">السيناريو</div><div class="cs-snap-val">ربط مراجعة العقود بالمستندات الهندسة وأدلة التسليم</div></div></li>
+          </ul>
+        </div>
+        <div class="cs-key-outcome">
+          <div class="cs-ko-label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>النتيجة الرئيسية</div>
+          <p>مراجعة العقود مدعومة بوصول مباشر للمستندات الهندسية وسجلات الموافقة وأدلة التسليم — بدون مزيد من المطاردة اليدوية للمرفقات.</p>
+        </div>
+      </div>
+
+      <div class="cs-right">
+        <div class="cs-two-col">
+          <div>
+            <div class="cs-section-head challenge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>التحدي</div>
+            <ul class="cs-bullets">
+              <li>المستندات الهندسية والتعاقدية ومشتريات مخزنة بشكل منفصل</li>
+              <li>كان المراجعون يحددون موقع المرفقات ويتتبعون الموافقات يدوياً</li>
+              <li>فتقت المطالبات وفحوص التسليم مسارات أدلة موثوقة</li>
+            </ul>
+          </div>
+          <div>
+            <div class="cs-section-head changed"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>ما غيّرته WondeTech</div>
+            <ul class="cs-bullets cs-bullets-positive">
+              <li>ربط نص العقد بالملفات الهندسية وسجلات الموافقة</li>
+              <li>إنشاء روابط أوضح بين البنود والأدلة الداعمة</li>
+              <li>تحسين رؤية النسخ وإمكانية تتبع المصادر</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cs-section">
+          <div class="cs-section-head impact"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>التأثير على الأعمال</div>
+          <div class="cs-impact-grid">
+            <div class="cs-impact-card">
+              <div class="cs-impact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+              <div class="cs-impact-val">تقليل البحث اليدوي</div>
+              <div class="cs-impact-desc">العثور على المرفقات والنسخ بدون مطاردة يدوية</div>
+            </div>
+            <div class="cs-impact-card">
+              <div class="cs-impact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+              <div class="cs-impact-val">مسار أدلة أوضح</div>
+              <div class="cs-impact-desc">تاريخ الموافقات مرئي من بند العقد إلى الملف المصدر</div>
+            </div>
+            <div class="cs-impact-card">
+              <div class="cs-impact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+              <div class="cs-impact-val">تحضير مراجعي أسرع</div>
+              <div class="cs-impact-desc">يبدأ المراجعون بالأدلة وليس بآثار المرفقات</div>
+            </div>
+            <div class="cs-impact-card">
+              <div class="cs-impact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+              <div class="cs-impact-val">مخاطر مشروع أقل</div>
+              <div class="cs-impact-desc">حل النزاعات بأدلة مباشرة وتفاوض أسرع</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-section">
+          <div class="cs-section-head modules"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>مساهمة الوحدات</div>
+          <div class="cs-modules-grid cs-modules-2">
+            <div class="cs-module-card kh">
+              <div class="cs-module-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+              <div class="cs-module-name">مركز المعرفة</div>
+              <div class="cs-module-desc">يدير السجلات الهندسية ومستندات الموافقة ومواد القبول وملفات المشروعات مع إدارة النسخ.</div>
+            </div>
+            <div class="cs-module-card cr">
+              <div class="cs-module-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+              <div class="cs-module-name">مراجعة العقود</div>
+              <div class="cs-module-desc">يربط بنود العقود بالأدلة الداعمة — المواصفات التقنية وتاريخ الموافقات وسجلات التسليم.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="uc-case-divider"></div>
+
+<!-- ============================================================
+     CASE 03: VIVIDATA
+     ============================================================ -->
+<section class="uc-case" id="case-vividata" data-modules="contract-review knowledge-hub">
+  <div class="container">
+
+    <div class="cs-case-header">
+      <div class="cs-case-num">الحالة 03</div>
+      <div class="cs-case-header-body">
+        <div class="cs-case-client-row">
+          <div class="cs-client-icon vividata-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10"/></svg>
+          </div>
+          <div>
+            <h2 class="cs-client-name">Vividata</h2>
+            <p class="cs-positioning">صياغة ومراجعة العقود عبر الحدود</p>
+          </div>
+        </div>
+        <div class="cs-module-tags">
+          <span class="cs-mod-tag mod-cr"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>مراجعة العقود</span>
+          <span class="cs-mod-tag mod-kh"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>مركز المعرفة</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-body">
+      <div class="cs-left">
+        <div class="cs-snapshot">
+          <div class="cs-snapshot-title"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>لمحة عن العميل</div>
+          <ul class="cs-snapshot-list">
+            <li><span class="cs-snap-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></span><div><div class="cs-snap-key">العميل</div><div class="cs-snap-val">Vividata</div></div></li>
+            <li><span class="cs-snap-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span><div><div class="cs-snap-key">الصناعة</div><div class="cs-snap-val">خدمات التكنولوجيا عبر الحدود</div></div></li>
+            <li><span class="cs-snap-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/></svg></span><div><div class="cs-snap-key">المنطقة</div><div class="cs-snap-val">دولي</div></div></li>
+            <li><span class="cs-snap-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4"/></svg></span><div><div class="cs-snap-key">السيناريو</div><div class="cs-snap-val">إعادة استخدام المعرفة المؤسسية في صياغة ومراجعة العقود</div></div></li>
+          </ul>
+        </div>
+        <div class="cs-key-outcome">
+          <div class="cs-ko-label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>النتيجة الرئيسية</div>
+          <p>تجميع الاتفاقيات التاريخية والقوالب المعتمدة وبنود المخاطر في قاعدة معرفة واحدة قابلة للاسترجاع — لتسريع الصياغة وضمان اتساق المراجعة.</p>
+        </div>
+      </div>
+
+      <div class="cs-right">
+        <div class="cs-two-col">
+          <div>
+            <div class="cs-section-head challenge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>التحدي</div>
+            <ul class="cs-bullets">
+              <li>عقود واتفاقات خدمات ومستندات امتثال باللغة الإنجليزية يجب إدارتها</li>
+              <li>الاتفاقيات التاريخية والقوالب موجودة لكن يصعب العثور عليها</li>
+              <li>الصياغة والمراجعة تعتمد على المقارنة اليدوية والذاكرة</li>
+            </ul>
+          </div>
+          <div>
+            <div class="cs-section-head changed"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>ما غيّرته WondeTech</div>
+            <ul class="cs-bullets cs-bullets-positive">
+              <li>تجميع الاتفاقيات والقوالب وبنود المخاطر في مركز المعرفة</li>
+              <li>جعل السوابق واللغة المعتمدة سهلة الاسترجاع أثناء الصياغة</li>
+              <li>مراجعة العقود تُنبّه بالمخاطر مقابل مكتبة بنود المؤسسة الخاصة</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cs-section">
+          <div class="cs-section-head impact"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>التأثير على الأعمال</div>
+          <div class="cs-impact-grid">
+            <div class="cs-impact-card">
+              <div class="cs-impact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+              <div class="cs-impact-val">تحضير المسودة الأولى بشكل أسرع</div>
+              <div class="cs-impact-desc">استرجاع القوالب المعتمدة والسوابق في بحث واحد</div>
+            </div>
+            <div class="cs-impact-card">
+              <div class="cs-impact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+              <div class="cs-impact-val">مراجعة عقود متسقة</div>
+              <div class="cs-impact-desc">تنبيهات مبنية على معرفتك المؤسسية الخاصة</div>
+            </div>
+            <div class="cs-impact-card">
+              <div class="cs-impact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 2 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+              <div class="cs-impact-val">إعادة استخدام قوالب أفضل</div>
+              <div class="cs-impact-desc">الاتفاقيات التاريخية والبنود المعتمدة تُعاد استخدامها بشكل منهجي</div>
+            </div>
+            <div class="cs-impact-card">
+              <div class="cs-impact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+              <div class="cs-impact-val">تواصل فريق أنظف</div>
+              <div class="cs-impact-desc">فرق الصياغة والقانونية تتشارك نفس قاعدة المراجع</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-section">
+          <div class="cs-section-head modules"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>مساهمة الوحدات</div>
+          <div class="cs-modules-grid cs-modules-2">
+            <div class="cs-module-card cr">
+              <div class="cs-module-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+              <div class="cs-module-name">مراجعة العقود</div>
+              <div class="cs-module-desc">يطبق تنبيهات المخاطر بناءً على الاتفاقيات التاريخية ومكتبة البنود المعتمدة الخاصة بالمؤسسة.</div>
+            </div>
+            <div class="cs-module-card kh">
+              <div class="cs-module-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+              <div class="cs-module-name">مركز المعرفة</div>
+              <div class="cs-module-desc">يجعل القوالب والسوابق والبنود المعتمدة وملاحظات المراجعة متاحة أثناء الصياغة والمراجعة.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="uc-case-divider"></div>
+
+<!-- ============================================================
+     CASE 04: U.S. CHEM-PHARMA STARTUP
+     ============================================================ -->
+<section class="uc-case uc-case-alt" id="case-startup" data-modules="contract-review knowledge-hub">
+  <div class="container">
+
+    <div class="cs-case-header">
+      <div class="cs-case-num">الحالة 04</div>
+      <div class="cs-case-header-body">
+        <div class="cs-case-client-row">
+          <div class="cs-client-icon startup-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v11m0 0H5m4 0h4m6-8h2m-2 0a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-4m0-9v9m0 0H5a2 2 0 0 1-2-2v-1"/></svg>
+          </div>
+          <div>
+            <h2 class="cs-client-name">U.S. Chemical-Pharma Startup</h2>
+            <p class="cs-positioning">امتثال الفريق الصغير وأولوية المخاطر</p>
+          </div>
+        </div>
+        <div class="cs-module-tags">
+          <span class="cs-mod-tag mod-cr"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>مراجعة العقود</span>
+          <span class="cs-mod-tag mod-kh"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>مركز المعرفة</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-body">
+      <div class="cs-left">
+        <div class="cs-snapshot">
+          <div class="cs-snapshot-title"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>لمحة عن العميل</div>
+          <ul class="cs-snapshot-list">
+            <li><span class="cs-snap-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></span><div><div class="cs-snap-key">العميل</div><div class="cs-snap-val">U.S. Chemical-Pharma Startup</div></div></li>
+            <li><span class="cs-snap-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span><div><div class="cs-snap-key">الصناعة</div><div class="cs-snap-val">الكيميائية / البحث والتطوير الدوائي</div></div></li>
+            <li><span class="cs-snap-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/></svg></span><div><div class="cs-snap-key">المنطقة</div><div class="cs-snap-val">الولايات المتحدة</div></div></li>
+            <li><span class="cs-snap-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4"/></svg></span><div><div class="cs-snap-key">السيناريو</div><div class="cs-snap-val">فرز مخاطر العقود قبل المراجعة القانونية الرسمية</div></div></li>
+          </ul>
+        </div>
+        <div class="cs-key-outcome">
+          <div class="cs-ko-label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>النتيجة الرئيسية</div>
+          <p>فريق صغير يفرز مخاطر العقود الرئيسية قبل المراجعة القانونية — بإعطاء الأولوية للمستندات عالية المخاطر والتركيز على القرارات حيث يكون لها أكبر تأثير.</p>
+        </div>
+      </div>
+
+      <div class="cs-right">
+        <div class="cs-two-col">
+          <div>
+            <div class="cs-section-head challenge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>التحدي</div>
+            <ul class="cs-bullets">
+              <li>فريق صغير يتعامل مع عقود البحث والتطوير والموردين واتفاقات عدم الإفشاء والملكية الفكرية والعملاء</li>
+              <li>السعة غير كافية لمراجعة كل مستند بالكامل قبل المراجعة القانونية</li>
+              <li>المخاطر الرئيسية اُكتشفت متأخرة — بعد تقدم الشروط التجارية</li>
+            </ul>
+          </div>
+          <div>
+            <div class="cs-section-head changed"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>ما غيّرته WondeTech</div>
+            <ul class="cs-bullets cs-bullets-positive">
+              <li>فحص العقود مقابل السياسات الداخلية والقوالب ومعايير الملكية الفكرية</li>
+              <li>تنبيه بالشروط عالية المخاطر واستعراض السوابق ذات الصلة</li>
+              <li>الفريق التجاري أعطى أولوية للمستندات التي تحتاج مراجعة قانونية أعمق</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cs-section">
+          <div class="cs-section-head impact"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>التأثير على الأعمال</div>
+          <div class="cs-impact-grid">
+            <div class="cs-impact-card">
+              <div class="cs-impact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+              <div class="cs-impact-val">تركيز الوقت القانوني على المستندات عالية المخاطر</div>
+              <div class="cs-impact-desc">تركيز السعة المحدودة حيث يهم ذلك حقاً</div>
+            </div>
+            <div class="cs-impact-card">
+              <div class="cs-impact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+              <div class="cs-impact-val">رؤية مبكرة للمخاطر</div>
+              <div class="cs-impact-desc">اكتشاف مخاطر الأعمال والامتثال قبل الالتزام</div>
+            </div>
+            <div class="cs-impact-card">
+              <div class="cs-impact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/></svg></div>
+              <div class="cs-impact-val">تحضير مراجعي منهجي</div>
+              <div class="cs-impact-desc">كل عقد يُفحص مقابل المعايير وليس الذاكرة فقط</div>
+            </div>
+            <div class="cs-impact-card">
+              <div class="cs-impact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+              <div class="cs-impact-val">قرارات مستنيرة قبل الموافقة</div>
+              <div class="cs-impact-desc">الفريق يفهم المخاطر الرئيسية قبل الالتزام بالشروط</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-section">
+          <div class="cs-section-head modules"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>مساهمة الوحدات</div>
+          <div class="cs-modules-grid cs-modules-2">
+            <div class="cs-module-card kh">
+              <div class="cs-module-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+              <div class="cs-module-name">مركز المعرفة</div>
+              <div class="cs-module-desc">يخزن السياسات الداخلية والقوالب المعتمدة ومعايير الملكية الفكرية ومعايير الامتثال كمعرفة مرجعية قابلة لإعادة الاستخدام.</div>
+            </div>
+            <div class="cs-module-card cr">
+              <div class="cs-module-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+              <div class="cs-module-name">مراجعة العقود</div>
+              <div class="cs-module-desc">يفحص العقود مقابل تلك المراجع ويبرز المخاطر الرئيسية قبل المراجعة القانونية الرسمية.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-section">
+  <div class="container">
+    <div class="uc-cta-box">
+      <div class="uc-cta-inner">
+        <div class="uc-cta-badge">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          ابدأ الآن
+        </div>
+        <h2 class="uc-cta-title">هل أنت مستعد لتحويل أصول المعرفة الخاصة بك إلى نتائج عمل؟</h2>
+        <p class="uc-cta-sub">ابدأ بمستنداتك ومعاييرك ومواد التدريب وسجلاتك التشغيلية. تساعدك WondeTech على تحويلها إلى معرفة قابلة للبحث وتعلم قائم على الأدوار ومراجعة مبنية على الأدلة.</p>
+        <div class="uc-cta-actions">
+          <a href="mailto:demo@wondetech.com" class="btn btn-white btn-lg">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            طلب عرض توضيحي
+          </a>
+          <a href="index-ar.html" class="btn btn-ghost-white btn-lg">استكشف المنصة</a>
+        </div>
+      </div>
+      <div class="uc-cta-visual" aria-hidden="true">
+        <div class="uc-cta-card uc-cta-card-1">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <span>مركز المعرفة</span>
+        </div>
+        <div class="uc-cta-card uc-cta-card-2">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          <span>مركز التعلم</span>
+        </div>
+        <div class="uc-cta-card uc-cta-card-3">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>مراجعة العقود</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo-mark">W</span>
+      <span class="logo-text">WondeTech</span>
+    </div>
+    <nav class="footer-nav">
+      <a href="knowledge-hub-ar.html">مركز المعرفة</a>
+      <a href="learning-hub-ar.html">مركز التعلم</a>
+      <a href="contract-review-ar.html">مراجعة العقود</a>
+      <a href="use-cases-ar.html">حالات الاستخدام</a>
+    </nav>
+    <div class="footer-copy">&copy; 2026 WondeTech. جميع الحقوق محفوظة.</div>
+    <div class="footer-lang">
+      <a href="use-cases.html">EN</a>
+      <span class="footer-lang-sep">|</span>
+      <a href="use-cases-zh.html">中文</a>
+      <span class="footer-lang-sep">|</span>
+      <a href="use-cases-ar.html" class="active">العربية</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Filter tab logic
+  const tabs = document.querySelectorAll('.uc-tab');
+  const cases = document.querySelectorAll('.uc-case');
+  const dividers = document.querySelectorAll('.uc-case-divider');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      const filter = tab.dataset.filter;
+
+      cases.forEach(c => {
+        const modules = c.dataset.modules || '';
+        const show = filter === 'all' || modules.includes(filter);
+        c.style.display = show ? '' : 'none';
+      });
+
+      const allCases = [...cases];
+      allDividers = [...dividers];
+      allDividers.forEach((d, i) => {
+        const prevCase = allCases[i];
+        const nextCase = allCases[i + 1];
+        const prevVisible = prevCase && prevCase.style.display !== 'none';
+        const nextVisible = nextCase && nextCase.style.display !== 'none';
+        d.style.display = (prevVisible && nextVisible) ? '' : 'none';
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
