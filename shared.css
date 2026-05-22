@@ -462,7 +462,6 @@ h1, h2, h3, h4, h5 {
 }
 .lang-option:hover { background: var(--gray-50); color: var(--gray-900); }
 .lang-option.active { background: var(--blue-light); color: var(--blue); font-weight: 700; }
-.lang-option .lang-flag { font-size: 15px; line-height: 1; }
 
 /* Footer language links */
 .footer-lang {
