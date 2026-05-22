@@ -483,6 +483,16 @@
 </footer>
 
 <script>
+// Language selector: click-toggle
+document.querySelectorAll('.lang-switcher').forEach(function(switcher){
+  var btn=switcher.querySelector('.lang-btn'),dd=switcher.querySelector('.lang-dropdown');
+  if(!btn||!dd)return;
+  btn.addEventListener('click',function(e){e.stopPropagation();document.querySelectorAll('.lang-switcher.open').forEach(function(s){if(s!==switcher)s.classList.remove('open')});switcher.classList.toggle('open')});
+  dd.addEventListener('click',function(e){e.stopPropagation()});
+  switcher.querySelectorAll('.lang-option').forEach(function(o){o.addEventListener('click',function(){switcher.classList.remove('open')})});
+});
+document.addEventListener('click',function(){document.querySelectorAll('.lang-switcher.open').forEach(function(s){s.classList.remove('open')})});
+
   // Tab switching for demo section
   document.querySelectorAll('.demo-tab').forEach(tab => {
     tab.addEventListener('click', () => {
