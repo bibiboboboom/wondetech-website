@@ -95,8 +95,11 @@
 }
 .uc-overview-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Overview Card */
@@ -628,10 +631,8 @@
 /* ——————————————————————————————————————————
    RESPONSIVE
 —————————————————————————————————————————— */
-@media (max-width: 1100px) {
-  .uc-overview-grid { grid-template-columns: repeat(2, 1fr); }
-}
 @media (max-width: 960px) {
+  .uc-overview-grid { max-width: none; }
   .cs-body { grid-template-columns: 1fr; gap: 24px; }
   .cs-left { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
   .cs-modules-3 { grid-template-columns: 1fr 1fr; }
