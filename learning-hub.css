@@ -712,3 +712,71 @@
   .ltf-step { max-width: 100%; }
   .ltf-arrow, .ltf-arrow-loop { display: none; }
 }
+
+/* svg-icon-fix-v1 */
+
+/* ── SVG icon rendering fixes (LH) ─────────────────────────────────────────── */
+.lh-vp-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: unset;
+}
+.lh-vp-icon svg { display: block; }
+
+.ltf-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: unset;
+}
+.ltf-icon svg { display: block; }
+
+.lj-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: unset;
+}
+.lj-icon svg { display: block; }
+
+.moh-section-badge svg { vertical-align: -3px; margin-right: 5px; }
+
+.moh-fact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: unset;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.moh-fact-icon svg { display: block; }
+
+.moh-tl-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: unset;
+}
+.moh-tl-icon svg { display: block; }
+
+.mfd-node-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: unset;
+}
+.mfd-node-icon svg { display: block; }
+
+.lhr-role-title svg { vertical-align: -3px; margin-right: 6px; }
+
+.cc-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: unset;
+}
+.cc-icon svg { display: block; }
+
+.uc-preview-customer svg { vertical-align: -3px; margin-right: 4px; }
+

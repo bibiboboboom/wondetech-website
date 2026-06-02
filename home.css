@@ -505,3 +505,55 @@
   .platform-connector { flex-direction: column; padding: 6px 0; }
   .connector-line { width: 1px; height: 12px; }
 }
+
+/* svg-icon-fix-v1 */
+
+/* ── SVG icon rendering fixes (emoji → SVG migration) ─────────────────────── */
+.doc-icon svg,
+.mod-icon svg,
+.problem-icon svg,
+.loop-icon svg,
+.mockup-search-icon svg,
+.uc-icon svg {
+  display: block;
+}
+
+.doc-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mod-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.problem-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.loop-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mockup-search-icon {
+  display: flex;
+  align-items: center;
+}
+
+.uc-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+

@@ -364,3 +364,46 @@
   .access-row { grid-template-columns: 1fr 1fr; font-size: 11px; }
   .asset-grid { grid-template-columns: 1fr 1fr; }
 }
+
+/* svg-icon-fix-v1 */
+
+/* ── SVG icon rendering fixes (KH) ─────────────────────────────────────────── */
+.asset-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: unset;
+}
+
+.asset-icon svg { display: block; }
+
+.vp-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: unset;
+}
+
+.vp-icon svg { display: block; }
+
+.demo-tab svg { vertical-align: -3px; margin-right: 4px; }
+
+.trace-source-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trace-source-icon svg { display: block; }
+
+.cc-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: unset;
+}
+
+.cc-icon svg { display: block; }
+
+.uc-preview-customer svg { vertical-align: -3px; margin-right: 4px; }
+
