@@ -437,13 +437,127 @@
       <div class="moh-section-badge"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Real User Story</div>
       <h2 class="moh-section-title">Mohammed's Development Journey</h2>
       <p class="moh-section-subtitle">
-        A practical story showing how Learning Hub turns role requirements, learning activity,
-        and manager feedback into targeted development actions.
+        From new joiner confusion to field readiness — how Learning Hub supports every stage of employee growth.
       </p>
     </div>
 
-    <!-- MIDDLE: Profile + Timeline -->
-    <div class="moh-middle">
+    <!-- IMAGE STORY SLIDER -->
+    <div class="story-slider" id="storySlider">
+
+      <!-- Slides -->
+      <div class="story-slides-wrapper">
+        <div class="story-slide active" data-index="0">
+          <div class="story-img-frame">
+            <img src="story-images/story-01.jpg" alt="Step 1: Confusion and overload on day one" class="story-img" />
+          </div>
+          <div class="story-caption">
+            <span class="story-step-label">Step 1 of 6</span>
+            <p class="story-caption-text">Mohammed joins as a new field engineer — surrounded by manuals, procedures, and technical documents, with no clear starting point.</p>
+          </div>
+        </div>
+
+        <div class="story-slide" data-index="1">
+          <div class="story-img-frame">
+            <img src="story-images/story-02.jpg" alt="Step 2: Structured onboarding plan" class="story-img" />
+          </div>
+          <div class="story-caption">
+            <span class="story-step-label">Step 2 of 6</span>
+            <p class="story-caption-text">Learning Hub generates a role-based development plan from his JD and competency model — giving Mohammed a clear, structured path forward.</p>
+          </div>
+        </div>
+
+        <div class="story-slide" data-index="2">
+          <div class="story-img-frame">
+            <img src="story-images/story-03.jpg" alt="Step 3: Guided bilingual learning" class="story-img" />
+          </div>
+          <div class="story-caption">
+            <span class="story-step-label">Step 3 of 6</span>
+            <p class="story-caption-text">He completes bilingual courses, watches live training sessions, and checks off tasks — all tracked automatically in the system.</p>
+          </div>
+        </div>
+
+        <div class="story-slide" data-index="3">
+          <div class="story-img-frame">
+            <img src="story-images/story-04.jpg" alt="Step 4: Field collaboration and practice" class="story-img" />
+          </div>
+          <div class="story-caption">
+            <span class="story-step-label">Step 4 of 6</span>
+            <p class="story-caption-text">Mohammed applies his learning on-site, working alongside experienced engineers. Practical exposure and collaboration reinforce classroom knowledge.</p>
+          </div>
+        </div>
+
+        <div class="story-slide" data-index="4">
+          <div class="story-img-frame">
+            <img src="story-images/story-05.jpg" alt="Step 5: Progress review and competency growth" class="story-img" />
+          </div>
+          <div class="story-caption">
+            <span class="story-step-label">Step 5 of 6</span>
+            <p class="story-caption-text">His manager reviews progress data, completed modules, and skills growth. Development actions are refined based on real learning signals and feedback.</p>
+          </div>
+        </div>
+
+        <div class="story-slide" data-index="5">
+          <div class="story-img-frame">
+            <img src="story-images/story-06.jpg" alt="Step 6: Role readiness achieved" class="story-img" />
+          </div>
+          <div class="story-caption">
+            <span class="story-step-label">Step 6 of 6</span>
+            <p class="story-caption-text">Mohammed reaches role readiness — contributing confidently in the field, mentoring new joiners, and continuing his development cycle.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrow Controls -->
+      <button class="story-arrow story-arrow-prev" id="storyPrev" aria-label="Previous slide">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="story-arrow story-arrow-next" id="storyNext" aria-label="Next slide">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+
+      <!-- Dots indicator -->
+      <div class="story-dots" id="storyDots">
+        <button class="story-dot active" data-dot="0" aria-label="Go to slide 1"></button>
+        <button class="story-dot" data-dot="1" aria-label="Go to slide 2"></button>
+        <button class="story-dot" data-dot="2" aria-label="Go to slide 3"></button>
+        <button class="story-dot" data-dot="3" aria-label="Go to slide 4"></button>
+        <button class="story-dot" data-dot="4" aria-label="Go to slide 5"></button>
+        <button class="story-dot" data-dot="5" aria-label="Go to slide 6"></button>
+      </div>
+    </div>
+
+    <!-- Slider JavaScript -->
+    <script>
+      (function() {
+        var current = 0;
+        var total = 6;
+        var slides = document.querySelectorAll('#storySlider .story-slide');
+        var dots = document.querySelectorAll('#storyDots .story-dot');
+
+        function goTo(index) {
+          slides[current].classList.remove('active');
+          dots[current].classList.remove('active');
+          current = (index + total) % total;
+          slides[current].classList.add('active');
+          dots[current].classList.add('active');
+        }
+
+        document.getElementById('storyPrev').addEventListener('click', function() {
+          goTo(current - 1);
+        });
+        document.getElementById('storyNext').addEventListener('click', function() {
+          goTo(current + 1);
+        });
+        dots.forEach(function(dot) {
+          dot.addEventListener('click', function() {
+            goTo(parseInt(dot.getAttribute('data-dot')));
+          });
+        });
+      })();
+    </script>
+
+    <!-- HIDDEN (replaced): Profile + Timeline -->
+    <div class="moh-middle" style="display:none;">
 
       <!-- LEFT: Profile Card -->
       <div class="moh-profile-card">
@@ -553,8 +667,8 @@
       </div>
     </div>
 
-    <!-- BEFORE / AFTER COMPARISON -->
-    <div class="moh-compare">
+    <!-- BEFORE / AFTER COMPARISON (hidden) -->
+    <div class="moh-compare" style="display:none;">
       <div class="moh-compare-label">What changes after the update?</div>
       <div class="moh-compare-grid">
         <div class="moh-compare-card before">
@@ -573,8 +687,8 @@
       </div>
     </div>
 
-    <!-- FLOW DIAGRAM -->
-    <div class="moh-flow-diagram">
+    <!-- FLOW DIAGRAM (hidden) -->
+    <div class="moh-flow-diagram" style="display:none;">
       <div class="mfd-track">
         <div class="mfd-node mfd-node-start">
           <div class="mfd-node-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="4" rx="1"/><path d="M9 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-2"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="15" y2="14"/><line x1="9" y1="18" x2="12" y2="18"/></svg></div>
