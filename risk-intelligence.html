@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Risk Intelligence — WondeTech</title>
-  <meta name="description" content="Risk Intelligence applies enterprise knowledge to business workflows, helping global teams detect risks before proposals, documents, or commitments go out." />
+  <meta name="description" content="Risk Intelligence helps global enterprise teams catch risks in user manuals, product documents, contracts, and business content before release — using governed Knowledge Hub." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet" />
@@ -27,11 +27,10 @@
       <li><a href="use-cases.html" class="nav-link">Use Cases</a></li>
     </ul>
     <a href="index.html#contact" class="btn btn-primary nav-cta">Request a Demo</a>
-    <!-- Language Switcher -->
     <div class="lang-switcher">
       <button class="lang-btn">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        EN ▾
+        EN &#9662;
       </button>
       <div class="lang-dropdown">
         <a href="risk-intelligence.html" class="lang-option active">EN English</a>
@@ -41,7 +40,7 @@
 </nav>
 
 <!-- ============================================================
-     SECTION 1 — HERO (sharper)
+     SECTION 1 — HERO
      ============================================================ -->
 <section class="ri-header" id="hero">
   <div class="ri-header-grid"></div>
@@ -54,34 +53,39 @@
     </div>
 
     <h1 class="ri-header-title">
-      Enterprise<br /><span class="gradient-text-light">Risk Intelligence</span>
+      Risk Intelligence<br /><span class="gradient-text-light">for Business Content</span>
     </h1>
 
     <p class="ri-header-subtitle">
-      Turn enterprise knowledge into proactive risk awareness.
+      Starting with User Manual Generation &amp; Risk Review
     </p>
 
     <p class="ri-header-one-liner">
-      Before a proposal, product claim, contract, supplier file, or operating procedure moves forward,
-      Risk Intelligence checks it against governed enterprise knowledge and flags what may create risk.
+      Review existing manuals or generate a draft from Knowledge Hub &mdash; then check product specifications,
+      safety warnings, certification statements, warranty language, and outdated content
+      before the manual reaches customers.
+    </p>
+
+    <p class="ri-header-description">
+      A user manual is more than a product document. It affects customer usage, safety responsibilities,
+      warranty boundaries, after-sales disputes, and market compliance. Risk Intelligence helps teams
+      catch issues before the manual is released.
     </p>
 
     <div class="ri-header-ctas">
-      <a href="#before-leaves" class="btn btn-ri-primary btn-lg">See How It Works</a>
-      <a href="#scenarios" class="btn btn-ri-ghost btn-lg">Example Scenarios</a>
+      <a href="#workflow" class="btn btn-ri-primary btn-lg">See the Workflow</a>
+      <a href="#risk-examples" class="btn btn-ri-ghost btn-lg">View Risk Examples</a>
     </div>
 
-    <!-- Hero visual: dashboard mockup showing risk check in action -->
+    <!-- Hero visual: dashboard mockup — User Manual Risk Check -->
     <div class="ri-hero-dashboard">
       <div class="ri-dash-mockup">
-
-        <!-- Mockup header bar -->
         <div class="ri-dash-header">
           <div class="ri-dash-dots"><span></span><span></span><span></span></div>
-          <span class="ri-dash-title">Risk Check &mdash; Product Proposal v2.3</span>
+          <span class="ri-dash-title">Risk Check &mdash; Product User Manual v3.1 / EU Market</span>
           <span class="ri-dash-status">
             <svg width="8" height="8" viewBox="0 0 8 8" fill="#f59e0b"><circle cx="4" cy="4" r="4"/></svg>
-            3 risks found
+            4 risks found
           </span>
         </div>
 
@@ -89,30 +93,38 @@
 
           <!-- Left: document preview -->
           <div class="ri-dash-doc-preview">
-            <div class="ri-dash-doc-label">Input Document</div>
+            <div class="ri-dash-doc-label">Input: User Manual Draft</div>
             <div class="ri-dash-doc-lines">
-              <div class="ri-doc-line"></div><div class="ri-doc-line short"></div>
-              <div class="ri-doc-line"></div><div class="ri-doc-line med"></div>
-              <div class="ri-doc-line"></div><div class="ri-doc-line long"></div>
-              <div class="ri-doc-line highlight"></div><div class="ri-doc-line"></div>
-              <div class="ri-doc-line"></div><div class="ri-doc-line short"></div>
+              <div class="ri-doc-line"></div>
+              <div class="ri-doc-line short"></div>
+              <div class="ri-doc-section-tag">Chapter 3 — Safety Instructions</div>
+              <div class="ri-doc-line"></div>
+              <div class="ri-doc-line highlight"></div>
+              <div class="ri-doc-line med"></div>
+              <div class="ri-doc-section-tag">Chapter 5 — Warranty</div>
+              <div class="ri-doc-line"></div>
+              <div class="ri-doc-line highlight red2"></div>
+              <div class="ri-doc-line short"></div>
             </div>
-            <div class="ri-doc-risk-marker" style="top:62%">
-              <svg width="12" height="12" viewBox="0 0 16 16" fill="#ef4444"><path d="M8 1L1 14h14L8 1z"/><text x="8" y="12" font-size="9" font-weight="800" fill="white" text-anchor="middle">!</text></svg>
+            <div class="ri-doc-risk-marker" style="top:47%">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="#f59e0b"><path d="M8 1L1 14h14L8 1z"/></svg>
+            </div>
+            <div class="ri-doc-risk-marker" style="top:72%">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="#ef4444"><path d="M8 1L1 14h14L8 1z"/></svg>
             </div>
           </div>
 
-          <!-- Center: risk analysis output -->
+          <!-- Center: risk output -->
           <div class="ri-dash-output">
             <div class="ri-output-item risk-high">
               <div class="ri-output-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
               </div>
               <div class="ri-output-body">
-                <div class="ri-output-title">Unsupported certification claim detected</div>
+                <div class="ri-output-title">Warranty period exceeds EU market policy</div>
                 <div class="ri-output-detail">
                   <span class="ri-tag ri-tag-red">High</span>
-                  Source: ISO-STD-2024 / Section 7.2
+                  Source: Warranty Policy POL-AFTS-007 / EU Directive
                 </div>
               </div>
             </div>
@@ -122,52 +134,56 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
               </div>
               <div class="ri-output-body">
-                <div class="ri-output-title">Warranty term exceeds regional policy limit</div>
+                <div class="ri-output-title">Safety warning missing in maintenance step 4</div>
                 <div class="ri-output-detail">
                   <span class="ri-tag ri-tag-yellow">Medium</span>
-                  Source: POL-SALES-003 / EU Market Rules
+                  Source: Safety Standard IEC-62368 / Incident Record #2023-041
                 </div>
               </div>
             </div>
 
-            <div class="ri-output-item risk-low">
+            <div class="ri-output-item risk-med">
               <div class="ri-output-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
               </div>
               <div class="ri-output-body">
-                <div class="ri-output-title">Template version outdated (v2.1 vs current v2.5)</div>
+                <div class="ri-output-title">Certification mark references withdrawn standard</div>
                 <div class="ri-output-detail">
-                  <span class="ri-tag ri-tag-blue">Low</span>
-                  Source: Template Library
+                  <span class="ri-tag ri-tag-yellow">Medium</span>
+                  Source: Certification file CERT-EU-2024
                 </div>
               </div>
             </div>
 
             <div class="ri-suggested-action">
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-              Suggested action: Revise claim wording and update template
+              Suggested: Revise warranty clause &bull; Add missing safety step &bull; Update cert reference
             </div>
           </div>
 
-          <!-- Right: source connection visual -->
+          <!-- Right: source panel -->
           <div class="ri-dash-source-panel">
             <div class="ri-source-title">Knowledge Sources Checked</div>
             <div class="ri-source-list">
               <div class="ri-source-item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                Standards &amp; Certs
+                Tech Specifications
               </div>
               <div class="ri-source-item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                Company Policy
+                Safety Standards
               </div>
               <div class="ri-source-item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                Historical Issues
+                Incident Records
               </div>
               <div class="ri-source-item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-                Templates
+                Warranty Policy
+              </div>
+              <div class="ri-source-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                Certification Files
               </div>
             </div>
             <div class="ri-source-footer">
@@ -183,478 +199,481 @@
 </section>
 
 <!-- ============================================================
-     SECTION 2 — BEFORE IT LEAVES THE COMPANY (new scenario section)
+     SECTION 2 — WHY USER MANUALS NEED RISK REVIEW
      ============================================================ -->
-<section class="section ri-before-section" id="before-leaves">
-  <div class="container">
-    <div class="section-label ri-purple-label">The Core Idea</div>
-    <h2 class="section-title">Before it leaves the company,<br />risk should be visible.</h2>
-    <p class="section-subtitle">
-      A team prepares a product proposal, customer response, marketing claim, supplier document,
-      or legal letter. Before that content goes out, Risk Intelligence checks it against enterprise knowledge.
-    </p>
-
-    <!-- 3-part flow diagram -->
-    <div class="ri-before-flow">
-
-      <!-- Step A: Business Action -->
-      <div class="ri-flow-step">
-        <div class="ri-flow-card ri-fc-action">
-          <div class="ri-flow-num">A</div>
-          <div class="ri-flow-icon-wrap ficon-orange">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ea580c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-          </div>
-          <h3 class="ri-flow-title">Business Action</h3>
-          <p class="ri-flow-text">A team creates content or makes a commitment — product materials, sales proposal, marketing copy, contract draft, supplier file, or SOP.</p>
-          <div class="ri-flow-examples">
-            <span class="ri-fex">Proposal</span>
-            <span class="ri-fex">Product spec</span>
-            <span class="ri-fex">Marketing copy</span>
-            <span class="ri-fex">Contract</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Arrow -->
-      <div class="ri-flow-arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="24" viewBox="0 0 36 24" fill="none"><path d="M2 12h28m-4-6l8 6-8 6" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-
-      <!-- Step B: Risk Intelligence Check -->
-      <div class="ri-flow-step">
-        <div class="ri-flow-card ri-fc-check">
-          <div class="ri-flow-num">B</div>
-          <div class="ri-flow-icon-wrap ficon-purple">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
-          </div>
-          <h3 class="ri-flow-title">Risk Intelligence Check</h3>
-          <p class="ri-flow-text">The system scans the content against standards, policies, procedures, market requirements, historical cases, and expert knowledge from Knowledge Hub.</p>
-          <div class="ri-flow-examples">
-            <span class="ri-fex purple">Standards match</span>
-            <span class="ri-fex purple">Policy check</span>
-            <span class="ri-fex purple">History lookup</span>
-            <span class="ri-fex purple">Region rules</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Arrow -->
-      <div class="ri-flow-arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="24" viewBox="0 0 36 24" fill="none"><path d="M2 12h28m-4-6l8 6-8 6" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-
-      <!-- Step C: Safer Decision -->
-      <div class="ri-flow-step">
-        <div class="ri-flow-card ri-fc-safe">
-          <div class="ri-flow-num">C</div>
-          <div class="ri-flow-icon-wrap ficon-green">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          </div>
-          <h3 class="ri-flow-title">Safer Decision</h3>
-          <p class="ri-flow-text">The team receives risk alerts with source explanations and suggested actions — before the content is sent externally or approved internally.</p>
-          <div class="ri-flow-examples">
-            <span class="ri-fex green">Risk alert</span>
-            <span class="ri-fex green">Source trace</span>
-            <span class="ri-fex green">Suggested fix</span>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- /ri-before-flow -->
-  </div>
-</section>
-
-<!-- ============================================================
-     SECTION 3 — WHY IT MATTERS (reworked: concrete risks)
-     ============================================================ -->
-<section class="section ri-why-section" id="why-it-matters">
+<section class="section ri-manual-risk-section" id="why-manuals">
   <div class="container">
     <div class="section-label ri-purple-label">Why It Matters</div>
-    <h2 class="section-title">Risks are created in daily business actions<br />— not only in final review.</h2>
+    <h2 class="section-title">Why user manuals need risk review</h2>
     <p class="section-subtitle">
-      Most compliance problems do not start at the legal review desk.
-      They begin when someone writes a product description, promises a delivery date,
-      publishes marketing copy, or signs off on an operating procedure.
+      A user manual reaches customers, regulators, service teams, and legal reviewers.
+      Each section carries responsibility. These are the four areas where issues most often appear.
     </p>
 
-    <div class="ri-concrete-cards">
+    <div class="ri-manual-cards">
 
-      <!-- Card 1: Product Claims -->
-      <div class="ri-ccard">
-        <div class="ri-ccard-header cch-orange">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-          <span>Product Claims &amp; Specifications</span>
+      <!-- Card 1: Product Specifications -->
+      <div class="ri-manual-card">
+        <div class="ri-mc-icon-bar mcib-blue">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
         </div>
-        <div class="ri-ccard-body">
-          <p>A product description may sound correct internally, but it may not match the certification, warranty, or market requirement of the target region.</p>
-          <div class="ri-ccard-example">
-            <span class="ri-example-label">Example:</span>
-            "Industry-leading durability" appears in a datasheet for a market where specific ISO test data is required by regulation.
-          </div>
+        <h3 class="ri-mc-title">Product Specifications</h3>
+        <p class="ri-mc-body">
+          Manual content must match the latest product specifications, technical parameters,
+          product version, and usage limitations. An outdated parameter or wrong model reference
+          can create customer confusion and after-sales disputes.
+        </p>
+        <div class="ri-mc-risk-note">
+          <span class="ri-rn-label">Common risk</span>
+          Specification in manual does not match latest released product version.
         </div>
       </div>
 
-      <!-- Card 2: Sales Promises -->
-      <div class="ri-ccard">
-        <div class="ri-ccard-header cch-blue">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-          <span>Sales Promises &amp; Commitments</span>
+      <!-- Card 2: Safety Warnings -->
+      <div class="ri-manual-card">
+        <div class="ri-mc-icon-bar mcib-orange">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ea580c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
         </div>
-        <div class="ri-ccard-body">
-          <p>A proposal may include delivery promises, service commitments, or performance claims that exceed internal policy or actual capability.</p>
-          <div class="ri-ccard-example">
-            <span class="ri-example-label">Example:</span>
-            A sales proposal promises "30-day delivery worldwide," but internal logistics policy allows only regional SLAs with longer lead times for certain zones.
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3: Marketing Communication -->
-      <div class="ri-ccard">
-        <div class="ri-ccard-header cch-indigo">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          <span>Marketing &amp; Public Communication</span>
-        </div>
-        <div class="ri-ccard-body">
-          <p>Promotional content may use overstatements, absolute language, or region-sensitive claims that create compliance or reputational risk.</p>
-          <div class="ri-ccard-example">
-            <span class="ri-example-label">Example:</span>
-            A press release uses "best-in-class globally" without substantiating data, which could trigger advertising-standards scrutiny in some markets.
-          </div>
+        <h3 class="ri-mc-title">Safety Warnings</h3>
+        <p class="ri-mc-body">
+          Installation, operation, and maintenance steps must include the right warnings,
+          restrictions, and safety instructions. Missing or incomplete safety content can
+          create safety liability and fail market certification requirements.
+        </p>
+        <div class="ri-mc-risk-note">
+          <span class="ri-rn-label">Common risk</span>
+          Required safety warning absent from a maintenance procedure step.
         </div>
       </div>
 
-      <!-- Card 4: Contracts & Operational Files -->
-      <div class="ri-ccard">
-        <div class="ri-ccard-header cch-purple">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-          <span>Contracts, Supplier Files &amp; SOPs</span>
+      <!-- Card 3: Certification & Market Requirements -->
+      <div class="ri-manual-card">
+        <div class="ri-mc-icon-bar mcib-indigo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
         </div>
-        <div class="ri-ccard-body">
-          <p>A contract, SOP, or supplier file may use an outdated template, miss required approvals, or leave responsibility boundaries unclear.</p>
-          <div class="ri-ccard-example">
-            <span class="ri-example-label">Example:</span>
-            An updated supplier agreement reuses a clause from a previous version that no longer reflects current data-protection requirements.
-          </div>
+        <h3 class="ri-mc-title">Certification &amp; Market Requirements</h3>
+        <p class="ri-mc-body">
+          Certification statements and market-specific requirements must match the target region
+          and approved compliance documents. A manual referencing a withdrawn certificate
+          or the wrong regional standard creates a compliance gap.
+        </p>
+        <div class="ri-mc-risk-note">
+          <span class="ri-rn-label">Common risk</span>
+          Certification referenced in manual does not apply to the target market.
         </div>
       </div>
 
-    </div><!-- /ri-concrete-cards -->
+      <!-- Card 4: Warranty & Liability -->
+      <div class="ri-manual-card">
+        <div class="ri-mc-icon-bar mcib-purple">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3 class="ri-mc-title">Warranty &amp; Liability</h3>
+        <p class="ri-mc-body">
+          Warranty language, after-sales commitments, disclaimers, and responsibility boundaries
+          must align with company policy and legal requirements. Overly broad commitments
+          or unclear disclaimers can create legal and financial exposure.
+        </p>
+        <div class="ri-mc-risk-note">
+          <span class="ri-rn-label">Common risk</span>
+          Warranty statement exceeds approved policy scope or creates unclear liability.
+        </div>
+      </div>
+
+    </div><!-- /ri-manual-cards -->
   </div>
 </section>
 
 <!-- ============================================================
-     SECTION 4 — HOW IT WORKS (visual pipeline)
+     SECTION 3 — TWO-PATH WORKFLOW (main visual focus)
      ============================================================ -->
-<section class="section ri-workflow-section" id="how-it-works">
+<section class="section ri-workflow-section" id="workflow">
   <div class="container">
     <div class="section-label ri-purple-label">How It Works</div>
-    <h2 class="section-title">From business content to risk-aware action</h2>
+    <h2 class="section-title">Two ways to start.<br />One risk-controlled release process.</h2>
     <p class="section-subtitle">
-      Risk Intelligence connects what your teams write and send to the governed knowledge
-      already stored in Knowledge Hub — surfacing issues before they become problems.
+      Upload an existing manual for review, or generate a draft from Knowledge Hub before risk review.
+      Both paths go through the same shared review loop before release.
     </p>
 
-    <!-- Pipeline diagram -->
-    <div class="ri-pipeline">
+    <div class="ri-two-path-layout">
 
-      <!-- INPUT -->
-      <div class="ri-pipe-node pipe-input">
-        <div class="ri-pipe-icon-box pib-blue">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-        </div>
-        <h3 class="ri-pipe-title">Input</h3>
-        <div class="ri-pipe-subtitle">Business Content</div>
-        <div class="ri-pipe-items">
-          <span class="ri-pi-item">Product materials</span>
-          <span class="ri-pi-item">Sales proposals</span>
-          <span class="ri-pi-item">Marketing copy</span>
-          <span class="ri-pi-item">Supplier files</span>
-          <span class="ri-pi-item">Contracts</span>
-          <span class="ri-pi-item">Legal letters</span>
-          <span class="ri-pi-item">SOPs</span>
-        </div>
-      </div>
+      <!-- LEFT: Two paths stacked -->
+      <div class="ri-paths-column">
 
-      <!-- Arrow down -->
-      <div class="ri-pipe-arrow-down">
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="40" viewBox="0 0 28 40" fill="none"><path d="M14 2v30m-6-6l6 6 6-6" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-
-      <!-- KNOWLEDGE SOURCES -->
-      <div class="ri-pipe-node pipe-knowledge">
-        <div class="ri-pipe-icon-box pib-indigo">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"/><line x="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
-        </div>
-        <h3 class="ri-pipe-title">Knowledge Sources</h3>
-        <div class="ri-pipe-subtitle">From Knowledge Hub</div>
-        <div class="ri-pipe-items">
-          <span class="ri-pi-item indigo">Standards</span>
-          <span class="ri-pi-item indigo">Policies</span>
-          <span class="ri-pi-item indigo">Procedures</span>
-          <span class="ri-pi-item indigo">Regulations</span>
-          <span class="ri-pi-item indigo">Templates</span>
-          <span class="ri-pi-item indigo">Historical issues</span>
-          <span class="ri-pi-item indigo">Expert knowledge</span>
-        </div>
-      </div>
-
-      <!-- Arrow right -->
-      <div class="ri-pipe-arrow-right">
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="28" viewBox="0 0 48 28" fill="none"><path d="M2 14h38m-8-7l9 7-9 7" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-
-      <!-- RISK ANALYSIS -->
-      <div class="ri-pipe-node pipe-analysis">
-        <div class="ri-pipe-icon-box pib-purple">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
-        </div>
-        <h3 class="ri-pipe-title">Risk Analysis</h3>
-        <div class="ri-pipe-subtitle">Scenario Recognition + Detection</div>
-        <div class="ri-pipe-items">
-          <span class="ri-pi-item purple">Outdated version</span>
-          <span class="ri-pi-item purple">Missing material</span>
-          <span class="ri-pi-item purple">Unsupported claim</span>
-          <span class="ri-pi-item purple">Unclear responsibility</span>
-          <span class="ri-pi-item purple">Regional mismatch</span>
-          <span class="ri-pi-item purple">Data security concern</span>
-        </div>
-      </div>
-
-      <!-- Arrow down -->
-      <div class="ri-pipe-arrow-down">
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="40" viewBox="0 0 28 40" fill="none"><path d="M14 2v30m-6-6l6 6 6-6" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-
-      <!-- OUTPUT -->
-      <div class="ri-pipe-node pipe-output">
-        <div class="ri-pipe-icon-box pib-green">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-        </div>
-        <h3 class="ri-pipe-title">Output</h3>
-        <div class="ri-pipe-subtitle">Actionable Result</div>
-        <div class="ri-pipe-items output-items">
-          <div class="ri-out-block">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-            Risk alert
+        <!-- PATH A -->
+        <div class="ri-path-block path-a">
+          <div class="ri-path-label-bar path-label-a">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            Path A &mdash; Upload Existing Manual
           </div>
-          <div class="ri-out-block">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            Source explanation
+          <div class="ri-path-steps">
+            <div class="ri-ps-step">
+              <div class="ri-ps-num pn-a">A1</div>
+              <div class="ri-ps-body">
+                <div class="ri-ps-title">Upload manual</div>
+                <div class="ri-ps-desc">Existing user manual, old version, or draft</div>
+              </div>
+            </div>
+            <div class="ri-ps-connector"></div>
+            <div class="ri-ps-step">
+              <div class="ri-ps-num pn-a">A2</div>
+              <div class="ri-ps-body">
+                <div class="ri-ps-title">Identify context</div>
+                <div class="ri-ps-desc">Product model &bull; target market &bull; product version &bull; language</div>
+              </div>
+            </div>
+            <div class="ri-ps-connector"></div>
+            <div class="ri-ps-step">
+              <div class="ri-ps-num pn-a">A3</div>
+              <div class="ri-ps-body">
+                <div class="ri-ps-title">Match Knowledge Hub</div>
+                <div class="ri-ps-desc">Specifications &bull; standards &bull; policies &bull; historical issues &bull; templates</div>
+              </div>
+            </div>
+            <div class="ri-ps-connector"></div>
+            <div class="ri-ps-step">
+              <div class="ri-ps-num pn-a">A4</div>
+              <div class="ri-ps-body">
+                <div class="ri-ps-title">Detect risks</div>
+                <div class="ri-ps-desc">Outdated version &bull; missing warning &bull; parameter mismatch &bull; warranty over-commitment</div>
+              </div>
+            </div>
+            <div class="ri-ps-connector"></div>
+            <div class="ri-ps-step ri-ps-output-step">
+              <div class="ri-ps-num pn-output">&#8594;</div>
+              <div class="ri-ps-body">
+                <div class="ri-ps-title">Review output</div>
+                <div class="ri-ps-desc">Risk alerts &bull; source explanations &bull; suggested actions</div>
+              </div>
+            </div>
           </div>
-          <div class="ri-out-block">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-            Suggested next action
+        </div><!-- /PATH A -->
+
+        <!-- PATH B -->
+        <div class="ri-path-block path-b">
+          <div class="ri-path-label-bar path-label-b">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            Path B &mdash; Generate Draft First
           </div>
+          <div class="ri-path-steps">
+            <div class="ri-ps-step">
+              <div class="ri-ps-num pn-b">B1</div>
+              <div class="ri-ps-body">
+                <div class="ri-ps-title">Select product &amp; market</div>
+                <div class="ri-ps-desc">Product model &bull; target market &bull; language &bull; use scenario</div>
+              </div>
+            </div>
+            <div class="ri-ps-connector"></div>
+            <div class="ri-ps-step">
+              <div class="ri-ps-num pn-b">B2</div>
+              <div class="ri-ps-body">
+                <div class="ri-ps-title">Pull from Knowledge Hub</div>
+                <div class="ri-ps-desc">Product data &bull; technical specs &bull; compliance requirements &bull; after-sales knowledge &bull; legal policies</div>
+              </div>
+            </div>
+            <div class="ri-ps-connector"></div>
+            <div class="ri-ps-step">
+              <div class="ri-ps-num pn-b">B3</div>
+              <div class="ri-ps-body">
+                <div class="ri-ps-title">Generate manual draft</div>
+                <div class="ri-ps-desc">Structured draft assembled from approved enterprise knowledge</div>
+              </div>
+            </div>
+            <div class="ri-ps-connector"></div>
+            <div class="ri-ps-step">
+              <div class="ri-ps-num pn-b">B4</div>
+              <div class="ri-ps-body">
+                <div class="ri-ps-title">Mark sources &amp; gaps</div>
+                <div class="ri-ps-desc">Source references &bull; missing evidence &bull; conflicting information &bull; uncertain content</div>
+              </div>
+            </div>
+            <div class="ri-ps-connector"></div>
+            <div class="ri-ps-step">
+              <div class="ri-ps-num pn-b">B5</div>
+              <div class="ri-ps-body">
+                <div class="ri-ps-title">Risk review</div>
+                <div class="ri-ps-desc">Check the generated draft before release</div>
+              </div>
+            </div>
+            <div class="ri-ps-connector"></div>
+            <div class="ri-ps-step ri-ps-output-step">
+              <div class="ri-ps-num pn-output">&#8594;</div>
+              <div class="ri-ps-body">
+                <div class="ri-ps-title">Human confirmation</div>
+                <div class="ri-ps-desc">Product &bull; R&amp;D &bull; quality &bull; compliance &bull; after-sales &bull; legal teams confirm high-risk items</div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /PATH B -->
+
+      </div><!-- /ri-paths-column -->
+
+      <!-- CONNECTOR ARROW (desktop only) -->
+      <div class="ri-path-connector-h">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <path d="M8 24h28m-8-10l12 10-12 10" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <!-- RIGHT: Shared Review Loop -->
+      <div class="ri-shared-loop">
+        <div class="ri-loop-header">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+          Shared Review Loop
         </div>
-      </div>
 
-    </div><!-- /ri-pipeline -->
+        <div class="ri-loop-steps">
 
-    <!-- Loop back note -->
-    <div class="ri-loop-note">
-      <div class="ri-loop-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
-      </div>
-      <div class="ri-loop-text">
-        <strong>Closed loop:</strong> Reviewed risk results, corrections, and approval outcomes can flow back into Knowledge Hub — improving future recognition over time.
-      </div>
-    </div>
+          <div class="ri-loop-step">
+            <div class="ri-loop-step-num">1</div>
+            <div class="ri-loop-step-body">
+              <div class="ri-loop-step-title">Business user handles issues</div>
+              <div class="ri-loop-step-desc">Revise content &bull; supplement missing information &bull; confirm or send for cross-department review</div>
+            </div>
+          </div>
+
+          <div class="ri-loop-connector-v"></div>
+
+          <div class="ri-loop-step">
+            <div class="ri-loop-step-num">2</div>
+            <div class="ri-loop-step-body">
+              <div class="ri-loop-step-title">Final output</div>
+              <div class="ri-loop-step-desc">A clearer, safer, and more compliant user manual ready for release</div>
+            </div>
+          </div>
+
+          <div class="ri-loop-connector-v"></div>
+
+          <div class="ri-loop-step loop-step-feedback">
+            <div class="ri-loop-step-num lsn-purple">3</div>
+            <div class="ri-loop-step-body">
+              <div class="ri-loop-step-title">Feedback to Knowledge Hub</div>
+              <div class="ri-loop-step-desc">Risk cases &bull; corrections &bull; knowledge gaps &bull; approved versions &bull; review records flow back for future reuse</div>
+            </div>
+          </div>
+
+        </div><!-- /ri-loop-steps -->
+
+        <div class="ri-loop-kh-note">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
+          Knowledge Hub improves with every review cycle
+        </div>
+
+      </div><!-- /ri-shared-loop -->
+
+    </div><!-- /ri-two-path-layout -->
 
   </div>
 </section>
 
 <!-- ============================================================
-     SECTION 5 — TYPICAL USE SCENARIOS (with mini-flows inside cards)
+     SECTION 4 — WHAT THE SYSTEM CAN CATCH (concrete risk examples)
      ============================================================ -->
-<section class="section ri-scenarios-section" id="scenarios">
+<section class="section ri-catch-section" id="risk-examples">
   <div class="container">
-    <div class="section-label ri-purple-label">Typical Use Scenarios</div>
-    <h2 class="section-title">Risk intelligence across business workflows</h2>
+    <div class="section-label ri-purple-label">Risk Examples</div>
+    <h2 class="section-title">What the system can catch before release</h2>
     <p class="section-subtitle">
-      Four concrete scenarios showing how teams apply Risk Intelligence
-      before content leaves the organization.
+      Each risk alert comes with a source explanation and a suggested next action,
+      so teams know exactly what to do &mdash; not just that something is wrong.
     </p>
 
-    <div class="ri-scenario-grid">
+    <div class="ri-catch-grid">
 
-      <!-- Scenario 01: Global Manufacturing -->
-      <div class="ri-sc-card">
-        <div class="ri-sc-header sch-blue">
-          <span class="ri-sc-num">01</span>
-          <h3 class="ri-sc-heading">Global Manufacturing</h3>
+      <!-- Example 1 -->
+      <div class="ri-catch-card">
+        <div class="ri-catch-header">
+          <div class="ri-catch-num">01</div>
+          <h3 class="ri-catch-title">Outdated Product Specification</h3>
         </div>
-        <div class="ri-sc-body">
-          <p class="ri-sc-desc">A manufacturer prepares product materials for multiple markets. The system checks whether claims, certifications, warranty language, and specifications match the target region's requirements.</p>
-          <div class="ri-sc-miniflow">
-            <div class="ri-mf-step">
-              <div class="ri-mf-label">INPUT</div>
-              <div>Product datasheet, technical specs</div>
+        <div class="ri-catch-body">
+          <div class="ri-catch-row">
+            <div class="ri-catch-label risk-label">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              Risk
             </div>
-            <div class="ri-mf-arrow">&rarr;</div>
-            <div class="ri-mf-step mf-risk">
-              <div class="ri-mf-label">RISK FOUND</div>
-              <div>Certification mismatch, warranty gap</div>
+            <p>The manual uses a parameter from an old product version that no longer reflects the current release.</p>
+          </div>
+          <div class="ri-catch-row">
+            <div class="ri-catch-label source-label">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2.5"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
+              Source
             </div>
-            <div class="ri-mf-arrow">&rarr;</div>
-            <div class="ri-mf-step mf-safe">
-              <div class="ri-mf-label">ACTION</div>
-              <div>Update spec to target-region standard</div>
+            <p>Latest technical specification &bull; product version record</p>
+          </div>
+          <div class="ri-catch-row action-row">
+            <div class="ri-catch-label action-label">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              Action
             </div>
+            <p>Update the parameter and send to R&amp;D for confirmation before release.</p>
           </div>
         </div>
       </div>
 
-      <!-- Scenario 02: Sales & Customer Commitments -->
-      <div class="ri-sc-card">
-        <div class="ri-sc-header sch-indigo">
-          <span class="ri-sc-num">02</span>
-          <h3 class="ri-sc-heading">Sales &amp; Customer Commitments</h3>
+      <!-- Example 2 -->
+      <div class="ri-catch-card">
+        <div class="ri-catch-header">
+          <div class="ri-catch-num">02</div>
+          <h3 class="ri-catch-title">Missing Safety Warning</h3>
         </div>
-        <div class="ri-sc-body">
-          <p class="ri-sc-desc">A sales team prepares a proposal or customer response. The system flags unsupported commitments, unclear service boundaries, delivery risks, or terms exceeding internal policy.</p>
-          <div class="ri-sc-miniflow">
-            <div class="ri-mf-step">
-              <div class="ri-mf-label">INPUT</div>
-              <div>Sales proposal, quotation</div>
+        <div class="ri-catch-body">
+          <div class="ri-catch-row">
+            <div class="ri-catch-label risk-label">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              Risk
             </div>
-            <div class="ri-mf-arrow">&rarr;</div>
-            <div class="ri-mf-step mf-risk">
-              <div class="ri-mf-label">RISK FOUND</div>
-              <div>Delivery promise exceeds capability</div>
+            <p>A maintenance procedure step does not include a required safety warning that applies to this product category.</p>
+          </div>
+          <div class="ri-catch-row">
+            <div class="ri-catch-label source-label">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2.5"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
+              Source
             </div>
-            <div class="ri-mf-arrow">&rarr;</div>
-            <div class="ri-mf-step mf-safe">
-              <div class="ri-mf-label">ACTION</div>
-              <div>Align terms with internal SLA policy</div>
+            <p>Safety standard IEC-62368 &bull; after-sales incident record #2023-041</p>
+          </div>
+          <div class="ri-catch-row action-row">
+            <div class="ri-catch-label action-label">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              Action
             </div>
+            <p>Add the required warning and confirm with quality or service team before release.</p>
           </div>
         </div>
       </div>
 
-      <!-- Scenario 03: Marketing & Public Communication -->
-      <div class="ri-sc-card">
-        <div class="ri-sc-header sch-purple">
-          <span class="ri-sc-num">03</span>
-          <h3 class="ri-sc-heading">Marketing &amp; Public Communication</h3>
+      <!-- Example 3 -->
+      <div class="ri-catch-card">
+        <div class="ri-catch-header">
+          <div class="ri-catch-num">03</div>
+          <h3 class="ri-catch-title">Certification Statement Mismatch</h3>
         </div>
-        <div class="ri-sc-body">
-          <p class="ri-sc-desc">A marketing team drafts external content. Risk Intelligence identifies overstatements, sensitive wording, and claims that may not align with company standards or local market regulations.</p>
-          <div class="ri-sc-miniflow">
-            <div class="ri-mf-step">
-              <div class="ri-mf-label">INPUT</div>
-              <div>Press release, ad copy</div>
+        <div class="ri-catch-body">
+          <div class="ri-catch-row">
+            <div class="ri-catch-label risk-label">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              Risk
             </div>
-            <div class="ri-mf-arrow">&rarr;</div>
-            <div class="ri-mf-step mf-risk">
-              <div class="ri-mf-label">RISK FOUND</div>
-              <div>Unsubstantiated superlative language</div>
+            <p>The manual references a certification that does not apply to the target market or has been replaced by a newer standard.</p>
+          </div>
+          <div class="ri-catch-row">
+            <div class="ri-catch-label source-label">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2.5"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
+              Source
             </div>
-            <div class="ri-mf-arrow">&rarr;</div>
-            <div class="ri-mf-step mf-safe">
-              <div class="ri-mf-label">ACTION</div>
-              <div>Add data reference or revise wording</div>
+            <p>Certification file CERT-EU-2024 &bull; target market compliance requirement</p>
+          </div>
+          <div class="ri-catch-row action-row">
+            <div class="ri-catch-label action-label">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              Action
             </div>
+            <p>Replace with approved certification language and confirm with compliance team.</p>
           </div>
         </div>
       </div>
 
-      <!-- Scenario 04: Contracts & Legal Documents -->
-      <div class="ri-sc-card">
-        <div class="ri-sc-header sch-teal">
-          <span class="ri-sc-num">04</span>
-          <h3 class="ri-sc-heading">Contracts &amp; Legal Documents</h3>
+      <!-- Example 4 -->
+      <div class="ri-catch-card">
+        <div class="ri-catch-header">
+          <div class="ri-catch-num">04</div>
+          <h3 class="ri-catch-title">Warranty Over-Commitment</h3>
         </div>
-        <div class="ri-sc-body">
-          <p class="ri-sc-desc">A business team prepares contracts, letters, statements, or customer-facing documents. The system checks responsibility boundaries, payment terms, liability clauses, data security, and template currency.</p>
-          <div class="ri-sc-miniflow">
-            <div class="ri-mf-step">
-              <div class="ri-mf-label">INPUT</div>
-              <div>Contract draft, legal letter</div>
+        <div class="ri-catch-body">
+          <div class="ri-catch-row">
+            <div class="ri-catch-label risk-label">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              Risk
             </div>
-            <div class="ri-mf-arrow">&rarr;</div>
-            <div class="ri-mf-step mf-risk">
-              <div class="ri-mf-label">RISK FOUND</div>
-              <div>Outdated template clause used</div>
+            <p>Warranty language exceeds company policy limits or creates unclear liability boundaries in the target market.</p>
+          </div>
+          <div class="ri-catch-row">
+            <div class="ri-catch-label source-label">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2.5"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
+              Source
             </div>
-            <div class="ri-mf-arrow">&rarr;</div>
-            <div class="ri-mf-step mf-safe">
-              <div class="ri-mf-label">ACTION</div>
-              <div>Replace with current approved version</div>
+            <p>Warranty policy POL-AFTS-007 &bull; legal disclaimer template</p>
+          </div>
+          <div class="ri-catch-row action-row">
+            <div class="ri-catch-label action-label">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              Action
             </div>
+            <p>Revise the warranty statement and send to legal review before final approval.</p>
           </div>
         </div>
       </div>
 
-    </div><!-- /ri-scenario-grid -->
+    </div><!-- /ri-catch-grid -->
   </div>
 </section>
 
 <!-- ============================================================
-     SECTION 6 — WHAT MAKES IT DIFFERENT
+     SECTION 5 — CAPABILITY DESIGN
      ============================================================ -->
 <section class="section ri-diff-section" id="differentiators">
   <div class="container">
     <div class="section-label ri-purple-label">Capability Design</div>
-    <h2 class="section-title">Why it is different from simple rule checking</h2>
+    <h2 class="section-title">What makes this workflow different</h2>
     <p class="section-subtitle">
-      Risk Intelligence is designed around how enterprises actually work —
-      using your own knowledge, understanding context, and learning over time.
+      Risk Intelligence is not a document drafting tool and does not auto-publish final documents.
+      The core value is risk identification, source tracing, suggested actions, human review,
+      and feedback into Knowledge Hub.
     </p>
 
     <div class="ri-diff-grid-new">
 
       <div class="ri-diffn-card">
         <div class="ri-diffn-icon rdni-purple">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"/><line x="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
         </div>
-        <h3 class="ri-diffn-title">Enterprise-specific knowledge grounding</h3>
-        <p>Risk alerts are based on the company's own standards, policies, procedures, templates, and historical experience — not generic rule libraries or public databases.</p>
-      </div>
-
-      <div class="ri-diffn-card">
-        <div class="ri-diffn-icon rdni-indigo">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        </div>
-        <h3 class="ri-diffn-title">Context-aware analysis</h3>
-        <p>The system considers business scenario, document type, region, product context, and user intent — instead of matching keywords against a fixed checklist.</p>
+        <h3 class="ri-diffn-title">Multi-department knowledge grounding</h3>
+        <p>The review draws from product, R&amp;D, quality, compliance, after-sales, legal, and historical document knowledge — all maintained and governed in Knowledge Hub.</p>
       </div>
 
       <div class="ri-diffn-card">
         <div class="ri-diffn-icon rdni-blue">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
         </div>
-        <h3 class="ri-diffn-title">Source-traceable explanations</h3>
-        <p>Each alert shows why the risk matters and where the supporting knowledge comes from — giving teams confidence to act rather than just receiving a warning flag.</p>
+        <h3 class="ri-diffn-title">Two-entry workflow</h3>
+        <p>Teams can either upload an existing manual for direct risk review, or generate a draft from Knowledge Hub first and then review it — before any content is released.</p>
+      </div>
+
+      <div class="ri-diffn-card">
+        <div class="ri-diffn-icon rdni-indigo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3 class="ri-diffn-title">Source-traceable risk explanation</h3>
+        <p>Each risk alert explains why it matters and links back to supporting knowledge — specifications, standards, certification files, policies, or historical issues — so teams can act with confidence.</p>
       </div>
 
       <div class="ri-diffn-card">
         <div class="ri-diffn-icon rdni-green">
           <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
         </div>
-        <h3 class="ri-diffn-title">Closed-loop risk learning</h3>
-        <p>Corrections, review results, and approval outcomes can return to Knowledge Hub — improving future risk detection and keeping the knowledge base more accurate over time.</p>
+        <h3 class="ri-diffn-title">Closed-loop improvement</h3>
+        <p>Risk cases, corrections, review outcomes, and knowledge gaps flow back into Knowledge Hub — making future risk recognition more accurate and keeping enterprise knowledge current.</p>
       </div>
 
-    </div><!-- /ri-diff-grid-new -->
+    </div>
   </div>
 </section>
 
 <!-- ============================================================
-     SECTION 7 — PLATFORM CONNECTION
+     SECTION 6 — PLATFORM CONNECTION
      ============================================================ -->
 <section class="section ri-platform-section" id="platform-connection">
   <div class="container">
     <div class="section-label ri-purple-label">The Platform</div>
     <h2 class="section-title">One knowledge foundation.<br />Three business applications.</h2>
     <p class="section-subtitle">
-      Three connected modules built on the same enterprise knowledge base.
-      Each serves a different purpose — but all draw from Knowledge Hub.
+      Risk Intelligence is powered by Knowledge Hub. It does not operate as a standalone tool.
+      The quality of risk detection depends directly on the depth and governance of Knowledge Hub content.
     </p>
 
     <div class="ri-platform-visual">
 
-      <!-- Knowledge Hub (foundation) -->
       <div class="ri-plat-card ri-plat-base">
         <div class="ri-plat-topbar ptb-blue">
           <div class="ri-ptag">Foundation</div>
@@ -662,14 +681,13 @@
         </div>
         <div class="ri-plat-content">
           <div class="ri-plat-icon-big pibg-blue">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"/><line x="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
           </div>
-          <p>Structures and governs enterprise knowledge — documents, standards, procedures, regulations, historical cases, expert insights — into a searchable, governed foundation.</p>
+          <p>Structures and governs enterprise documents, product data, standards, policies, compliance materials, historical cases, and expert knowledge into a searchable, traceable foundation.</p>
           <a href="knowledge-hub.html" class="ri-plat-link">Explore Knowledge Hub &rarr;</a>
         </div>
       </div>
 
-      <!-- Two application cards side by side -->
       <div class="ri-plat-apps-row">
 
         <div class="ri-plat-card ri-plat-app">
@@ -696,17 +714,15 @@
             <div class="ri-plat-icon-big pibg-purple">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
-            <p>Applies knowledge to business workflows — helping teams identify and handle risks across production, sales, marketing, contracts, and operations <em>before</em> decisions go out.</p>
+            <p>Applies knowledge to business content workflows — starting with User Manual Generation &amp; Risk Review — to help teams detect risks before business content is released.</p>
             <span class="ri-plat-link-static">You are here</span>
           </div>
         </div>
 
-      </div><!-- /ri-plat-apps-row -->
+      </div>
 
-      <!-- Connection arrows -->
       <div class="ri-plat-arrows">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 60" fill="none" preserveAspectRatio="xMidYMid meet">
-          <!-- KH -> LH arrow -->
           <defs>
             <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
               <path d="M0 0 L8 4 L0 8 Z" fill="#2563EB"/>
@@ -720,7 +736,29 @@
         </svg>
       </div>
 
-    </div><!-- /ri-platform-visual -->
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 7 — EXPANSION NOTE
+     ============================================================ -->
+<section class="section ri-expand-section" id="expand">
+  <div class="container">
+    <div class="ri-expand-box">
+      <div class="ri-expand-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      </div>
+      <div class="ri-expand-content">
+        <h3 class="ri-expand-title">From user manuals to broader business content</h3>
+        <p>
+          User Manual Generation &amp; Risk Review is the first concrete workflow in Risk Intelligence.
+          The same logic can extend to sales proposals, marketing claims, supplier files,
+          legal letters, SOPs, and other business content where accuracy, compliance,
+          and traceability matter before external release or internal approval.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -731,11 +769,11 @@
   <div class="container">
     <div class="ri-cta-box">
       <div class="ri-cta-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c4b5fd" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c4b5fd" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
       </div>
-      <h2 class="ri-cta-title">Make risk visible before it becomes costly.</h2>
+      <h2 class="ri-cta-title">Catch manual risks before they reach customers.</h2>
       <p class="ri-cta-sub">
-        See how Risk Intelligence connects your enterprise knowledge to your business workflows.
+        See how Risk Intelligence connects your enterprise knowledge to your document workflows.
       </p>
       <div class="page-header-cta-row">
         <a href="mailto:demo@wondetech.com" class="btn btn-white btn-lg">Request a Demo</a>
@@ -766,7 +804,6 @@
 </footer>
 
 <script>
-// Language selector: click-toggle
 document.querySelectorAll('.lang-switcher').forEach(function(switcher){
   var btn=switcher.querySelector('.lang-btn'),dd=switcher.querySelector('.lang-dropdown');
   if(!btn||!dd)return;
