@@ -164,87 +164,262 @@
 </section>
 
 <!-- ============================================================
-     SECTION 4 — Interactive Example: Sales Contract Review
+     SECTION 4 — Sales Contract Review Storyboard (main demo)
      ============================================================ -->
-<section class="section ri-demo-section" id="interactive-demo">
+<section class="section ri-sb-section" id="interactive-demo">
   <div class="container">
     <div class="section-label">Interactive Example</div>
-    <h2 class="section-title">Sales Contract Review &mdash; an example</h2>
+    <h2 class="section-title">Sales Contract Review</h2>
     <p class="section-subtitle">
-      Sales contract is one of the most common use cases. The same review logic applies to other business content
-      you can see further down. Click <em>Start Review</em> below.
+      See how Business Content Intelligence helps sales, commercial, legal, and finance teams
+      identify contract risks before approval or signature.
     </p>
 
-    <div class="ri-demo">
-      <!-- LEFT: Document snippet -->
-      <div class="ri-demo-doc">
-        <div class="ri-demo-doc-head">
-          <div class="ri-demo-doc-meta">
-            <span class="ri-demo-doc-type">Sales Contract &mdash; Draft v2.3</span>
-            <span class="ri-demo-doc-id">ACME-2026-0612</span>
-          </div>
-          <div class="ri-demo-doc-title">Equipment Supply &amp; Service Agreement</div>
+    <!-- Step navigation dots -->
+    <div class="ri-sb-nav" id="sc-nav" role="tablist" aria-label="Sales Contract Review steps">
+      <button class="ri-sb-dot active" data-sc-step="0" role="tab" aria-selected="true" aria-label="Step 1: Ready to Review">
+        <span class="ri-sb-dot-label">Ready to Review</span>
+      </button>
+      <button class="ri-sb-dot" data-sc-step="1" role="tab" aria-selected="false" aria-label="Step 2: The Scan">
+        <span class="ri-sb-dot-label">The Scan</span>
+      </button>
+      <button class="ri-sb-dot" data-sc-step="2" role="tab" aria-selected="false" aria-label="Step 3: Source Trail">
+        <span class="ri-sb-dot-label">Source Trail</span>
+      </button>
+      <button class="ri-sb-dot" data-sc-step="3" role="tab" aria-selected="false" aria-label="Step 4: Before &amp; After">
+        <span class="ri-sb-dot-label">Before &amp; After</span>
+      </button>
+      <button class="ri-sb-dot" data-sc-step="4" role="tab" aria-selected="false" aria-label="Step 5: Ready for Review">
+        <span class="ri-sb-dot-label">Ready for Review</span>
+      </button>
+    </div>
+
+    <!-- Stage: left (contract doc) + right (BCI Review Panel) -->
+    <div class="ri-sb-stage">
+
+      <!-- LEFT: Sales Contract draft -->
+      <div class="ri-sb-doc">
+        <div class="ri-sb-doc-head">
+          <span class="ri-sb-doc-type">Sales Contract &mdash; Draft v2.3</span>
+          <span class="ri-sb-doc-id">ACME-2026-0612</span>
         </div>
-        <div class="ri-demo-doc-body">
-          <p class="ri-doc-clause">4. <strong>Payment Terms.</strong> Total contract value USD 480,000,
-            payable in <button type="button" class="ri-mark" data-risk="1">five (5) equal quarterly installments starting 90 days after final delivery</button>.</p>
+        <div class="ri-sb-doc-body">
+          <div class="ri-sb-doc-title">Equipment Supply &amp; Service Agreement</div>
 
-          <p class="ri-doc-clause">5. <strong>Delivery.</strong> Seller shall provide delivery
-            <button type="button" class="ri-mark" data-risk="2">within 30 days worldwide</button>, including all
-            destinations listed in Schedule B.</p>
+          <!-- Clause 1: Payment Terms -->
+          <p class="ri-sb-clause">
+            <strong>4. Payment Terms.</strong>
+            Total contract value USD 480,000, payable in
+            <span class="ri-sb-claim" data-claim="0">90 days after final delivery</span>.
+            <span class="ri-sb-warn" data-warn="0" aria-label="Warning">&#9888;</span>
+          </p>
 
-          <p class="ri-doc-clause">9. <strong>Liability.</strong> Seller assumes
-            <button type="button" class="ri-mark" data-risk="3">unlimited liability</button> for any direct or
-            indirect loss arising from performance or non-performance of this Agreement.</p>
+          <!-- Clause 2: Delivery -->
+          <p class="ri-sb-clause">
+            <strong>5. Delivery.</strong>
+            Seller shall ensure delivery
+            <span class="ri-sb-claim" data-claim="1">within 30 days worldwide</span>,
+            including all destinations in Schedule B.
+            <span class="ri-sb-warn" data-warn="1" aria-label="Warning">&#9888;</span>
+          </p>
+
+          <!-- Clause 3: Liability -->
+          <p class="ri-sb-clause">
+            <strong>9. Liability.</strong>
+            Seller assumes
+            <span class="ri-sb-claim" data-claim="2">unlimited liability</span>
+            for any direct or indirect loss arising from this Agreement.
+            <span class="ri-sb-warn" data-warn="2" aria-label="Warning">&#9888;</span>
+          </p>
+
+          <!-- Before/After block (Step 4 only) -->
+          <div class="ri-sb-ba-block" id="sc-ba" style="display:none">
+            <div class="ri-sb-ba-row ri-sb-ba-before">
+              <span class="ri-sb-ba-label before">Before</span>
+              <span class="ri-sb-ba-text">seller assumes unlimited liability</span>
+            </div>
+            <div class="ri-sb-ba-row ri-sb-ba-after">
+              <span class="ri-sb-ba-label after">After</span>
+              <span class="ri-sb-ba-text">liability is capped per the approved standard clause</span>
+            </div>
+          </div>
+
+          <!-- Status badge (Step 5 only) -->
+          <div class="ri-sb-status-block" id="sc-status" style="display:none">
+            <div class="ri-sb-status-badge" id="sc-status-badge">Under Review</div>
+          </div>
         </div>
       </div>
 
-      <!-- RIGHT: AI Risk Review Panel -->
-      <div class="ri-demo-review">
-        <div class="ri-demo-review-head">
-          <span class="ri-demo-review-dot"></span>
-          AI Risk Review
+      <!-- RIGHT: BCI Review Panel -->
+      <div class="ri-sb-review">
+        <div class="ri-sb-review-head">
+          <span class="ri-sb-review-dot"></span>
+          BCI Review Panel
         </div>
 
-        <!-- Pre-start state -->
-        <div class="ri-demo-prestart" id="ri-prestart">
-          <div class="ri-demo-prestart-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        <!-- Step 0: Ready to Review -->
+        <div class="ri-sb-step-panel" data-sc-panel="0">
+          <div class="ri-sb-panel-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>
           </div>
-          <p class="ri-demo-prestart-text">Click to review the contract draft against your Knowledge Hub.</p>
-          <button type="button" class="btn btn-primary btn-indigo ri-demo-start-btn" id="ri-start-btn">Start Review</button>
+          <p class="ri-sb-panel-heading">Ready to review?</p>
+          <p class="ri-sb-panel-text">Small issues in payment, delivery, or liability clauses can create business risk before approval or signature.</p>
+          <div class="ri-sb-warn-list">
+            <div class="ri-sb-warn-item"><span class="ri-sb-warn-icon">&#9888;</span><span>Payment term may exceed company policy</span></div>
+            <div class="ri-sb-warn-item"><span class="ri-sb-warn-icon">&#9888;</span><span>Delivery commitment may be too broad</span></div>
+            <div class="ri-sb-warn-item"><span class="ri-sb-warn-icon">&#9888;</span><span>Liability clause may create uncapped exposure</span></div>
+          </div>
         </div>
 
-        <!-- Reviewing state -->
-        <div class="ri-demo-running" id="ri-running" hidden>
-          <div class="ri-demo-spinner"></div>
-          <p>Reviewing against Knowledge Hub&hellip;</p>
+        <!-- Step 1: The Scan -->
+        <div class="ri-sb-step-panel" data-sc-panel="1" hidden>
+          <p class="ri-sb-panel-heading">Scanning contract terms&hellip;</p>
+          <div class="ri-sb-progress-bar">
+            <div class="ri-sb-progress-fill" id="sc-progress"></div>
+          </div>
+          <p class="ri-sb-panel-text">Business Content Intelligence reviews the document against your Knowledge Hub.</p>
+          <div class="ri-sb-scan-rows">
+            <div class="ri-sb-scan-row" data-sc-scan="0"><span class="ri-sb-scan-dot"></span><span>Payment Term Risk</span><span class="ri-sb-scan-flag" data-sc-flag="0"></span></div>
+            <div class="ri-sb-scan-row" data-sc-scan="1"><span class="ri-sb-scan-dot"></span><span>Delivery Commitment Risk</span><span class="ri-sb-scan-flag" data-sc-flag="1"></span></div>
+            <div class="ri-sb-scan-row" data-sc-scan="2"><span class="ri-sb-scan-dot"></span><span>Liability Clause Risk</span><span class="ri-sb-scan-flag" data-sc-flag="2"></span></div>
+          </div>
         </div>
 
-        <!-- Result state -->
-        <div class="ri-demo-result" id="ri-result" hidden>
-          <div class="ri-demo-summary">
-            <div class="ri-demo-summary-num">3</div>
-            <div class="ri-demo-summary-text">
-              <strong>risks identified.</strong>
-              <span>Click a highlighted clause on the left to see details.</span>
+        <!-- Step 2: Source Trail -->
+        <div class="ri-sb-step-panel" data-sc-panel="2" hidden>
+          <p class="ri-sb-panel-heading">Source Trail</p>
+          <p class="ri-sb-panel-text">Each risk is linked to trusted Knowledge Hub sources.</p>
+          <div class="ri-sb-finding">
+            <span class="ri-sb-finding-claim">&ldquo;90 days after final delivery&rdquo;</span>
+            <span class="ri-sb-finding-badge">Payment term exceeds company policy</span>
+          </div>
+          <div class="ri-sb-source-cards" id="sc-source-cards">
+            <div class="ri-sb-source-card" style="animation-delay:0ms">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Payment Policy
+            </div>
+            <div class="ri-sb-source-card" style="animation-delay:120ms">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/></svg>
+              Delivery Capability Guideline
+            </div>
+            <div class="ri-sb-source-card" style="animation-delay:240ms">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Legal Clause Library
+            </div>
+            <div class="ri-sb-source-card" style="animation-delay:360ms">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              Approved Contract Template
+            </div>
+            <div class="ri-sb-source-card" style="animation-delay:480ms">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/></svg>
+              Historical Risk Cases
             </div>
           </div>
-          <div class="ri-demo-hint">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6B7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-            Tap a highlighted phrase in the contract on the left.
-          </div>
-          <div class="ri-demo-detail" id="ri-detail">
-            <div class="ri-demo-detail-placeholder">Risk details will appear here.</div>
+        </div>
+
+        <!-- Step 3: Before & After -->
+        <div class="ri-sb-step-panel" data-sc-panel="3" hidden>
+          <p class="ri-sb-panel-heading">Suggested Revision</p>
+          <p class="ri-sb-panel-text">The system shows the source and suggests safer wording for human review.</p>
+          <div class="ri-sb-ba-panel">
+            <div class="ri-sb-ba-compare">
+              <div class="ri-sb-ba-compare-row before-row">
+                <span class="ri-sb-ba-compare-label">Before</span>
+                <span class="ri-sb-ba-compare-text strike">seller assumes unlimited liability</span>
+              </div>
+              <div class="ri-sb-ba-compare-row after-row">
+                <span class="ri-sb-ba-compare-label">After</span>
+                <span class="ri-sb-ba-compare-text suggested">liability is capped per the approved standard clause</span>
+              </div>
+            </div>
+            <div class="ri-sb-ba-action">
+              <span class="ri-sb-ba-action-label">Suggested action</span>
+              <span class="ri-sb-ba-action-text">Revise the clause or submit for Legal / Finance review before signature.</span>
+            </div>
+            <div class="ri-sb-ba-approve">
+              <button type="button" class="ri-sb-approve-btn" id="sc-approve-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                Approve revision
+              </button>
+              <span class="ri-sb-approved-msg" id="sc-approved-msg" hidden>&#10003; Revision approved</span>
+            </div>
           </div>
         </div>
+
+        <!-- Step 4: Ready for Review -->
+        <div class="ri-sb-step-panel" data-sc-panel="4" hidden>
+          <div class="ri-sb-final-badge" id="sc-final-badge">Ready for Review</div>
+          <p class="ri-sb-panel-heading">Review faster. Move forward with confidence.</p>
+          <p class="ri-sb-panel-text">Contract reviewed against Knowledge Hub. Suggested actions ready for the team.</p>
+          <div class="ri-sb-summary-pills">
+            <div class="ri-sb-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+              3 risks identified
+            </div>
+            <div class="ri-sb-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              4 Knowledge Hub sources referenced
+            </div>
+            <div class="ri-sb-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              Legal / Finance / Delivery review suggested
+            </div>
+            <div class="ri-sb-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+              Ready for revision before approval
+            </div>
+          </div>
+          <div class="ri-sb-wonde-mark">WondeTech</div>
+        </div>
+
+      </div><!-- .ri-sb-review -->
+    </div><!-- .ri-sb-stage -->
+
+    <!-- Caption bar -->
+    <div class="ri-sb-caption" id="sc-caption">
+      Commercial documents move fast &mdash; but small clauses can create major business risk.
+    </div>
+
+    <!-- Prev / Next controls -->
+    <div class="ri-sb-controls">
+      <button type="button" class="ri-sb-ctrl-btn" id="sc-prev" disabled>&#8592; Prev</button>
+      <span class="ri-sb-step-count"><span id="sc-cur">1</span> / 5</span>
+      <button type="button" class="ri-sb-ctrl-btn" id="sc-next">Next &#8594;</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 5 — Marketing Claims (lightweight placeholder card)
+     ============================================================ -->
+<section class="section ri-mkt-section" id="marketing-claims">
+  <div class="container">
+    <div class="ri-mkt-card">
+      <div class="ri-mkt-card-left">
+        <div class="ri-mkt-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
+        </div>
+        <div>
+          <div class="ri-mkt-label">Another Scenario</div>
+          <h3 class="ri-mkt-title">Marketing Claims &amp; Product Promotion</h3>
+          <p class="ri-mkt-desc">Review product claims, certification references, advertising wording, and localized promotional materials before they go public.</p>
+        </div>
+      </div>
+      <div class="ri-mkt-card-right">
+        <div class="ri-mkt-video-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Planned format: short explainer video
+        </div>
+        <p class="ri-mkt-video-note">A short explainer video demonstrating this scenario will be available soon.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============================================================
-     SECTION 5 — Also applies to more business content
+     SECTION 6 — Also applies to more business content
      ============================================================ -->
 <section class="section ri-more-section" id="more-content">
   <div class="container">
@@ -269,7 +444,11 @@
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#db2777" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
         </div>
         <h3>Marketing Claims &amp; Product Promotion</h3>
-        <p>Review product claims, certification references, advertising wording, and localized promotional materials.</p>
+        <p>Review product claims, certification references, advertising wording, and localized promotional materials before they go public.</p>
+        <span class="ri-more-video-tag">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Short explainer video coming soon
+        </span>
       </div>
 
       <div class="ri-more-card">
@@ -363,82 +542,204 @@
 </footer>
 
 <!-- ============================================================
-     INTERACTIVE DEMO JS
+     SALES CONTRACT STORYBOARD JS
      ============================================================ -->
 <script>
 (function(){
-  var startBtn   = document.getElementById('ri-start-btn');
-  var prestart   = document.getElementById('ri-prestart');
-  var running    = document.getElementById('ri-running');
-  var result     = document.getElementById('ri-result');
-  var detail     = document.getElementById('ri-detail');
-  var marks      = document.querySelectorAll('.ri-mark');
+  var STEP_COUNT = 5;
+  var AUTO_INTERVAL = 5500; // ms between auto-advance
 
-  // Risk data: keyed by data-risk id
-  var risks = {
-    '1': {
-      tag: 'Payment Term Risk',
-      body: 'This payment term is longer than the company\u2019s standard payment policy.',
-      source: 'Payment Policy V3.2',
-      action: 'Adjust the payment milestone or submit for Finance approval.'
-    },
-    '2': {
-      tag: 'Delivery Commitment Risk',
-      body: 'The delivery promise may exceed standard delivery capability for the listed destinations.',
-      source: 'Delivery Capability Guideline',
-      action: 'Add delivery assumptions or revise the timeline.'
-    },
-    '3': {
-      tag: 'Liability Clause Risk',
-      body: 'The liability clause may create uncapped responsibility for the company.',
-      source: 'Legal Clause Library',
-      action: 'Apply the approved liability cap clause.'
-    }
-  };
+  var captions = [
+    'Commercial documents move fast \u2014 but small clauses can create major business risk.',
+    'Business Content Intelligence reviews contract terms before they move forward.',
+    'Each risk is linked to trusted Knowledge Hub sources.',
+    'The system shows the source and suggests safer wording for human review.',
+    'Review faster. Move forward with confidence.'
+  ];
 
-  // Mark highlighting / click
-  function selectRisk(id){
-    marks.forEach(function(m){
-      m.classList.toggle('is-active', m.getAttribute('data-risk') === id);
-    });
-    var r = risks[id];
-    if(!r) return;
-    detail.innerHTML =
-      '<div class="ri-detail-tag">' + r.tag + '</div>' +
-      '<p class="ri-detail-body">' + r.body + '</p>' +
-      '<div class="ri-detail-source">' +
-        '<span class="ri-detail-label">Source</span>' +
-        '<span class="ri-detail-value">' + r.source + '</span>' +
-      '</div>' +
-      '<div class="ri-detail-action">' +
-        '<span class="ri-detail-label">Suggested action</span>' +
-        '<span class="ri-detail-value">' + r.action + '</span>' +
-      '</div>';
-    detail.classList.remove('ri-detail-reveal');
-    void detail.offsetWidth; // restart animation
-    detail.classList.add('ri-detail-reveal');
+  var currentStep = 0;
+  var autoTimer = null;
+  var scanTimers = [];
+
+  // Scope all queries to the #interactive-demo section to avoid any future conflicts
+  var section  = document.getElementById('interactive-demo');
+  var dots     = section.querySelectorAll('.ri-sb-dot');
+  var panels   = section.querySelectorAll('.ri-sb-step-panel');
+  var caption  = document.getElementById('sc-caption');
+  var prevBtn  = document.getElementById('sc-prev');
+  var nextBtn  = document.getElementById('sc-next');
+  var curEl    = document.getElementById('sc-cur');
+
+  // Doc-side elements
+  var claims      = section.querySelectorAll('.ri-sb-claim');
+  var warns       = section.querySelectorAll('.ri-sb-warn');
+  var baBlock     = document.getElementById('sc-ba');
+  var statusBlock = document.getElementById('sc-status');
+  var statusBadge = document.getElementById('sc-status-badge');
+
+  function clearScanTimers(){
+    scanTimers.forEach(clearTimeout);
+    scanTimers = [];
   }
-  marks.forEach(function(m){
-    m.addEventListener('click', function(){
-      selectRisk(m.getAttribute('data-risk'));
+
+  function setStep(n, fromAuto){
+    clearScanTimers();
+    currentStep = n;
+
+    // Update dots
+    dots.forEach(function(d, i){
+      d.classList.toggle('active', i === n);
+      d.setAttribute('aria-selected', i === n ? 'true' : 'false');
+    });
+
+    // Show correct panel
+    panels.forEach(function(p, i){
+      if(i === n){
+        p.removeAttribute('hidden');
+        p.classList.remove('ri-sb-panel-in');
+        void p.offsetWidth;
+        p.classList.add('ri-sb-panel-in');
+      } else {
+        p.setAttribute('hidden', '');
+        p.classList.remove('ri-sb-panel-in');
+      }
+    });
+
+    // Caption
+    if(caption){
+      caption.classList.remove('ri-sb-caption-in');
+      void caption.offsetWidth;
+      caption.classList.add('ri-sb-caption-in');
+      caption.textContent = captions[n];
+    }
+
+    // Prev / Next
+    if(prevBtn) prevBtn.disabled = (n === 0);
+    if(nextBtn) nextBtn.disabled = (n === STEP_COUNT - 1);
+    if(curEl) curEl.textContent = n + 1;
+
+    // --- Doc-side reset ---
+    claims.forEach(function(c){ c.className = 'ri-sb-claim'; });
+    warns.forEach(function(w){ w.className = 'ri-sb-warn'; w.style.opacity = ''; w.style.display = ''; });
+    if(baBlock) baBlock.style.display = 'none';
+    if(statusBlock) statusBlock.style.display = 'none';
+
+    // --- Step-specific doc & panel logic ---
+
+    if(n === 0){
+      // Pulse warning icons in one by one
+      warns.forEach(function(w, i){
+        w.style.opacity = '0';
+        var t = setTimeout(function(){
+          w.style.opacity = '1';
+          w.classList.add('ri-sb-warn-pulse');
+        }, 400 + i * 240);
+        scanTimers.push(t);
+      });
+    }
+
+    if(n === 1){
+      var scanRows  = section.querySelectorAll('.ri-sb-scan-row');
+      var scanFlags = section.querySelectorAll('.ri-sb-scan-flag');
+      // Reset
+      scanRows.forEach(function(r){ r.classList.remove('active'); });
+      scanFlags.forEach(function(f){ f.textContent = ''; });
+      var bar = document.getElementById('sc-progress');
+      if(bar) bar.style.width = '0%';
+      // Sweep through 3 rows sequentially
+      [0, 1, 2].forEach(function(i){
+        var t1 = setTimeout(function(){
+          if(scanRows[i]) scanRows[i].classList.add('active');
+          if(claims[i]) claims[i].classList.add('highlighted');
+          if(warns[i]) warns[i].classList.add('active');
+          if(bar) bar.style.width = ((i + 1) / 3 * 100) + '%';
+          var t2 = setTimeout(function(){
+            if(scanFlags[i]) scanFlags[i].textContent = '\u26A0';
+          }, 420);
+          scanTimers.push(t2);
+        }, 320 + i * 640);
+        scanTimers.push(t1);
+      });
+    }
+
+    if(n === 2){
+      // All claims flagged; trigger source card dock animation
+      claims.forEach(function(c){ c.classList.add('flagged'); });
+      warns.forEach(function(w){ w.classList.add('active'); });
+      var srcCards = section.querySelectorAll('#sc-source-cards .ri-sb-source-card');
+      srcCards.forEach(function(c){
+        c.classList.remove('ri-sb-source-dock');
+        void c.offsetWidth;
+        c.classList.add('ri-sb-source-dock');
+      });
+    }
+
+    if(n === 3){
+      // Show before/after in doc (liability clause = claim[2] revised)
+      claims[2] && claims[2].classList.add('revised');
+      claims[0] && claims[0].classList.add('highlighted');
+      claims[1] && claims[1].classList.add('highlighted');
+      warns.forEach(function(w){ w.classList.add('active'); });
+      if(baBlock) baBlock.style.display = '';
+    }
+
+    if(n === 4){
+      // All done / ready
+      claims.forEach(function(c){ c.classList.add('done'); });
+      warns.forEach(function(w){ w.style.display = 'none'; });
+      if(statusBlock) statusBlock.style.display = '';
+      if(statusBadge){
+        statusBadge.textContent = 'Under Review';
+        statusBadge.className = 'ri-sb-status-badge under';
+        var t = setTimeout(function(){
+          statusBadge.textContent = 'Ready for Review';
+          statusBadge.className = 'ri-sb-status-badge ready';
+        }, 700);
+        scanTimers.push(t);
+      }
+      // Final badge pop-in
+      var fb = document.getElementById('sc-final-badge');
+      if(fb){ fb.classList.remove('ri-sb-final-in'); void fb.offsetWidth; fb.classList.add('ri-sb-final-in'); }
+    }
+
+    if(!fromAuto) resetAuto();
+  }
+
+  function resetAuto(){
+    if(autoTimer) clearInterval(autoTimer);
+    autoTimer = setInterval(function(){
+      if(currentStep < STEP_COUNT - 1){
+        setStep(currentStep + 1, true);
+      } else {
+        clearInterval(autoTimer);
+      }
+    }, AUTO_INTERVAL);
+  }
+
+  // Dot clicks
+  dots.forEach(function(d){
+    d.addEventListener('click', function(){
+      setStep(parseInt(d.getAttribute('data-sc-step'), 10));
     });
   });
 
-  // Start Review flow
-  startBtn.addEventListener('click', function(){
-    startBtn.disabled = true;
-    prestart.classList.add('is-fading');
-    setTimeout(function(){
-      prestart.hidden = true;
-      running.hidden = false;
-      setTimeout(function(){
-        running.hidden = true;
-        result.hidden = false;
-        // Default: no risk selected — show the summary hint
-        detail.innerHTML = '<div class="ri-demo-detail-placeholder">Risk details will appear here.</div>';
-      }, 900);
-    }, 200);
-  });
+  // Prev / Next
+  if(prevBtn) prevBtn.addEventListener('click', function(){ if(currentStep > 0) setStep(currentStep - 1); });
+  if(nextBtn) nextBtn.addEventListener('click', function(){ if(currentStep < STEP_COUNT - 1) setStep(currentStep + 1); });
+
+  // Approve button (step 3)
+  var approveBtn  = document.getElementById('sc-approve-btn');
+  var approvedMsg = document.getElementById('sc-approved-msg');
+  if(approveBtn){
+    approveBtn.addEventListener('click', function(){
+      approveBtn.style.display = 'none';
+      if(approvedMsg) approvedMsg.removeAttribute('hidden');
+    });
+  }
+
+  // Init
+  setStep(0);
+  resetAuto();
 })();
 </script>
 </body>
