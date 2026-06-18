@@ -244,6 +244,45 @@
             </div>
           </div>
 
+          <!-- Revision Summary (Step 5 only) -->
+          <div class="ri-sb-revisions" id="sc-revisions" style="display:none">
+            <div class="ri-sb-revision-card">
+              <div class="ri-sb-revision-label">Suggested Revision 1 of 3</div>
+              <div class="ri-sb-original">
+                <span class="ri-sb-original-label">Original</span>
+                <p>Total contract value USD 480,000, payable in five equal quarterly installments starting 90 days after final delivery.</p>
+              </div>
+              <div class="ri-sb-suggested">
+                <span class="ri-sb-suggested-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Suggested Revision</span>
+                <p>Total contract value USD 480,000, payable according to approved company payment milestones.</p>
+              </div>
+            </div>
+
+            <div class="ri-sb-revision-card">
+              <div class="ri-sb-revision-label">Suggested Revision 2 of 3</div>
+              <div class="ri-sb-original">
+                <span class="ri-sb-original-label">Original</span>
+                <p>Seller shall ensure delivery within 30 days worldwide, including all destinations in Schedule B.</p>
+              </div>
+              <div class="ri-sb-suggested">
+                <span class="ri-sb-suggested-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Suggested Revision</span>
+                <p>Seller shall provide delivery according to the approved implementation schedule and regional availability.</p>
+              </div>
+            </div>
+
+            <div class="ri-sb-revision-card">
+              <div class="ri-sb-revision-label">Suggested Revision 3 of 3</div>
+              <div class="ri-sb-original">
+                <span class="ri-sb-original-label">Original</span>
+                <p>Seller assumes unlimited liability for any direct or indirect loss arising from this Agreement.</p>
+              </div>
+              <div class="ri-sb-suggested">
+                <span class="ri-sb-suggested-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Suggested Revision</span>
+                <p>Seller's liability shall be capped according to the approved standard liability clause.</p>
+              </div>
+            </div>
+          </div>
+
           <!-- Status badge (Step 5 only) -->
           <div class="ri-sb-status-block" id="sc-status" style="display:none">
             <div class="ri-sb-status-badge" id="sc-status-badge">Under Review</div>
@@ -358,16 +397,16 @@
               3 risks identified
             </div>
             <div class="ri-sb-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              3 suggested revisions prepared
+            </div>
+            <div class="ri-sb-pill">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
               4 Knowledge Hub sources referenced
             </div>
             <div class="ri-sb-pill">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
               Legal / Finance / Delivery review suggested
-            </div>
-            <div class="ri-sb-pill">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-              Ready for revision before approval
             </div>
           </div>
           <div class="ri-sb-wonde-mark">WondeTech</div>
@@ -620,6 +659,11 @@
 
     // --- Doc-side reset ---
     claims.forEach(function(c){ c.className = 'ri-sb-claim'; });
+    // Hide revision cards, show original clauses
+    var clauses = section.querySelectorAll('.ri-sb-clause');
+    clauses.forEach(function(c){ c.style.display = ''; });
+    var revisions = document.getElementById('sc-revisions');
+    if(revisions) revisions.style.display = 'none';
     warns.forEach(function(w){ w.className = 'ri-sb-warn'; w.style.opacity = ''; w.style.display = ''; });
     if(baBlock) baBlock.style.display = 'none';
     if(statusBlock) statusBlock.style.display = 'none';
@@ -684,9 +728,12 @@
     }
 
     if(n === 4){
-      // All done / ready
-      claims.forEach(function(c){ c.classList.add('done'); });
-      warns.forEach(function(w){ w.style.display = 'none'; });
+      // Show revision summary (Step 5)
+      // Hide original clauses, show revision cards
+      var clauses = section.querySelectorAll('.ri-sb-clause');
+      clauses.forEach(function(c){ c.style.display = 'none'; });
+      var revisions = document.getElementById('sc-revisions');
+      if(revisions) revisions.style.display = '';
       if(statusBlock) statusBlock.style.display = '';
       if(statusBadge){
         statusBadge.textContent = 'Under Review';

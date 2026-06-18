@@ -494,8 +494,18 @@
   border-bottom-color: transparent;
 }
 .ri-sb-claim.done {
+  text-decoration: line-through;
+  color: var(--gray-400);
+  background: transparent;
+  border-bottom-color: transparent;
+  opacity: 0.7;
+}
+.ri-sb-claim-suggested {
   background: linear-gradient(180deg, transparent 55%, #dcfce7 55%);
-  border-bottom-color: #86efac;
+  border-bottom: 2px solid #86efac;
+  border-radius: 2px;
+  padding: 0 2px;
+  color: #166534;
 }
 
 /* Warning icons */
@@ -899,6 +909,85 @@
   color: var(--indigo);
   margin-top: 12px;
   letter-spacing: 0.02em;
+}
+
+/* ============================================================
+   Revision Cards (Step 5 only)
+   ============================================================ */
+.ri-sb-revisions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+  animation: ri-sb-panel-in 0.5s ease both;
+}
+
+.ri-sb-revision-card {
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--white);
+}
+
+.ri-sb-revision-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 8px 12px;
+  background: var(--gray-50);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.ri-sb-original {
+  padding: 12px;
+  background: #fef2f2;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.ri-sb-original-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #dc2626;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+.ri-sb-original p {
+  font-size: 13px;
+  color: var(--gray-600);
+  line-height: 1.5;
+  margin: 0;
+  text-decoration: line-through;
+  text-decoration-color: var(--gray-400);
+}
+
+.ri-sb-suggested {
+  padding: 12px;
+  background: #f0fdf4;
+}
+
+.ri-sb-suggested-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #16a34a;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+.ri-sb-suggested p {
+  font-size: 13px;
+  color: #166534;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 500;
 }
 
 /* Caption bar */
