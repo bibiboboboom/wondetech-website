@@ -209,8 +209,8 @@
           <!-- Clause 1: Payment Terms -->
           <p class="ri-sb-clause">
             <strong>4. Payment Terms.</strong>
-            Total contract value USD 480,000, payable in
-            <span class="ri-sb-claim" data-claim="0">90 days after final delivery</span>.
+            Total contract value USD 480,000,
+            <span class="ri-sb-claim" data-claim="0">payable in five equal quarterly installments starting 90 days after final delivery</span><span class="ri-sb-claim-revision" id="sc-rev-0" style="display:none">payable according to approved company payment milestones</span>.
             <span class="ri-sb-warn" data-warn="0" aria-label="Warning">&#9888;</span>
           </p>
 
@@ -218,7 +218,7 @@
           <p class="ri-sb-clause">
             <strong>5. Delivery.</strong>
             Seller shall ensure delivery
-            <span class="ri-sb-claim" data-claim="1">within 30 days worldwide</span>,
+            <span class="ri-sb-claim" data-claim="1">within 30 days worldwide</span><span class="ri-sb-claim-revision" id="sc-rev-1" style="display:none">according to the approved implementation schedule and regional availability</span>,
             including all destinations in Schedule B.
             <span class="ri-sb-warn" data-warn="1" aria-label="Warning">&#9888;</span>
           </p>
@@ -227,7 +227,7 @@
           <p class="ri-sb-clause">
             <strong>9. Liability.</strong>
             Seller assumes
-            <span class="ri-sb-claim" data-claim="2">unlimited liability</span>
+            <span class="ri-sb-claim" data-claim="2">unlimited liability</span><span class="ri-sb-claim-revision" id="sc-rev-2" style="display:none">liability capped according to the approved standard clause</span>
             for any direct or indirect loss arising from this Agreement.
             <span class="ri-sb-warn" data-warn="2" aria-label="Warning">&#9888;</span>
           </p>
@@ -241,45 +241,6 @@
             <div class="ri-sb-ba-row ri-sb-ba-after">
               <span class="ri-sb-ba-label after">After</span>
               <span class="ri-sb-ba-text">liability is capped per the approved standard clause</span>
-            </div>
-          </div>
-
-          <!-- Revision Summary (Step 5 only) -->
-          <div class="ri-sb-revisions" id="sc-revisions" style="display:none">
-            <div class="ri-sb-revision-card">
-              <div class="ri-sb-revision-label">Suggested Revision 1 of 3</div>
-              <div class="ri-sb-original">
-                <span class="ri-sb-original-label">Original</span>
-                <p>Total contract value USD 480,000, payable in five equal quarterly installments starting 90 days after final delivery.</p>
-              </div>
-              <div class="ri-sb-suggested">
-                <span class="ri-sb-suggested-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Suggested Revision</span>
-                <p>Total contract value USD 480,000, payable according to approved company payment milestones.</p>
-              </div>
-            </div>
-
-            <div class="ri-sb-revision-card">
-              <div class="ri-sb-revision-label">Suggested Revision 2 of 3</div>
-              <div class="ri-sb-original">
-                <span class="ri-sb-original-label">Original</span>
-                <p>Seller shall ensure delivery within 30 days worldwide, including all destinations in Schedule B.</p>
-              </div>
-              <div class="ri-sb-suggested">
-                <span class="ri-sb-suggested-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Suggested Revision</span>
-                <p>Seller shall provide delivery according to the approved implementation schedule and regional availability.</p>
-              </div>
-            </div>
-
-            <div class="ri-sb-revision-card">
-              <div class="ri-sb-revision-label">Suggested Revision 3 of 3</div>
-              <div class="ri-sb-original">
-                <span class="ri-sb-original-label">Original</span>
-                <p>Seller assumes unlimited liability for any direct or indirect loss arising from this Agreement.</p>
-              </div>
-              <div class="ri-sb-suggested">
-                <span class="ri-sb-suggested-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Suggested Revision</span>
-                <p>Seller's liability shall be capped according to the approved standard liability clause.</p>
-              </div>
             </div>
           </div>
 
@@ -391,6 +352,7 @@
           <div class="ri-sb-final-badge" id="sc-final-badge">Ready for Review</div>
           <p class="ri-sb-panel-heading">Review faster. Move forward with confidence.</p>
           <p class="ri-sb-panel-text">Contract reviewed against Knowledge Hub. Suggested actions ready for the team.</p>
+          <p class="ri-sb-panel-text" style="font-size:12px;color:var(--gray-500);margin-top:8px;">Suggested revisions are ready for human review before approval.</p>
           <div class="ri-sb-summary-pills">
             <div class="ri-sb-pill">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
@@ -659,11 +621,11 @@
 
     // --- Doc-side reset ---
     claims.forEach(function(c){ c.className = 'ri-sb-claim'; });
-    // Hide revision cards, show original clauses
-    var clauses = section.querySelectorAll('.ri-sb-clause');
-    clauses.forEach(function(c){ c.style.display = ''; });
-    var revisions = document.getElementById('sc-revisions');
-    if(revisions) revisions.style.display = 'none';
+    // Hide inline revision spans
+    ['sc-rev-0','sc-rev-1','sc-rev-2'].forEach(function(id){
+      var el = document.getElementById(id);
+      if(el) el.style.display = 'none';
+    });
     warns.forEach(function(w){ w.className = 'ri-sb-warn'; w.style.opacity = ''; w.style.display = ''; });
     if(baBlock) baBlock.style.display = 'none';
     if(statusBlock) statusBlock.style.display = 'none';
@@ -728,12 +690,15 @@
     }
 
     if(n === 4){
-      // Show revision summary (Step 5)
-      // Hide original clauses, show revision cards
-      var clauses = section.querySelectorAll('.ri-sb-clause');
-      clauses.forEach(function(c){ c.style.display = 'none'; });
-      var revisions = document.getElementById('sc-revisions');
-      if(revisions) revisions.style.display = '';
+      // Show inline tracked changes (Step 5)
+      // All risks identified; show suggested revisions inline
+      claims.forEach(function(c){ c.classList.add('done'); });
+      warns.forEach(function(w){ w.style.display = 'none'; });
+      // Show inline revision spans
+      ['sc-rev-0','sc-rev-1','sc-rev-2'].forEach(function(id){
+        var el = document.getElementById(id);
+        if(el) el.style.display = '';
+      });
       if(statusBlock) statusBlock.style.display = '';
       if(statusBadge){
         statusBadge.textContent = 'Under Review';
