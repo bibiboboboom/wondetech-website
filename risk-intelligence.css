@@ -1048,41 +1048,41 @@
   gap: 10px;
   align-items: flex-start;
   flex-shrink: 0;
-}
-.ri-mkt-video-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  padding: 8px 16px;
-  background: #f5f3ff;
-  border: 1px solid #e9d5ff;
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--purple);
-  white-space: nowrap;
-}
-.ri-mkt-video-note {
-  font-size: 12px;
-  color: var(--gray-400);
-  line-height: 1.6;
-  max-width: 220px;
-  margin: 0;
+  min-width: 260px;
+  flex: 1;
 }
 
-/* More-card video tag (used in Section 6) */
-.ri-more-video-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
+/* Marketing Claims bullet points */
+.ri-mkt-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ri-mkt-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--gray-700);
+  line-height: 1.6;
+}
+.ri-mkt-points li svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* More-card value line */
+.ri-more-value {
+  font-size: 12.5px;
+  color: var(--indigo);
+  line-height: 1.6;
   margin-top: 10px;
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--purple);
-  background: #f5f3ff;
-  border: 1px solid #e9d5ff;
-  border-radius: 999px;
-  padding: 3px 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--gray-100);
+  font-weight: 500;
 }
 
 @media (max-width: 640px) {
